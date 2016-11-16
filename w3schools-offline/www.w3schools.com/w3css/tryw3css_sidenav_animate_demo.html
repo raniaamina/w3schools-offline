@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+
+<!-- Mirrored from www.w3schools.com/w3css/tryw3css_sidenav_animate_demo.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:51 GMT -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../lib/w3.css">
+<style>
+.w3-opennav:hover {
+	color:grey;
+}
+</style>
+<body class="w3-light-grey">
+
+<nav class="w3-sidenav w3-dark-grey w3-animate-left" style="display:none">
+  <a href="javascript:void(0)" onclick="w3_close()" 
+  class="w3-closenav w3-large">Close &times;</a>
+  <a href="javascript:void(0)">Link 1</a>		
+  <a href="javascript:void(0)">Link 2</a>		
+  <a href="javascript:void(0)">Link 3</a>		
+  <a href="javascript:void(0)">Link 4</a>		
+  <a href="javascript:void(0)">Link 5</a>		
+</nav>
+
+<div class="w3-container">
+  <span class="w3-opennav w3-xxlarge" onclick="w3_open()">&#9776;</span>
+  <h2>Page content..</h2>
+  <p>Click on the menu icon (&#9776;) to slide in the side navigation.</p>
+</div>
+     
+<script>
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+}
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+}
+</script>
+     
+</body>
+
+<!-- Mirrored from www.w3schools.com/w3css/tryw3css_sidenav_animate_demo.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:51 GMT -->
+</html> 

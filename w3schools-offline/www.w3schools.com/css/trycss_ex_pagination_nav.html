@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.w3schools.com/css/trycss_ex_pagination_nav.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:42 GMT -->
+<head>
+<style>
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+ul.pagination li a.active {
+    background-color: #eee;
+    color: black;
+    border: 1px solid #ddd;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+</style>
+</head>
+<body>
+
+<p>Next/Previous buttons:</p>
+<ul class="pagination">
+  <li><a href="#">&#10094;</a></li>
+  <li><a href="#">&#10095;</a></li>
+</ul>
+
+<p>Navigation pagination:</p>
+<ul class="pagination">
+  <li><a href="#" class="active">Home</a></li>
+  <li><a href="#">Link 1</a></li>
+  <li><a href="#">Link 2</a></li>
+  <li><a href="#">Link 3</a></li>
+</ul>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/css/trycss_ex_pagination_nav.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:42 GMT -->
+</html>

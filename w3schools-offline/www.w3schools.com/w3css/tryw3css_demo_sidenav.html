@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+
+<!-- Mirrored from www.w3schools.com/w3css/tryw3css_demo_sidenav.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:47 GMT -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../lib/w3.css">
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<style>
+@media screen and (max-width: 455px) {
+    .h3 {
+        font-size:16px;
+    }
+}
+.w3-closenav {position:absolute !important;right:20px!important;top:2px!important;padding:0 !important;}
+.w3-closenav:hover {background-color:transparent !important;color:#fff;}
+</style>
+<body style="background:#e6e6e6;color:black;">
+
+<nav class="w3-sidenav w3-light-grey w3-card-4 w3-animate-left" style="width:200px">
+  <header class="w3-container w3-dark-grey">
+  <h5>Menu <a href="javascript:void(0)" 
+  onclick="w3_close()"
+  class="w3-right w3-xlarge w3-closenav" title="close sidenav">&times;</a></h5>
+  </header>
+
+  <a class="w3-padding w3-green" href="javascript:void(0)">Home</a>		
+  <a class="w3-padding" href="javascript:void(0)">About</a>		
+  <a class="w3-padding" href="javascript:void(0)">Contact</a>		
+  <div class="w3-dropdown-hover">
+    <a class="w3-padding" href="javascript:void(0)">Dropdown <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+      <a href="javascript:void(0)">Link 1</a>
+      <a href="javascript:void(0)">Link 2</a>
+      <a href="javascript:void(0)">Link 3</a>
+    </div>
+  </div>	
+  <a class="w3-padding" href="javascript:void(0)">Support</a>		
+</nav>
+
+<div id="main" style="margin-left:200px;transition:0.4s;">
+
+<div class="w3-container w3-margin-left">
+  <span title="open sidenav" style="position:fixed;top:5px;display:none" class="w3-opennav w3-xlarge" onclick="w3_open()">&#9776;</span>
+  <h3 class="h3" style="position:fixed;top:36px;">Page content..</h3>
+</div>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "180px";
+  document.getElementsByClassName("w3-sidenav")[0].style.width = "180px";
+  document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+  document.getElementsByClassName("w3-opennav")[0].style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0";
+  document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+  document.getElementsByClassName("w3-opennav")[0].style.display = "inline-block";
+}
+</script>
+      
+</body>
+
+<!-- Mirrored from www.w3schools.com/w3css/tryw3css_demo_sidenav.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:47 GMT -->
+</html> 

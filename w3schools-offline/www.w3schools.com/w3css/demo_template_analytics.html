@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+
+<!-- Mirrored from www.w3schools.com/w3css/demo_template_analytics.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:53 GMT -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../lib/w3.css">
+<style>
+/* Set the sidenav to full-width when the screen is less than 600 pixels wide */
+@media (max-width: 500px) {
+  .w3-sidenav {
+      width: 100% !important;
+  }
+}
+</style>
+<body>
+
+<nav class="w3-sidenav w3-light-grey" style="width:25%">
+  <a href="javascript:void(0)" 
+  onclick="w3_close()"
+  class="w3-closenav w3-large w3-right w3-padding-right">×</a>
+  <div class="w3-container">
+    <h3>Logo</h3>
+  </div>
+  <a class="w3-red" href="#">Dashboard</a>		
+  <a href="#">Age</a>		
+  <a href="#">Gender</a>		
+  <a href="#">Geo</a>		
+</nav>
+
+<div id="main" style="margin-left:25%"> <!-- Start main -->
+<br>
+
+<div class="w3-row-padding">
+  <div class="w3-col m12">
+    <div class="w3-container w3-light-grey w3-card-4">
+      <span class="w3-opennav w3-xlarge" onclick="w3_open()" style="display:none">&#9776;</span>
+      <h3>Dashboard</h3>
+      <p>Some Text...</p>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="w3-row-padding">
+  <div class="w3-quarter">
+    <div class="w3-card-2 w3-light-grey w3-padding">
+      <h4>Users</h4>
+      <p>1 Million</p> 
+    </div>
+  </div>
+
+  <div class="w3-quarter">
+    <div class="w3-card-2 w3-light-grey w3-padding">
+      <h4>Pages</h4>
+      <p>100 Million</p> 
+    </div>
+  </div>
+
+  <div class="w3-quarter">
+    <div class="w3-card-2 w3-light-grey w3-padding">
+      <h4>Sessions</h4>
+      <p>10 Million</p> 
+    </div>
+  </div>
+
+  <div class="w3-quarter">
+    <div class="w3-card-2 w3-light-grey w3-padding">
+      <h4>Bounce Rate</h4>
+      <p>30%</p> 
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="w3-row-padding">
+  <div class="w3-third">
+    <div class="w3-card-2 w3-light-grey w3-padding">
+      <h3>Text..</h3>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-2 w3-light-grey w3-padding">
+      <h3>Text..</h3>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-2 w3-light-grey w3-padding">
+      <h3>Text..</h3>
+    </div>
+  </div>
+</div>
+<br>
+
+<footer class="w3-container w3-blue-grey">
+  <h5>Footer</h5>
+  <p>Footer information goes here</p>
+</footer>
+
+</div> <!-- End main -->
+     
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%"
+  document.getElementsByClassName("w3-sidenav")[0].style.width ="25%";
+  document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+  document.getElementsByClassName("w3-opennav")[0].style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+  document.getElementsByClassName("w3-opennav")[0].style.display = "inline-block";
+}
+</script>
+     
+</body>
+
+<!-- Mirrored from www.w3schools.com/w3css/demo_template_analytics.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:53 GMT -->
+</html> 

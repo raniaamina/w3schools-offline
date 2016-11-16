@@ -1,0 +1,1515 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/jquerymobile/jquerymobile_ref_data.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 07:16:30 GMT -->
+<head>
+
+<title>jQuery Mobile Data Attributes</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,ASP,XML,DOM,Bootstrap,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,source code,colors,demos,tips">
+<meta name="Description" content="Well organized and easy to understand Web bulding tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, and XML.">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../lib/w3.css">
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3855518-1', 'auto');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script>
+
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type='text/javascript'>
+// GPT slots
+var gptAdSlots = [];
+googletag.cmd.push(function() {
+var leaderMapping = googletag.sizeMapping().
+// Mobile ad
+addSize([0, 0], [320, 50]). 
+// Vertical Tablet ad
+addSize([480, 0], [468, 60]). 
+// Horizontal Tablet
+addSize([750, 0], [728, 90]).
+// Small Desktop
+addSize([993, 0], [468, 60]).
+// Normal Desktop
+addSize([1135, 0], [728, 90]).
+// Large Desktop and bigger ad
+addSize([1425, 0], [[728, 90], [970, 90]]).build();
+gptAdSlots[0] = googletag.defineSlot('/16833175/MainLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1422003450156-2').
+defineSizeMapping(leaderMapping).addService(googletag.pubads());
+var skyMapping = googletag.sizeMapping().
+// Mobile ad
+addSize([0, 0], [320, 50]). 
+// Tablet ad
+addSize([975, 0], [120, 600]). 
+// Desktop
+addSize([1135, 0], [160, 600]).   
+// Large Desktop
+addSize([1675, 0], [[160, 600], [300, 600], [300, 1050]]).build();
+gptAdSlots[1] = googletag.defineSlot('/16833175/WideSkyScraper', [[160, 600], [300, 600], [300, 1050]], 'div-gpt-ad-1422003450156-5').
+defineSizeMapping(skyMapping).addService(googletag.pubads());
+var bmrMapping = googletag.sizeMapping().
+// Smaller
+addSize([0, 0], [[300, 250], [336, 280]]). 
+// Large Desktop
+addSize([1200, 0], [[300, 250], [336, 280], [970, 250]]).build();
+gptAdSlots[2] = googletag.defineSlot('/16833175/BottomMediumRectangle', [[300, 250], [336, 280], [970, 250]], 'div-gpt-ad-1422003450156-0').
+defineSizeMapping(bmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+gptAdSlots[3] = googletag.defineSlot('/16833175/RightBottomMediumRectangle', [[300, 250], [336, 280]], 'div-gpt-ad-1422003450156-3').addService(googletag.pubads());
+googletag.pubads().setTargeting("content","jquerymob");
+googletag.enableServices();
+});
+</script>
+<link rel="stylesheet" type="text/css" href="../stdtheme.css" />
+</head>
+<body>
+<div class='w3-container top'>
+<a class='w3schools-logo' href='../index.html'>w3schools<span class='dotcom'>.com</span></a>
+<div class='w3-right toptext w3-wide'>THE WORLD'S LARGEST WEB DEVELOPER SITE</div></div>
+<div class='w3-topnav w3-card-2 w3-slim topnav' id='topnav'>
+<div style='overflow:auto;'>
+<div style='float:left;width:50%;overflow:hidden;height:44px'>
+<a href='javascript:void(0);' class='topnav-localicons w3-hide-large w3-left' onclick='open_menu()' title='Menu'>&#9776;</a>
+<a href='../default.html' class='topnav-icons fa fa-home w3-left' title='Home'></a>
+<a href='../html/default.html' class='w3-hide-small' title='HTML Tutorial'>HTML</a><a href='../css/default.html' class='w3-hide-small' title='CSS Tutorial'>CSS</a><a href='../js/default.html' class='w3-hide-small' title='JavaScript Tutorial'>JAVASCRIPT</a><a href='../sql/default.html' class='w3-hide-small' title='SQL Tutorial'>SQL</a><a href='../php/default.html' class='w3-hide-small' title='PHP Tutorial'>PHP</a><a href='../bootstrap/default.html' class='w3-hide-small' title='Bootstrap Tutorial'>BOOTSTRAP</a><a href='../jquery/default.html' class='w3-hide-small' title='jQuery Tutorial'>JQUERY</a><a href='../angular/default.html' class='w3-hide-small' title='Angular Tutorial'>ANGULAR</a><a href='../xml/default.html' class='w3-hide-small' title='XML Tutorial'>XML</a></div>
+<div style='float:right;width:110px;overflow:hidden;height:44px;'>
+<a href='javascript:void(0);' class='topnav-icons fa fa-search w3-right' onclick='w3_open_nav("search")' title='Search W3Schools'></a>
+<a href='javascript:void(0);' class='topnav-icons fa fa-globe w3-right' onclick='openGoogleTranslate();w3_open_nav("translate")' title='Translate W3Schools'></a></div>
+<div class='w3-hide-small' style='float:right;width:30%;overflow:hidden;height:44px;'>
+<a id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='Tutorials'>TUTORIALS <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a><a id='topnavbtn_references' href='javascript:void(0);' onclick='w3_open_nav("references")' title='References'>REFERENCES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a><a id='topnavbtn_examples' href='javascript:void(0);' onclick='w3_open_nav("examples")' title='Examples'>EXAMPLES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a><a href='http://w3schools.invisionzone.com/'>FORUM</a></div></div>
+<div id='nav_tutorials' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_references' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_examples' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_translate' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_search' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div></div>
+<div class='w3-row w3-light-grey' id='belowtopnav'>
+<div class='w3-col w3-slim' id='leftmenu'>
+<div id='leftmenuinner'>
+<div class='w3-light-grey' id='leftmenuinnerinner'>
+<a href='javascript:void(0)' onclick='close_menu()' class='w3-closebtn w3-hide-large w3-large' style='padding:3px 12px;'>&times;</a>
+<h2 class="left"><span class="left_h2">jQ Mobile Tutorial</span></h2>
+<a target="_top" href="default.html">jQ Mobile HOME</a>
+<a target="_top" href="jquerymobile_intro.html">jQ Mobile Intro</a>
+<a target="_top" href="jquerymobile_get_started.html">jQ Mobile Get Started</a>
+<a target="_top" href="jquerymobile_pages.html">jQ Mobile Pages</a>
+<a target="_top" href="jquerymobile_transitions.html">jQ Mobile Transitions</a>
+<a target="_top" href="jquerymobile_buttons.html">jQ Mobile Buttons</a>
+<a target="_top" href="jquerymobile_icons.html">jQ Mobile Icons</a>
+<a target="_top" href="jquerymobile_popups.html">jQ Mobile Popups</a>
+<a target="_top" href="jquerymobile_toolbars.html">jQ Mobile Toolbars</a>
+<a target="_top" href="jquerymobile_navbars.html">jQ Mobile Navbars</a>
+<a target="_top" href="jquerymobile_panels.html">jQ Mobile Panels</a>
+<a target="_top" href="jquerymobile_collapsibles.html">jQ Mobile Collapsibles</a>
+<a target="_top" href="jquerymobile_tables.html">jQ Mobile Tables</a>
+<a target="_top" href="jquerymobile_grids.html">jQ Mobile Grids</a>
+<br>
+<h2 class="left"><span class="left_h2">jQ Mobile Lists</span></h2>
+<a target="_top" href="jquerymobile_list_views.html">jQ Mobile List Views</a>
+<a target="_top" href="jquerymobile_list_content.html">jQ Mobile List Content</a>
+<a target="_top" href="jquerymobile_filters.html">jQ Mobile Filter Items</a>
+<br>
+<h2 class="left"><span class="left_h2">jQ Mobile Forms</span></h2>
+<a target="_top" href="jquerymobile_form_basic.html">jQ Mobile Form Basic</a>
+<a target="_top" href="jquerymobile_form_inputs.html">jQ Mobile Form Inputs</a>
+<a target="_top" href="jquerymobile_form_select.html">jQ Mobile Form Select</a>
+<a target="_top" href="jquerymobile_form_sliders.html">jQ Mobile Form Sliders</a>
+<br>
+<h2 class="left"><span class="left_h2">jQ Mobile Themes</span></h2>
+<a target="_top" href="jquerymobile_themes.html">jQ Mobile Themes</a>
+<br>
+<h2 class="left"><span class="left_h2">jQ Mobile Events</span></h2>
+<a target="_top" href="jquerymobile_events_intro.html">jQ Mobile Events</a>
+<a target="_top" href="jquerymobile_events_touch.html">jQ Mobile Touch</a>
+<a target="_top" href="jquerymobile_events_scroll.html">jQ Mobile Scroll</a>
+<a target="_top" href="jquerymobile_events_orientation.html">jQ Mobile Orientation</a>
+<a target="_top" href="jquerymobile_events_page.html">jQ Mobile Page Events</a>
+<br>
+<h2 class="left"><span class="left_h2">Examples</span></h2>
+<a target="_top" href="jquerymobile_examples.html">jQ Mobile Examples</a>
+<br>
+<h2 class="left"><span class="left_h2">References</span></h2>
+<a target="_top" href="jquerymobile_ref_css.html">jQ CSS Classes</a>
+<a target="_top" href="jquerymobile_ref_data.html">jQ Data Attributes</a>
+<a target="_top" href="jquerymobile_ref_events.html">jQ Events</a>
+<a target="_top" href="jquerymobile_ref_icons.html">jQ Icons</a><br><br></div></div>&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-row w3-white'>
+<div class='w3-col l10 m12' id='main'>
+<div id='mainLeaderboard' style='overflow:hidden;'>
+<!-- MainLeaderboard-->
+<div id='div-gpt-ad-1422003450156-2'>
+<script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+</div></div>
+<h1>jQuery Mobile <span class="color_h1">Data Attributes</span></h1>
+<div class="chapter">
+<div class="prev"><a class="chapter" href="jquerymobile_ref_css.html">&laquo; Previous</a></div>
+<div class="next"><a class="chapter" href="jquerymobile_ref_events.html">Next Chapter &raquo;</a></div>
+</div>
+<hr>
+<h2>jQuery Data Attributes</h2>
+<p>jQuery Mobile uses the <a href="../tags/att_global_data.html">HTML5 data-* attribute</a> 
+to create a "touch-friendly" and attractive look for mobile devices.</p>
+<p>For the reference list below, <strong>bold value</strong> specifies the 
+default value.</p>
+<hr>
+
+<h2>Button</h2>
+<p><span class="deprecated">Deprecated in version 1.4. Use 
+<a href="jquerymobile_ref_css.html">CSS Classes</a> instead.</span> Hyperlinks with <span class="marked">data-role=&quot;button&quot;</span>. Button elements and links in 
+toolbars and input fields are automatically styled as buttons, no need for 
+data-role="button".</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-corners</td>
+<td><strong>true</strong> | false</td>
+<td>Specifies whether the button should have rounded corners or not</td>
+</tr>
+<tr>
+<td>data-icon</td>
+<td><a href="jquerymobile_ref_icons.html">Icons Reference</a></td>
+<td>Specifies the icon of the button. Default is no icon</td>
+</tr>
+<tr>
+<td>data-iconpos</td>
+<td><strong>left</strong> | right | top | bottom | notext</td>
+<td>Specifies the position of the icon</td>
+</tr>
+<tr>
+<td>data-iconshadow</td>
+<td><strong>true</strong> | false</td>
+<td>Specifies whether the button icon should have shadows or not</td>
+</tr>
+<tr>
+<td>data-inline</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the button should be inline or not</td>
+</tr>
+<tr>
+<td>data-mini</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the button should be of small or regular size</td>
+</tr>
+<tr>
+<td>data-shadow</td>
+<td><strong>true</strong> | false</td>
+<td>Specifies whether the button should have shadows or not</td>
+</tr>
+<tr>
+<td>data-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the theme color of the button</td>
+</tr>
+</table>
+<br>
+<table class="lamp" id="table2"><tr>
+<th style="width:34px"><img src="../images/lamp.jpg" alt="Note" style="height:32px;width:32px"></th>
+<td>To group multiple buttons, use a container with the data-role="controlgroup" 
+attribute together with data-type="horizontal|vertical&quot; to specify whether to 
+group buttons horizontally or vertically.</td>
+</tr></table>
+<hr>
+
+<h2>Checkbox</h2>
+<p>Pairs of labels and inputs with <span class="marked">type=&quot;checkbox&quot;</span>.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-mini</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the checkbox should be of small or regular size</td>
+</tr>
+<tr>
+<td>data-role</td>
+<td>none</td>
+<td>Prevents jQuery Mobile to style checkboxes as buttons</td>
+</tr>
+<tr>
+<td>data-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the theme color of the checkbox</td>
+</tr>
+</table>
+<br>
+<table class="lamp" id="table2"><tr>
+<th style="width:34px"><img src="../images/lamp.jpg" alt="Note" style="height:32px;width:32px"></th>
+<td>To group multiple checkboxes, use the data-role=&quot;controlgroup&quot; together with 
+the data-type=&quot;horizontal|vertical&quot; to specify whether to group checkboxes 
+horizontally or vertically.</td>
+</tr></table>
+<hr>
+
+<h2>Collapsible</h2>
+<p>A header element followed by any HTML markup inside a container with the <span class="marked">data-role=&quot;collapsible&quot;</span>.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-collapsed</td>
+<td><strong>true</strong> | false</td>
+<td>Specifies whether the content should be closed or expanded</td>
+</tr>
+<tr>
+<td>data-collapsed-cue-text</td>
+<td><em>sometext&nbsp;</em></td>
+<td>Specifies some text to provide audible feedback for users with screen reader 
+software. Default is &quot;click to collapse contents&quot;.</td>
+</tr>
+<tr>
+<td>data-collapsed-icon</td>
+<td><a href="jquerymobile_ref_icons.html">Icons Reference</a></td>
+<td>Specifies the icon of the collapsible button. Default is "plus"</td>
+</tr>
+<tr>
+<td>data-content-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the theme color of the collapsible content. Will also add rounded 
+corners to the collapsible content</td>
+</tr>
+<tr>
+<td>data-expanded-cue-text</td>
+<td><em>sometext&nbsp;</em></td>
+<td>Specifies some text to provide audible feedback for users with screen reader 
+software. Default is &quot;click to expand contents&quot;.</td>
+</tr>
+<tr>
+<td>data-expanded-icon</td>
+<td><a href="jquerymobile_ref_icons.html">Icons Reference</a></td>
+<td>Specifies the icon of the collapsible button when the content is expanded. 
+Default is "minus"</td>
+</tr>
+<tr>
+<td>data-iconpos</td>
+<td><strong>left</strong> | right | top | bottom</td>
+<td>Specifies the position of the icon</td>
+</tr>
+<tr>
+<td>data-inset</td>
+<td><strong>true</strong> | false</td>
+<td>Specifies whether the collapsible button should be styled with rounded 
+corners and some margin or not</td>
+</tr>
+<tr>
+<td>data-mini</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the collapsible buttons should be of small or regular size</td>
+</tr>
+<tr>
+<td>data-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the theme color of the collapsible button</td>
+</tr>
+</table>
+<hr>
+
+<h2>Collapsible Set</h2>
+<p>Collapsible content blocks inside a container with the <span class="marked"> data-role=&quot;collapsibleset&quot;</span>.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-collapsed-icon</td>
+<td><a href="jquerymobile_ref_icons.html">Icons Reference</a></td>
+<td>Specifies the icon of the collapsible button. Default is "plus"</td>
+</tr>
+<tr>
+<td>data-content-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the theme color of the collapsible content</td>
+</tr>
+<tr>
+<td>data-expanded-icon</td>
+<td><a href="jquerymobile_ref_icons.html">Icons Reference</a></td>
+<td>Specifies the icon of the collapsible button when the content is expanded. 
+Default is "minus"</td>
+</tr>
+<tr>
+<td>data-iconpos</td>
+<td><strong>left</strong> | right | top | bottom | notext</td>
+<td>Specifies the position of the icon</td>
+</tr>
+<tr>
+<td>data-inset</td>
+<td><strong>true</strong> | false</td>
+<td>Specifies whether the collapsibles should be styled with rounded 
+corners and some margin or not</td>
+</tr>
+<tr>
+<td>data-mini</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the collapsible buttons should be of small or regular size</td>
+</tr>
+<tr>
+<td>data-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the theme color of the collapsible set</td>
+</tr>
+</table>
+<hr>
+
+<h2>Content</h2>
+<p><span class="deprecated">Deprecated in version 1.4, and will be removed in 1.5.</span> Container with <span class="marked">data-role="content"</span>.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the theme color of the content</td>
+</tr>
+</table>
+<hr>
+
+<h2>Controlgroup</h2>
+<p>A &lt;div&gt; or &lt;fieldset&gt; container with <span class="marked">data-role="controlgroup"</span>. 
+Groups multiple button-styled inputs of a single type (link-based buttons, radio buttons, 
+checkboxes, select elements). For grouping form checkboxes and radio buttons, the 
+&lt;fieldset&gt; container is recommended inside a &lt;div&gt; with the &quot;ui-fieldcontain&quot; 
+class, 
+to improve label styling.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-exclude-invisible</td>
+<td><strong>true</strong> | false</td>
+<td>Specifies whether to exclude invisible children in the assignment of rounded 
+corners</td>
+</tr>
+<tr>
+<td>data-mini</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the group should be of small or regular size</td>
+</tr>
+<tr>
+<td>data-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the theme color of the controlgroup</td>
+</tr>
+<tr>
+<td>data-type</td>
+<td>horizontal | <strong>vertical</strong></td>
+<td>Specifies whether the group should be horizontally or vertically 
+displayed</td>
+</tr>
+</table>
+<hr>
+
+<h2>Dialog</h2>
+<p>A container with <span class="marked">data-dialog=&quot;true&quot;</span>.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-close-btn</td>
+<td><strong>left</strong> | right | none</td>
+<td>Specifies the position of the close button</td>
+</tr>
+<tr>
+<td>data-close-btn-text</td>
+<td><em>sometext</em></td>
+<td>Specifies the text for the close button</td>
+</tr>
+<tr>
+<td>data-corners</td>
+<td><strong>true </strong>| false&nbsp;</td>
+<td>Specifies whether the dialog should have rounded corners or not</td>
+</tr>
+<tr>
+<td>data-dom-cache</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the to clear jQuery DOM cache or not for individual pages 
+(if set to true, you need to take care to manage the DOM yourself and test 
+thoroughly on all mobile devices)</td>
+</tr>
+<tr>
+<td>data-overlay-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the overlay (background) color of the dialog page</td>
+</tr>
+<tr>
+<td>data-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the theme color of the dialog page</td>
+</tr>
+<tr>
+<td>data-title</td>
+<td><em>sometext</em></td>
+<td>Specifies the title for the dialog page</td>
+</tr>
+</table>
+<hr>
+
+<h2>Enhancement</h2>
+<p>A container with <span class="marked">data-enhance=&quot;false&quot;</span> or <span class="marked">data-ajax=&quot;false&quot;</span></p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-enhance</td>
+<td><strong>true </strong>| false</td>
+<td>If set to &quot;true&quot;, (default) jQuery Mobile will automatically style the page, 
+making it suitable for mobile devices. If set to &quot;false&quot;, the framework will not 
+style the page&nbsp;&nbsp; </td>
+</tr>
+<tr>
+<td>data-ajax</td>
+<td><strong>true </strong>| false</td>
+<td>Specifies whether to load pages via ajax or not</td>
+</tr>
+</table>
+<p><strong>Note:</strong> data-enhance=&quot;false&quot; must be used in conjunction with 
+$.mobile.ignoreContentEnabled=true&quot; to stop jQuery Mobile to style pages 
+automatically.</p>
+<p>Any link or form element inside data-ajax="false" containers will be ignored by the framework's navigation functionality when $.mobile.ignoreContentEnabled is set to true.</p>
+<hr>
+
+<h2>Field Container</h2>
+<p><span class="deprecated">Deprecated in version 1.4, and will be removed in 1.5. 
+Use class=&quot;ui-fieldcontain instead&quot;. </span> A container with <span class="marked">data-role="fieldcontain"</span> wrapped around label/form element pair.</p>
+<hr>
+
+<h2>Fixed Toolbar</h2>
+<p>A container with <span class="marked">data-role=&quot;header&quot;</span> or <span class="marked">data-role=&quot;footer&quot;</span> 
+together with the 
+<span class="marked">data-position=&quot;fixed&quot;</span> attribute.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-disable-page-zoom</td>
+<td><strong>true</strong> | false</td>
+<td>Specifies whether the user is able to scale/zoom the page or not</td>
+</tr>
+<tr>
+<td>data-fullscreen</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies toolbars to always be positioned at the top and/or bottom</td>
+</tr>
+<tr>
+<td>data-tap-toggle</td>
+<td><strong>true</strong> | false</td>
+<td>Specifies whether the user is able to toggle toolbar-visibility on 
+taps/clicks or not</td>
+</tr>
+<tr>
+<td>data-transition</td>
+<td><strong>slide</strong> | fade | none</td>
+<td>Specifies the transition effect when a tap/click occurs</td>
+</tr>
+<tr>
+<td>data-update-page-padding</td>
+<td><strong>true</strong> | false</td>
+<td>Specifies the padding of both top and bottom of the page to be updated on resize, transition 
+and &quot;updatelayout&quot; 
+events (jQuery Mobile always updates the padding on the &quot;pageshow&quot; event)</td>
+</tr>
+<tr>
+<td>data-visible-on-page-show</td>
+<td><strong>true</strong> | false</td>
+<td>Specifies toolbar-visibility when parent page is shown</td>
+</tr>
+</table>
+<hr>
+
+<h2>Flip Toggle Switch</h2>
+<p>An &lt;input type=&quot;checkbox&quot;&gt; with a data-role of &quot;flipswitch&quot;:</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-mini</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the switch should be of small or regular size</td>
+</tr>
+<tr>
+<td>data-on-text</td>
+<td><em>sometext</em></td>
+<td>Specifies the &quot;on&quot; text on the flip switch (default is &quot;On&quot;)</td>
+</tr>
+<tr>
+<td>data-off-text</td>
+<td><em>sometext</em></td>
+<td>Specifies the &quot;off&quot; text on the flip switch (default is &quot;Off&quot;)</td>
+</tr>
+</table>
+<hr>
+
+<h2>Footer</h2>
+<p>A container with <span class="marked">data-role=&quot;footer&quot;</span>.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-id</td>
+<td><em>sometext</em></td>
+<td>Specifies a unique ID. Required for persistent footers</td>
+</tr>
+<tr>
+<td>data-position</td>
+<td><strong>inline</strong> | fixed</td>
+<td>Specifies whether the footer should be inline with page content or remain 
+positioned at the bottom</td>
+</tr>
+<tr>
+<td>data-fullscreen</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the footer should always be positioned at the bottom and over the page 
+content (slightly see-through) or not</td>
+</tr>
+<tr>
+<td>data-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the theme color of the footer</td>
+</tr>
+</table>
+<p><strong>Note:</strong> To enable the fullscreen position, use data-position="fixed" and then add the data-fullscreen attribute to the element.</p>
+<hr>
+
+<h2>Header</h2>
+<p>A container with <span class="marked">data-role=&quot;header&quot;</span>.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-id</td>
+<td><em>sometext</em></td>
+<td>Specifies a unique ID. Required for persistent headers</td>
+</tr>
+<tr>
+<td>data-position</td>
+<td><strong>inline</strong> | fixed</td>
+<td>Specifies whether the header should be inline with page content or remain 
+positioned at the top</td>
+</tr>
+<tr>
+<td>data-fullscreen</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the header should always be positioned at the top and over the page 
+content (slightly see-through) or not</td>
+</tr>
+<tr>
+<td>data-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the theme color of the header</td>
+</tr>
+</table>
+<p><strong>Note:</strong> To enable the fullscreen position, use 
+data-position=&quot;fixed&quot; and then add the data-fullscreen attribute to the element.</p>
+<hr>
+
+<h2>Inputs</h2>
+<p>Inputs with <span class="marked">type=&quot;text|search|etc.&quot;</span> or <span class="marked">textarea elements</span>.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-clear-btn</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the input should have a &quot;clear&quot; button</td>
+</tr>
+<tr>
+<td>data-clear-btn-text</td>
+<td><em>text</em></td>
+<td>Specifies a text for the &quot;clear&quot; button. Default is &quot;clear text&quot;</td>
+</tr>
+<tr>
+<td>data-mini</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the input should be of small or regular size</td>
+</tr>
+<tr>
+<td>data-role</td>
+<td>none</td>
+<td>Prevents jQuery Mobile to style inputs/textareas as buttons</td>
+</tr>
+<tr>
+<td>data-theme</td>
+<td><em>letter</em> (a-z)&nbsp;</td>
+<td>Specifies the theme color of the input field</td>
+</tr>
+</table>
+<hr>
+
+<h2>Link</h2>
+<p>All links.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-ajax</td>
+<td><strong>true</strong> | false</td>
+<td>Specifies whether to load pages via ajax for improved user experience and 
+transitions. If set to false, jQuery Mobile will do a normal page request.</td>
+</tr>
+<tr>
+<td>data-direction</td>
+<td>reverse</td>
+<td>Reverse transition animation (only for page or dialog)</td>
+</tr>
+<tr>
+<td>data-dom-cache</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the to clear jQuery DOM cache or not for individual pages 
+(if set to true, you need to take care to manage the DOM yourself and test 
+thoroughly on all mobile devices)</td>
+</tr>
+<tr>
+<td>data-prefetch</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether to prefetch pages into the DOM so that they are available 
+when the user visits them</td>
+</tr>
+<tr>
+<td>data-rel</td>
+<td>back | dialog | external | popup</td>
+<td>Specifies an option for how the link should behave. Back - Moves one step 
+back in history. Dialog - Opens a link as a dialog, not tracked in history. 
+External - For linking to another domain. Popup - opens a popup window.</td>
+</tr>
+<tr>
+<td>data-transition</td>
+<td><strong>fade</strong> | flip | flow | pop | slide | slidedown | slidefade | slideup | turn | 
+none</td>
+<td>Specifies how to transition from one page to the next. See our
+<a href="jquerymobile_transitions.html">jQuery Mobile Transitions</a> chapter.</td>
+</tr>
+<tr>
+<td>data-position-to</td>
+<td><strong>origin</strong> | jQuery selector | window</td>
+<td>Specifies the position of popup boxes. Origin - Default. Positions the 
+popup over the link that opens it. jQuery selector - positions the popup over 
+the specified element. Window - positions the popup in the middle of the window 
+screen.</td>
+</tr>
+</table>
+<hr>
+
+<h2>List</h2>
+<p>An &lt;ol&gt; or &lt;ul&gt; with <span class="marked">data-role=&quot;listview&quot;</span>.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-autodividers</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether to automatically divide list items or not</td>
+</tr>
+<tr>
+<td>data-count-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the theme color of the count bubble</td>
+</tr>
+<tr>
+<td>data-divider-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the theme color of the list divider</td>
+</tr>
+<tr>
+<td>data-filter</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether to add a search box in a list or not</td>
+</tr>
+<tr>
+<td>data-filter-placeholder</td>
+<td><em>sometext</em></td>
+<td><span class="deprecated">Deprecated in version 1.4. Use the HTML placeholder attribute instead. </span>Specifies the text inside the search box. Default is &quot;Filter items...&quot;</td>
+</tr>
+<tr>
+<td>data-filter-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the theme color of the search filter</td>
+</tr>
+<tr>
+<td>data-icon</td>
+<td><a href="jquerymobile_ref_icons.html">Icons Reference</a></td>
+<td>Specifies the icon of the list</td>
+</tr>
+<tr>
+<td>data-inset</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the list should be styled with rounded 
+corners and some margin or not</td>
+</tr>
+<tr>
+<td>data-split-icon</td>
+<td><a href="jquerymobile_ref_icons.html">Icons Reference</a></td>
+<td>Specifies the icon of the split button. Default is &quot;arrow-r&quot;</td>
+</tr>
+<tr>
+<td>data-split-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the theme color of the split button</td>
+</tr>
+<tr>
+<td>data-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the theme color of the list</td>
+</tr>
+</table>
+<hr>
+
+<h2>List item</h2>
+<p>An &lt;li&gt; inside an &lt;ol&gt; or &lt;ul&gt; with <span class="marked">data-role=&quot;listview&quot;</span>.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-filtertext</td>
+<td><em>sometext</em></td>
+<td>Specifies a text to search for when filtering elements. This text will then be 
+filtered instead of the actual list item text</td>
+</tr>
+<tr>
+<td>data-icon</td>
+<td><a href="jquerymobile_ref_icons.html">Icons Reference</a></td>
+<td>Specifies the icon of the list item</td>
+</tr>
+<tr>
+<td>data-role</td>
+<td>list-divider</td>
+<td>Specifies a divider for list items</td>
+</tr>
+<tr>
+<td>data-theme</td>
+<td><em>letter</em> (a-z)&nbsp;</td>
+<td>Specifies the theme color of the list item</td>
+</tr>
+</table>
+<p><strong>Note:</strong> The data-icon attribute only work on list items with 
+links.</p>
+<hr>
+
+<h2>Navbar</h2>
+<p>&lt;li&gt; elements inside a container with <span class="marked">data-role=&quot;navbar&quot;</span>.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-icon</td>
+<td><a href="jquerymobile_ref_icons.html">Icons Reference</a></td>
+<td>Specifies the icon of the list item</td>
+</tr>
+<tr>
+<td>data-iconpos</td>
+<td>left | right | <strong>top</strong> | bottom | notext</td>
+<td>Specifies the position of the icon</td>
+</tr>
+</table>
+<br>
+<table class="lamp" id="table2"><tr>
+<th style="width:34px"><img src="../images/lamp.jpg" alt="Note" style="height:32px;width:32px"></th>
+<td>Navbars inherit the theme-swatch from their parent container. It is not 
+possible to set the data-theme attribute to a navbar. The data-theme attribute can 
+be set individually to each link inside the navbar.</td>
+</tr></table>
+<hr>
+
+<h2>Page</h2>
+<p>A container with <span class="marked">data-role=&quot;page&quot;</span>.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-dom-cache</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the to clear jQuery DOM cache or not for individual pages 
+(if set to true, you need to take care to manage the DOM yourself and test 
+thoroughly on all mobile devices)</td>
+</tr>
+<tr>
+<td>data-overlay-theme</td>
+<td><em>letter</em> (a-z)&nbsp;</td>
+<td>Specifies the overlay (background) color of dialog pages</td>
+</tr>
+<tr>
+<td>data-theme</td>
+<td><em>letter</em> (a-z)&nbsp;</td>
+<td>Specifies the theme color of the page</td>
+</tr>
+<tr>
+<td>data-title</td>
+<td><em>sometext</em></td>
+<td>Specifies the page title</td>
+</tr>
+<tr>
+<td>data-url</td>
+<td>url</td>
+<td>Value for updating the URL, instead of the url used to request the page</td>
+</tr>
+</table>
+<hr>
+
+<h2>Popup</h2>
+<p>A container with <span class="marked">data-role=&quot;popup&quot;</span>.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-corners</td>
+<td><strong>true</strong> | false</td>
+<td>Specifies whether the popup should have rounded corners or not</td>
+</tr>
+<tr>
+<td>data-dismissible</td>
+<td><strong>true</strong> | false</td>
+<td>Specifies whether the popup should be closed by clicking outside of the 
+popup or not</td>
+</tr>
+<tr>
+<td>data-history</td>
+<td><strong>true</strong> | false</td>
+<td>Specifies whether the popup should create a browser history item when 
+opened. If set to false, it will not create a history item, and will then not be 
+closeable via the browser's &quot;Back&quot; button</td>
+</tr>
+<tr>
+<td>data-overlay-theme</td>
+<td><em>letter</em> (a-z)&nbsp;</td>
+<td>Specifies the overlay (background) 
+color of the popup box. Default is transparent background (none). </td>
+</tr>
+<tr>
+<td>data-shadow</td>
+<td><strong>true</strong> | false</td>
+<td>Specifies whether the popup box should have shadows or not</td>
+</tr>
+<tr>
+<td>data-theme</td>
+<td><em>letter</em> (a-z)&nbsp;</td>
+<td>Specifies the theme color of the popup box. Default inherited, "none" sets 
+the popup to transparent</td>
+</tr>
+<tr>
+<td>data-tolerance</td>
+<td>30, 15, 30, 15&nbsp;</td>
+<td>Specifies the distance from the edges of the window (top, right, bottom, 
+left)</td>
+</tr>
+</table>
+<p>An anchor with <span class="marked">data-rel=&quot;popup&quot;</span>:</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-position-to</td>
+<td><strong>origin</strong> | jQuery selector | window</td>
+<td>Specifies the position of popup boxes. Origin - Default. Positions the 
+popup over the link that opens it. jQuery selector - positions the popup over 
+the specified element. Window - positions the popup in the middle of the window 
+screen.</td>
+</tr>
+<tr>
+<td>data-rel</td>
+<td>popup</td>
+<td>For opening the popup box</td>
+</tr>
+<tr>
+<td>data-transition</td>
+<td>fade | flip | flow | pop | slide | slidedown | slidefade | slideup | turn | 
+<strong>none</strong></td>
+<td>Specifies how to transition from one page to the next. See our
+<a href="jquerymobile_transitions.html">jQuery Mobile Transitions</a> chapter.</td>
+</tr>
+</table>
+<hr>
+
+<h2>Radio Button</h2>
+<p>Pairs of labels and inputs with <span class="marked">type=&quot;radio&quot;</span>.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-mini</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the button should be of small or regular size</td>
+</tr>
+<tr>
+<td>data-role</td>
+<td>none</td>
+<td>Prevents jQuery Mobile to style radiobuttons as enhanced buttons</td>
+</tr>
+<tr>
+<td>data-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the theme color of the radio button</td>
+</tr>
+</table>
+<br>
+<table class="lamp" id="table2"><tr>
+<th style="width:34px"><img src="../images/lamp.jpg" alt="Note" style="height:32px;width:32px"></th>
+<td>To group multiple radio buttons, use the data-role=&quot;controlgroup&quot; together with 
+the data-type=&quot;horizontal|vertical&quot; to specify whether to group the 
+buttons 
+horizontally or vertically.</td>
+</tr></table>
+<hr>
+
+<h2>Select</h2>
+<p>All <span class="marked">&lt;select&gt;</span> elements.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-icon</td>
+<td><a href="jquerymobile_ref_icons.html">Icons Reference</a></td>
+<td>Specifies the icon of the select element. Default is &quot;arrow-d&quot;</td>
+</tr>
+<tr>
+<td>data-iconpos</td>
+<td>left | <strong>right</strong> | top | bottom | notext</td>
+<td>Specifies the position of the icon</td>
+</tr>
+<tr>
+<td>data-inline</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the select element should be inline or not</td>
+</tr>
+<tr>
+<td>data-mini</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the select should be of small or regular size</td>
+</tr>
+<tr>
+<td>data-native-menu</td>
+<td><strong>true</strong> | false</td>
+<td>When set to false, it uses jQuery's own custom select menu (recommended if 
+you want the select menu to display the same on all mobile devices)</td>
+</tr>
+<tr>
+<td>data-overlay-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the theme color of jQuery's own custom select menu (used together 
+with data-native-menu=&quot;false&quot;)</td>
+</tr>
+<tr>
+<td>data-placeholder</td>
+<td>true | <strong>false</strong></td>
+<td>Can be set on an &lt;option&gt; element of a non-native select</td>
+</tr>
+<tr>
+<td>data-role</td>
+<td>none</td>
+<td>Prevents jQuery Mobile to style select elements as buttons</td>
+</tr>
+<tr>
+<td>data-theme</td>
+<td><em>letter</em> (a-z)</td>
+<td>Specifies the theme color of the select element</td>
+</tr>
+</table>
+<br>
+<table class="lamp" id="table2"><tr>
+<th style="width:34px"><img src="../images/lamp.jpg" alt="Note" style="height:32px;width:32px"></th>
+<td>To group multiple select elements, use the data-role=&quot;controlgroup&quot; together with 
+the data-type=&quot;horizontal|vertical&quot; to specify whether to group the 
+elements 
+horizontally or vertically.</td>
+</tr></table>
+<hr>
+
+<h2>Slider</h2>
+<p>Inputs with <span class="marked">type=&quot;range&quot;</span>.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Data-attribute</th>
+<th style="width:20%">Value</th>
+<th style="width:60%">Description</th>
+</tr>
+<tr>
+<td>data-highlight</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the slider track should be highlighted or not</td>
+</tr>
+<tr>
+<td>data-mini</td>
+<td>true | <strong>false</strong></td>
+<td>Specifies whether the slider should be of small or regular size</td>
+</tr>
+<tr>
+<td>data-role</td>
+<td>none</td>
+<td>Prevents jQuery Mobile to style slider controls as buttons</td>
+</tr>
+<tr>
+<td>data-theme</td>
+<td><em>letter</em> (a-z)&nbsp;</td>
+<td>Specifies the theme color of the slider control (the input, handle and 
+track)</td>
+</tr>
+<tr>
+<td>data-track-theme</td>
+<td><em>letter</em> (a-z)&nbsp;</td>
+<td>Specifies the theme color of the slider track</td>
+</tr>
+</table>
+
+<br>
+<br>
+<div class="chapter">
+<div class="prev"><a class="chapter" href="jquerymobile_ref_css.html">&laquo; Previous</a></div>
+<div class="next"><a class="chapter" href="jquerymobile_ref_events.html">Next Chapter &raquo;</a></div>
+</div>
+</div>
+<div class="w3-col l2 m12" id="right">
+
+<div class="sidesection">
+<div id="skyscraper">
+<div id="div-gpt-ad-1422003450156-5">
+<script>
+ googletag.cmd.push(function() {
+ googletag.display('div-gpt-ad-1422003450156-5');
+ });
+ </script> 
+</div>
+</div>
+</div>
+
+<div class="sidesection">
+<h3>W3SCHOOLS EXAMS</h3>
+<a target="_blank" href="../cert/default.html">HTML, CSS, JavaScript, PHP, jQuery, and XML Certifications</a>
+</div>
+
+<div class="sidesection">
+<h3>COLOR PICKER</h3>
+<a href="../colors/colors_picker.html">
+<img src="../images/colorpicker.gif" alt="colorpicker"></a>
+</div>
+
+<div class="sidesection">
+<h3>SHARE THIS PAGE</h3>
+<div class="w3-text-grey sharethis">
+<script>
+<!--
+try{
+loc=location.pathname;
+if (loc.toUpperCase().indexOf(".ASP")<0) loc=loc+"default.asp";
+txt='<a href="http://www.facebook.com/sharer.php?u=http://www.w3schools.com'+loc+'" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a>';
+txt=txt+'<a href="http://twitter.com/home?status=Currently reading http://www.w3schools.com'+loc+'" target="_blank" title="Twitter"><span class="fa fa-twitter-square fa-2x"></span></a>';
+txt=txt+'<a href="https://plus.google.com/share?url=http://www.w3schools.com'+loc+'" target="_blank" title="Google+"><span class="fa fa-google-plus-square fa-2x"></span></a>';
+document.write(txt);
+} catch(e) {}
+//-->
+</script>
+</div>
+</div>
+
+<div class="sidesection w3-text-grey sharethis">
+<a href="javascript:void(0);" onclick="clickFBLike()" title="Like W3Schools on Facebook">
+<span class="fa fa-thumbs-o-up fa-2x"></span></a>
+<div id="fblikeframe">
+<div id="popupframe"></div>
+<div id="popupDIV"></div>
+</div>
+</div>       
+
+<div class="sidesection">
+<h3>LEARN MORE:</h3>
+<p>
+<a href="../colors/colors_converter.html">Color Converter</a><br>
+<a href="../howto/howto_google_maps.html">Google Maps</a><br>
+<a href="../howto/howto_css_animate_buttons.html">Animated Buttons</a><br>
+<a href="../howto/howto_css_modals.html">Modal Boxes</a><br>
+<a href="../howto/howto_css_modal_images.html">Modal Images</a><br>
+<a href="../howto/howto_css_tooltip.html">Tooltips</a><br>
+<a href="../howto/howto_css_loader.html">Loaders</a><br>
+<a href="../howto/howto_js_animate.html">JS Animations</a><br>
+<a href="../howto/howto_js_progressbar.html">Progress Bars</a><br>
+<a href="../howto/howto_js_dropdown.html">Dropdowns</a><br>
+<a href="../howto/howto_js_slideshow.html">Slideshow</a><br>
+<a href="../howto/howto_js_sidenav.html">Side Navigation</a><br>
+<a href="../howto/howto_html_include.html">HTML Includes</a><br>
+<a href="../w3css/w3css_color_palettes.html">Color Palettes</a>
+</p>
+</div>
+
+</div>
+</div>
+<div class="footer w3-container w3-white">      
+
+<hr>
+<div style="overflow:auto">
+<!-- BottomMediumRectangle -->
+<div class="bottomad" id='div-gpt-ad-1422003450156-0'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-0'); });
+</script>
+</div>
+<!-- RightBottomMediumRectangle -->
+<div class="bottomad" id='div-gpt-ad-1422003450156-3'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-3'); });
+</script>
+</div>
+</div>
+
+<hr>
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m3 s12">
+<a href="javascript:void(0);" onclick="displayError();return false" style="white-space:nowrap;">REPORT ERROR</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="#" target="_blank" onclick="printPage();return false;">PRINT PAGE</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="http://w3schools.invisionzone.com/" target="_blank">FORUM</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="../about/default.html" target="_top">ABOUT</a>
+</div>
+</div>
+<hr>
+<div class="w3-light-grey w3-padding w3-center" id="err_form" style="display:none;">
+<span onclick="this.parentElement.style.display='none'" class="w3-closebtn">&times;</span>     
+<h2>Your Suggestion:</h2>
+<form>
+<div class="w3-group">      
+<label for="err_email">Your E-mail:</label>
+<input class="w3-input" type="text" style="width:100%" id="err_email" name="err_email">
+</div>
+<div class="w3-group">      
+<label for="err_email">Page address:</label>
+<input class="w3-input" type="text" style="width:100%" id="err_url" name="err_url" disabled="disabled">
+</div>
+<div class="w3-group">
+<label for="err_email">Description:</label>
+<textarea rows="10" class="w3-input" id="err_desc" name="err_desc" style="width:100%;"></textarea>
+</div>
+<div class="form-group">        
+<button type="button" onclick="sendErr()">Submit</button>
+</div>
+<br>
+</form>
+</div>
+<div class="w3-container w3-light-grey w3-padding" id="err_sent" style="display:none;">
+<span onclick="this.parentElement.style.display='none'" class="w3-closebtn">&times;</span>     
+<h2>Thank You For Helping Us!</h2>
+<p>Your message has been sent to W3Schools.</p>
+</div>
+
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 Tutorials</h4>
+<a href="../html/default.html">HTML Tutorial</a><br>
+<a href="../css/default.html">CSS Tutorial</a><br>
+<a href="../js/default.html">JavaScript Tutorial</a><br>
+<a href="../w3css/default.html">W3.CSS Tutorial</a><br>
+<a href="../bootstrap/default.html">Bootstrap Tutorial</a><br>
+<a href="../sql/default.html">SQL Tutorial</a><br>
+<a href="../php/default.html">PHP Tutorial</a><br>
+<a href="../jquery/default.html">jQuery Tutorial</a><br>
+<a href="../angular/default.html">Angular Tutorial</a><br>
+<a href="../xml/default.html">XML Tutorial</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 References</h4>
+<a href="../tags/default.html">HTML Reference</a><br>
+<a href="../cssref/default.html">CSS Reference</a><br>
+<a href="../jsref/default.html">JavaScript Reference</a><br>
+<a href="../w3css/w3css_references.html">W3.CSS Reference</a><br>
+<a href="../browsers/default.html">Browser Statistics</a><br>
+<a href="../php/php_ref_array.asp">PHP Reference</a><br>
+<a href="../colors/colors_names.html">HTML Colors</a><br>
+<a href="../charsets/default.html">HTML Character Sets</a><br>
+<a href="../jquery/jquery_ref_selectors.html">jQuery Reference</a><br>
+<a href="../angular/angular_ref_directives.html">AngularJS Reference</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 Examples</h4>
+<a href="../html/html_examples.html">HTML Examples</a><br>
+<a href="../css/css_examples.html">CSS Examples</a><br>
+<a href="../js/js_examples.html">JavaScript Examples</a><br>
+<a href="../w3css/w3css_examples.html">W3.CSS Examples</a><br>
+<a href="../js/js_dom_examples.html">HTML DOM Examples</a><br>
+<a href="../php/php_examples.html">PHP Examples</a><br>
+<a href="../jquery/jquery_examples.html">jQuery Examples</a><br>
+<a href="../asp/asp_examples.html">ASP Examples</a><br>
+<a href="../xml/xml_examples.html">XML Examples</a><br>
+<a href="../svg/svg_examples.html">SVG Examples</a>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Web Certificates</h4>
+<a href="../cert/default.html">HTML Certificate</a><br>
+<a href="../cert/default.html">HTML5 Certificate</a><br>
+<a href="../cert/default.html">CSS Certificate</a><br>
+<a href="../cert/default.html">JavaScript Certificate</a><br>
+<a href="../cert/default.html">jQuery Certificate</a><br>
+<a href="../cert/default.html">PHP Certificate</a><br>
+<a href="../cert/default.html">Bootstrap Certificate</a><br>
+<a href="../cert/default.html">XML Certificate</a><br>
+</div>
+</div>        
+</div>        
+
+<hr>
+<div class="w3-center w3-small w3-opacity">
+W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding.
+Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.
+While using this site, you agree to have read and accepted our <a href="../about/about_copyright.html">terms of use</a>,
+<a href="../about/about_privacy.html">cookie and privacy policy</a>.
+<a href="../about/about_copyright.html">Copyright 1999-2016</a> by Refsnes Data. All Rights Reserved.<br><br>
+<a href="../index.html">
+<img style="width:150px;height:28px;border:0" src="../images/w3schoolscom_gray.gif" alt="W3Schools.com"></a>
+</div>
+<br><br>
+</div>
+</div>
+</div>
+
+<div id="nav_tutorials_content" style="display:none;">
+<span onclick='w3_close_nav("tutorials")' class='w3-closebtn w3-xlarge'>&times;</span>
+<div class='w3-row-padding'>
+<div class='w3-col l2 m4'>
+<h3>HTML/CSS</h3>
+<a href='../html/default.html'>Learn HTML</a>
+<a href='../css/default.html'>Learn CSS</a>
+<a href='../w3css/default.html'>Learn W3.CSS</a>
+<a href='../colors/default.html'>Learn Colors</a>
+<a href='../bootstrap/default.html'>Learn Bootstrap</a>
+</div>
+<div class='w3-col l2 m4'>  
+<h3>JavaScript</h3>
+<a href='../js/default.html'>Learn JavaScript</a>
+<a href='../jquery/default.html'>Learn jQuery</a>
+<a href='default.html'>Learn jQueryMobile</a>
+<a href='../appml/default.html'>Learn AppML</a>
+<a href='../angular/default.html'>Learn AngularJS</a>
+<a href='../ajax/default.html'>Learn AJAX</a>
+<a href='../json/default.html'>Learn JSON</a>
+</div>
+<div class='w3-col l2 m4'>   
+<h3>HTML Graphics</h3>
+<a href='../canvas/default.html'>Learn Canvas</a>
+<a href='../svg/default.html'>Learn SVG</a>
+<a href='../icons/default.html'>Learn Icons</a>
+<a href='../googleapi/default.html'>Learn Google Maps</a>
+<a href="../games/default.html">Learn HTML Games</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Server Side</h3>
+<a href='../sql/default.html'>Learn SQL</a>
+<a href='../php/default.html'>Learn PHP</a>
+<a href='../asp/default.html'>Learn ASP</a>
+<a href='../aspnet/default.html'>Learn ASP.NET</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Web Building</h3>
+<a href='../website/default.html'>Web Building</a>
+<a href='../browsers/default.html'>Web Statistics</a>
+<a href='../cert/default.html'>Web Certificates</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>XML Tutorials</h3>
+<a href='../xml/default.html'>Learn XML</a>
+<a href='../xsl/default.html'>Learn XSLT</a>
+</div>
+</div>
+</div>
+<div id="nav_references_content" style="display:none;">
+<span onclick='w3_close_nav("references")' class='w3-closebtn w3-xlarge'>&times;</span>
+<div class='w3-row-padding'>
+<div class='w3-col l2 m4'>
+<h3>HTML</h3>
+<a href='../tags/default.html'>HTML Tag Reference</a>
+<a href='../tags/ref_eventattributes.html'>HTML Event Reference</a>
+<a href='../colors/default.html'>HTML Color Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>CSS</h3>
+<a href='../cssref/default.html'>CSS Reference</a>
+<a href='../cssref/css_selectors.html'>CSS Selector Reference</a>
+<a href='../w3css/w3css_references.html'>W3.CSS Reference</a>
+<a href='../bootstrap/bootstrap_ref_css_text.html'>Bootstrap Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>JavaScript</h3>
+<a href='../jsref/default.html'>JavaScript Reference</a>
+<a href='../jsref/default.html'>HTML DOM Reference</a>
+<a href='../jquery/jquery_ref_selectors.html'>jQuery Reference</a>
+<a href='jquerymobile_ref_data.html'>jQuery Mobile Reference</a>
+<a href='../angular/angular_ref_directives.html'>AngularJS Reference</a>
+<a href='../googleAPI/google_maps_ref.html'>Google Maps Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Server Side</h3>
+<a href='../php/php_ref_array.asp'>PHP Reference</a>
+<a href='../sql/sql_quickref.html'>SQL Reference</a>
+<a href='../asp/asp_ref_response.html'>ASP Reference</a>
+<a href='../aspnet/webpages_ref_classes.html'>Razor Reference</a>
+<a href='../aspnet/aspnet_intro.html'>ASP.NET Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>XML</h3>
+<a href='../xml/dom_nodetype.html'>XML Reference</a>
+<a href='../xsl/xsl_w3celementref.html'>XSLT Reference</a>
+<a href='../xml/schema_elements_ref.html'>XML Schema Reference</a>
+<a href='../svg/svg_reference.html'>SVG Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Charsets</h3>
+<a href='../charsets/default.html'>HTML Character Sets</a>
+<a href='../charsets/ref_html_ascii.html'>HTML ASCII</a>
+<a href='../charsets/ref_html_ansi.html'>HTML ANSI</a>
+<a href='../charsets/ref_html_ansi.html'>HTML Windows-1252</a>
+<a href='../charsets/ref_html_8859.html'>HTML ISO-8859-1</a>
+<a href='../charsets/ref_html_symbols.html'>HTML Symbols</a>
+<a href='../charsets/ref_html_utf8.html'>HTML UTF-8</a>
+</div>
+</div>
+</div>
+<div id="nav_examples_content" style="display:none;">
+<span onclick='w3_close_nav("examples")' class='w3-closebtn w3-xlarge'>&times;</span>
+<div class='w3-row-padding'>
+<div class='w3-col l3 m6'>
+<h3>HTML/CSS</h3>
+<a href='../html/html_examples.html'>HTML Examples</a>
+<a href='../css/css_examples.html'>CSS Examples</a>
+<a href='../w3css/w3css_examples.html'>W3.CSS Examples</a>
+</div>
+<div class='w3-col l3 m6'>
+<h3>JavaScript</h3>
+<a href='../js/js_examples.html' target='_top'>JavaScript Examples</a>
+<a href='../js/js_dom_examples.html' target='_top'>HTML DOM Examples</a>
+<a href='../jquery/jquery_examples.html' target='_top'>jQuery Examples</a>
+<a href='jquerymobile_examples.html' target='_top'>jQuery Mobile Examples</a>
+<a href='../angular/angular_examples.html' target='_top'>AngularJS Examples</a>
+<a href='../ajax/ajax_examples.html' target='_top'>AJAX Examples</a>
+</div>
+<div class='w3-col l3 m6'>
+<h3>Server Side</h3>
+<a href='../php/php_examples.html' target='_top'>PHP Examples</a>
+<a href='../asp/asp_examples.html' target='_top'>ASP Examples</a>
+<a href='../aspnet/webpages_examples.html' target='_top'>Razor Examples</a>
+<a href='../aspnet/aspnet_examples.html' target='_top'>.NET Examples</a>
+</div>
+<div class='w3-col l3 m6'>
+<h3>XML</h3>
+<a href='../xml/xml_examples.html' target='_top'>XML Examples</a>
+<a href='../xsl/xsl_examples.html' target='_top'>XSL Examples</a>
+<a href='../xsl/xsl_examples.html' target='_top'>XSLT Examples</a>
+<a href='../xsl/xpath_examples.html' target='_top'>XPath Examples</a>
+<a href='../xml/schema_example.html' target='_top'>XML Schema Examples</a>
+<a href='../svg/svg_examples.html' target='_top'>SVG Examples</a>
+</div>
+</div>
+</div>
+<div id='nav_translate_content' style="display:none">
+<span onclick='w3_close_nav("translate")' class='w3-closebtn w3-xlarge'>&times;</span>
+<br><br>Translate w3schools.com:
+<div id='google_translate_element'></div>
+<br>
+</div>
+<div id='nav_search_content' style="display:none">
+<span onclick='w3_close_nav("search")' class='w3-closebtn w3-xlarge'>&times;</span>
+<br><br>
+<div class='searchdiv'>
+Search w3schools.com:
+<div id='googleSearch'><div class='gcse-search'></div></div>
+</div>
+<br>
+</div>
+<script src="../lib/w3schools_footer.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
+<![endif]-->
+</body>
+
+<!-- Mirrored from www.w3schools.com/jquerymobile/jquerymobile_ref_data.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 07:16:34 GMT -->
+</html>

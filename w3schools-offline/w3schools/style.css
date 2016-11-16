@@ -1,0 +1,44 @@
+/*
+** This CSS code is not done to the web.
+** The automatic HTML and CSS code are only a helper.
+*/
+
+body {
+  text-align: center;
+}
+
+#bg {
+  top: 0px;
+  height: 671px;
+  width: 670px;
+  background: url("bg-01.png") no-repeat;
+  position: absolute;
+  left: 0px;
+}
+
+#header {
+  top: 15px;
+  height: 216px;
+  width: 670px;
+  background: url("header-01.png") no-repeat;
+  position: absolute;
+  left: 0px;
+}
+
+#text_learn_&_fun {
+  top: 261px;
+  height: 146px;
+  width: 438px;
+  background: url("text_learn_&_fun-01.png") no-repeat;
+  position: absolute;
+  left: 117px;
+}
+
+#start_btn {
+  top: 439px;
+  height: 116px;
+  width: 465px;
+  background: url("start_btn-01.png") no-repeat;
+  position: absolute;
+  left: 104px;
+}

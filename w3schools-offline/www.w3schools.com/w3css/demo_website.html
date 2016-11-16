@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<title>Demo W3.CSS</title>
+
+<!-- Mirrored from www.w3schools.com/w3css/demo_website.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 09:48:58 GMT -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../lib/w3.css">
+<link rel="stylesheet" href="../lib/w3-theme-black.css">
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<style>
+/* static navbar for screens below 601px width */
+@media only screen and (max-width: 601px) {.w3-top {position:static;}}
+</style>
+<body id="myPage">
+
+<!-- Side Navigation on click -->
+<nav class="w3-sidenav w3-white w3-card-2 w3-animate-left" style="display:none;z-index:2">
+  <a href="javascript:void(0)" 
+  onclick="w3_close()"
+  class="w3-closenav w3-xxxlarge w3-text-teal">Close &times;</a>
+  <a href="javascript:void(0)">Link 1</a>		
+  <a href="javascript:void(0)">Link 2</a>		
+  <a href="javascript:void(0)">Link 3</a>		
+  <a href="javascript:void(0)">Link 4</a>		
+  <a href="javascript:void(0)">Link 5</a>		
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+<ul class="w3-navbar w3-card-2 w3-black w3-large">
+  <li><a href="index.html" title="Go To W3.CSS" class="w3-teal"><i class="fa fa-home w3-large"></i></a></li>
+  <li><a href="javascript:void(0)">Link</a></li>
+  <li><a href="javascript:void(0)">Link</a></li>
+  <li class="w3-dropdown-hover">
+    <a href="javascript:void(0)">Dropdown <i class="fa fa-caret-down"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+      <a href="javascript:void(0)">Link 1</a>
+      <a href="javascript:void(0)">Link 2</a>
+      <a href="javascript:void(0)">Link 3</a>
+    </div>
+  </li>
+  <li class="w3-right"><a href="javascript:void(0)"><i class="fa fa-search w3-large"></i></a></li>
+</ul>
+</div>
+
+<div class="w3-image w3-animate-opacity">
+  <img class="testimg" src="w3csstestbg.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-title w3-margin-32">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">LEARN W3.CSS</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-8 w3-animate-top">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">&times;</span>
+        <h4>Oh snap! We just showed you a modal..</h4>
+        <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+      </header>
+      <div class="w3-container">
+        <p>Cool huh? Ok, enough teasing around..</p>
+        <p>Go to our <a class="w3-btn" href="default.html">W3.CSS Tutorial</a> to learn more!</p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Modal footer</p>
+      </footer>
+    </div>
+</div>
+
+<!-- Container -->
+<div class="w3-container w3-padding-64 w3-center">
+<h2>OUR TEAM</h2>	
+<p>Meet the team - our office rats:</p>
+				
+<div class="w3-row test"><br>
+
+<div class="w3-quarter">
+  <img src="img_avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Johnny Walker</h3>
+  <p>Web Designer</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="img_avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Rebecca Flex</h3>
+  <p>Support</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="img_avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Jan Ringo</h3>
+  <p>Boss man</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="img_avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Kai Ringo</h3>
+  <p>Fixer</p>
+</div>
+
+</div>
+</div>
+
+<!-- Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1">
+
+<div class="w3-quarter">
+<h2>Our Portfolio</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card-2 w3-white">
+  <img src="img_fjords.jpg" alt="Vernazza" style="width:100%">
+  <div class="w3-container">
+  <h3>Customer 1</h3>
+  <h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card-2 w3-white">
+  <img src="img_lights.jpg" alt="Cinque Terre" style="width:100%">
+  <div class="w3-container">
+  <h3>Customer 2</h3>
+  <h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card-2 w3-white">
+  <img src="img_mountains.jpg" alt="Monterosso" style="width:100%">
+  <div class="w3-container">
+  <h3>Customer 3</h3>
+  <h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-btn-floating-large w3-teal" style="position:absolute;top:-28px;right:24px;z-index:0;">
+  <i class="fa fa-plus"></i></a>
+</div>
+
+<!-- Container -->
+<div class="w3-container w3-padding-64">
+  <h2 class="w3-padding-bottom">Contact Us</h2>
+  <div class="w3-row">
+    <div class="w3-col m5">
+      <h3>Address</h3>
+      <p>Swing by for a cup of coffee, or whatever.</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;Chicago, US</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;+00 1515151515</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>&nbsp;&nbsp;test@test.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container">
+      <div class="w3-group">      
+        <input class="w3-input" style="width:100%;" type="text" required>
+        <label class="w3-label w3-validate">Name</label>
+      </div>
+      <div class="w3-group">      
+        <input class="w3-input" style="width:100%;" type="text" required>
+        <label class="w3-label w3-validate">Email</label>
+      </div>
+      <div class="w3-group">      
+        <textarea class="w3-input" style="width:100%;"></textarea>
+        <label class="w3-label">Subject</label>
+      </div>  
+      <input class="w3-check" type="checkbox" checked="checked">
+      <label class="w3-validate">I Like it!</label>
+      <button type="button" class="w3-btn w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Google Maps -->
+<div id="googleMap" style="width:100%;height:420px;"></div>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:5,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>&#169; Copyright whatever</p>			
+
+  <div style="position:relative;bottom:103px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal">Go To Top</span>   
+    <a class="w3-btn w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>				
+</footer>
+
+<!-- Script For Side Navigation -->
+<script>
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.width = "300px";
+    document.getElementsByClassName("w3-sidenav")[0].style.textAlign = "center";
+    document.getElementsByClassName("w3-sidenav")[0].style.fontSize = "40px";
+    document.getElementsByClassName("w3-sidenav")[0].style.paddingTop = "10%";
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+}
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+}
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/w3css/demo_website.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 09:49:00 GMT -->
+</html>

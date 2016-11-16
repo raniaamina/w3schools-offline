@@ -1,0 +1,2809 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/browsers/browsers_firefox.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:01:10 GMT -->
+<head>
+<title>Firefox Browser</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,ASP,XML,DOM,Bootstrap,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,source code,colors,demos,tips">
+<meta name="Description" content="Well organized and easy to understand Web bulding tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, and XML.">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../lib/w3.css">
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3855518-1', 'auto');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script>
+
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type='text/javascript'>
+// GPT slots
+var gptAdSlots = [];
+googletag.cmd.push(function() {
+var leaderMapping = googletag.sizeMapping().
+// Mobile ad
+addSize([0, 0], [320, 50]). 
+// Vertical Tablet ad
+addSize([480, 0], [468, 60]). 
+// Horizontal Tablet
+addSize([750, 0], [728, 90]).
+// Small Desktop
+addSize([993, 0], [468, 60]).
+// Normal Desktop
+addSize([1135, 0], [728, 90]).
+// Large Desktop and bigger ad
+addSize([1425, 0], [[728, 90], [970, 90]]).build();
+gptAdSlots[0] = googletag.defineSlot('/16833175/MainLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1422003450156-2').
+defineSizeMapping(leaderMapping).addService(googletag.pubads());
+var skyMapping = googletag.sizeMapping().
+// Mobile ad
+addSize([0, 0], [320, 50]). 
+// Tablet ad
+addSize([975, 0], [120, 600]). 
+// Desktop
+addSize([1135, 0], [160, 600]).   
+// Large Desktop
+addSize([1675, 0], [[160, 600], [300, 600], [300, 1050]]).build();
+gptAdSlots[1] = googletag.defineSlot('/16833175/WideSkyScraper', [[160, 600], [300, 600], [300, 1050]], 'div-gpt-ad-1422003450156-5').
+defineSizeMapping(skyMapping).addService(googletag.pubads());
+var bmrMapping = googletag.sizeMapping().
+// Smaller
+addSize([0, 0], [[300, 250], [336, 280]]). 
+// Large Desktop
+addSize([1200, 0], [[300, 250], [336, 280], [970, 250]]).build();
+gptAdSlots[2] = googletag.defineSlot('/16833175/BottomMediumRectangle', [[300, 250], [336, 280], [970, 250]], 'div-gpt-ad-1422003450156-0').
+defineSizeMapping(bmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+gptAdSlots[3] = googletag.defineSlot('/16833175/RightBottomMediumRectangle', [[300, 250], [336, 280]], 'div-gpt-ad-1422003450156-3').addService(googletag.pubads());
+googletag.pubads().setTargeting("content","browsers");
+googletag.enableServices();
+});
+</script>
+<link rel="stylesheet" type="text/css" href="../stdtheme.css" />
+<style>
+table.reference .right {text-align:right;}
+.auto-style1 {
+	font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class='w3-container top'>
+<a class='w3schools-logo' href='../index.html'>w3schools<span class='dotcom'>.com</span></a>
+<div class='w3-right toptext w3-wide'>THE WORLD'S LARGEST WEB DEVELOPER SITE</div></div>
+<div class='w3-topnav w3-card-2 w3-slim topnav' id='topnav'>
+<div style='overflow:auto;'>
+<div style='float:left;width:50%;overflow:hidden;height:44px'>
+<a href='javascript:void(0);' class='topnav-localicons w3-hide-large w3-left' onclick='open_menu()' title='Menu'>&#9776;</a>
+<a href='../default.html' class='topnav-icons fa fa-home w3-left' title='Home'></a>
+<a href='../html/default.html' class='w3-hide-small' title='HTML Tutorial'>HTML</a><a href='../css/default.html' class='w3-hide-small' title='CSS Tutorial'>CSS</a><a href='../js/default.html' class='w3-hide-small' title='JavaScript Tutorial'>JAVASCRIPT</a><a href='../sql/default.html' class='w3-hide-small' title='SQL Tutorial'>SQL</a><a href='../php/default.html' class='w3-hide-small' title='PHP Tutorial'>PHP</a><a href='../bootstrap/default.html' class='w3-hide-small' title='Bootstrap Tutorial'>BOOTSTRAP</a><a href='../jquery/default.html' class='w3-hide-small' title='jQuery Tutorial'>JQUERY</a><a href='../angular/default.html' class='w3-hide-small' title='Angular Tutorial'>ANGULAR</a><a href='../xml/default.html' class='w3-hide-small' title='XML Tutorial'>XML</a></div>
+<div style='float:right;width:110px;overflow:hidden;height:44px;'>
+<a href='javascript:void(0);' class='topnav-icons fa fa-search w3-right' onclick='w3_open_nav("search")' title='Search W3Schools'></a>
+<a href='javascript:void(0);' class='topnav-icons fa fa-globe w3-right' onclick='openGoogleTranslate();w3_open_nav("translate")' title='Translate W3Schools'></a></div>
+<div class='w3-hide-small' style='float:right;width:30%;overflow:hidden;height:44px;'>
+<a id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='Tutorials'>TUTORIALS <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a><a id='topnavbtn_references' href='javascript:void(0);' onclick='w3_open_nav("references")' title='References'>REFERENCES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a><a id='topnavbtn_examples' href='javascript:void(0);' onclick='w3_open_nav("examples")' title='Examples'>EXAMPLES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a><a href='http://w3schools.invisionzone.com/'>FORUM</a></div></div>
+<div id='nav_tutorials' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_references' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_examples' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_translate' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_search' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div></div>
+<div class='w3-row w3-light-grey' id='belowtopnav'>
+<div class='w3-col w3-slim' id='leftmenu'>
+<div id='leftmenuinner'>
+<div class='w3-light-grey' id='leftmenuinnerinner'>
+<a href='javascript:void(0)' onclick='close_menu()' class='w3-closebtn w3-hide-large w3-large' style='padding:3px 12px;'>&times;</a>
+<h2 class="left"><span class="left_h2">Browsers</span></h2>
+<a target="_top" href="default.html">Browser HOME</a>
+<a target="_top" href="browsers_stats.html">Browser Statistics</a>
+<a target="_top" href="browsers_os.html">Browser OS</a>
+<a target="_top" href="browsers_display.html">Browser Display</a>
+<a target="_top" href="browsers_mobile.html">Browser Mobile</a>
+<a target="_top" href="browsers_explorer.html">Browser IE</a>
+<a target="_top" href="browsers_chrome.html">Browser Chrome</a>
+<a target="_top" href="browsers_firefox.html">Browser Firefox</a>
+<a target="_top" href="browsers_safari.html">Browser Safari</a>
+<a target="_top" href="browsers_opera.html">Browser Opera</a>
+<br><br></div></div>&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-row w3-white'>
+<div class='w3-col l10 m12' id='main'>
+<div id='mainLeaderboard' style='overflow:hidden;'>
+<!-- MainLeaderboard-->
+<div id='div-gpt-ad-1422003450156-2'>
+<script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+</div></div>
+<h1><span class="color_h1">Mozilla Firefox</span> Browser</h1>
+<div class="chapter">
+<div class="prev"><a class="chapter" href="browsers_chrome.html">&laquo; Previous</a></div>
+<div class="next"><a class="chapter" href="browsers_safari.html">Next Chapter &raquo;</a></div>
+</div>
+<hr>
+<h2>The Firefox Browser</h2>
+<img src="pic_firefox128.png" alt="Firefox" style="float:left;margin-right:20px;height:128px;width:128px;">
+<p>Firefox is a free, open-source web browser from Mozilla.</p>
+<p>Firefox is one of the most popular internet browsers today.</p>
+<p>Firefox is available for Windows, Mac OS X, Linux, and Android.</p>
+<p class="clearfix"><a target="_blank" href="http://www.mozilla.org/products/firefox/">Download Firefox</a></p>
+<hr>
+
+<h2>Firefox Statistics</h2>
+<p>The following figures are based on W3Schools' users, and are extracted from our <a href="browsers_stats.html">Browser Statistics</a>:</p>
+<div class="table-responsive">
+<table class="w3-table-all notranslate">
+    <tr>
+    <th>2016</th>
+    <th class="right">Total</th>
+    <th class="right">FF 46</th>
+    <th class="right">FF 45</th>
+    <th class="right">FF 44</th>
+    <th class="right">FF 43</th>
+    <th class="right">FF 42</th>
+    <th class="right">FF 41</th>
+    <th class="right">FF 40</th>
+    <th class="right">FF 39</th>
+    <th class="right">Older</th> 
+    </tr>
+	<tr>
+    <td>February</td>
+    <td class="right">18.6%</td>
+    <td>0.2%</td>
+    <td>0.8%</td>
+    <td>8.8%</td>
+    <td>4.6%</td>
+    <td>0.5%</td>
+    <td class="right">0.3%</td>
+    <td class="right">0.3%</td>
+    <td class="right">0.4%</td>
+    <td class="right">2.7%</td>
+    </tr>
+	<tr>
+    <td>January</td>
+    <td class="right">18.8%</td>
+    <td>&nbsp;</td>
+    <td>0.2%</td>
+    <td>1.4%</td>
+    <td>12.8%</td>
+    <td>0.9%</td>
+    <td>0.5%</td>
+    <td class="right">0.3%</td>
+    <td class="right">0.4%</td>
+    <td class="right">2.3%</td>
+    </tr>
+</table>
+</div>
+<br>
+<div class="table-responsive">
+<table class="w3-table-all notranslate">
+    <tr>
+    <th>2015</th>
+    <th class="right">Total</th>
+    <th class="right">FF 44</th>
+    <th class="right">FF 43</th>
+    <th class="right">FF 42</th>
+    <th class="right">FF 41</th>
+    <th class="right">FF 40</th>
+    <th class="right">FF 39</th>
+    <th class="right">FF 38</th>
+    <th class="right">FF 37</th>
+    <th class="right">FF 36</th>
+    <th class="right">FF 35</th>
+    <th class="right">FF 34</th>
+    <th class="right">Older</th> 
+    </tr>
+	<tr>
+    <td>December</td>
+    <td class="right">19.1%</td>
+    <td class="right">0.4%</td>
+    <td class="right">4.8%</td>
+    <td class="right">9.3%</td>
+    <td class="right">0.6%</td>
+    <td class="right">0.5%</td>
+    <td class="right">0.4%</td>
+    <td class="right">1.3%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.1%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.1%</td>
+    <td class="right">2.2%</td>
+    </tr>
+	<tr>
+    <td>November</td>
+    <td class="right">19.2%</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">0.7%</td>
+    <td class="right">9.9%</td>
+    <td class="right">4.2%</td>
+    <td class="right">0.8%</td>
+    <td class="right">0.5%</td>
+    <td class="right">1.2%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.1%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.1%</td>
+    <td class="right">1.3%</td>
+    </tr>
+	<tr>
+    <td>October</td>
+    <td class="right">20.0%</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.8%</td>
+    <td class="right">12.7%</td>
+    <td class="right">2.1%</td>
+    <td class="right">0.6%</td>
+    <td class="right">1.3%</td>
+    <td class="right">0.3%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.3%</td>
+    <td class="right">0.1%</td>
+    <td class="right">1.4%</td>
+    </tr>
+	<tr>
+    <td>September</td>
+    <td class="right">20.6%</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">0.2%</td>
+    <td class="right">1.9%</td>
+    <td class="right">13.3%</td>
+    <td class="right">1.1%</td>
+    <td class="right">1.4%</td>
+    <td class="right">0.3%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.4%</td>
+    <td class="right">0.2%</td>
+    <td class="right">1.6%</td>
+    </tr>
+	<tr>
+    <td>August</td>
+    <td class="right">21.2%</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">0.1%</td>
+    <td class="right">0.6%</td>
+    <td class="right">6.8%</td>
+    <td class="right">7.7%</td>
+    <td class="right">1.2%</td>
+    <td class="right">0.8%</td>
+    <td class="right">0.5%</td>
+    <td class="right">0.6%</td>
+    <td class="right">0.2%</td>
+    <td class="right">2.7%</td>
+    </tr>
+	<tr>
+    <td>July</td>
+    <td class="right">21.6%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">0.7%</td>
+    <td class="right">10.6%</td>
+    <td class="right">4.5%</td>
+    <td class="right">0.5%</td>
+    <td class="right">0.7%</td>
+    <td class="right">0.5%</td>
+    <td class="right">0.2%</td>
+    <td class="right">3.9%</td>
+    </tr>
+	<tr>
+    <td>June</td>
+    <td class="right">21.3%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.8%</td>
+    <td class="right">14.8%</td>
+    <td class="right">1.0%</td>
+    <td class="right">0.5%</td>
+    <td class="right">0.4%</td>
+    <td class="right">0.3%</td>
+    <td class="right">3.5%</td>
+    </tr>
+	<tr>
+    <td>May</td>
+    <td class="right">21.5%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">0.1%</td>
+    <td class="right">7.2%</td>
+    <td class="right">9.2%</td>
+    <td class="right">0.6%</td>
+    <td class="right">0.6%</td>
+    <td class="right">0.3%</td>
+    <td class="right">3.6%</td>
+    </tr>
+	<tr>
+    <td>April</td>
+    <td class="right">21.6%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">1.0%</td>
+    <td class="right">12.1%</td>
+    <td class="right">3.9%</td>
+    <td class="right">0.8%</td>
+    <td class="right">0.4%</td>
+    <td class="right">3.4%</td>
+    </tr>
+	<tr>
+    <td>March</td>
+    <td class="right">22.1%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">0.2%</td>
+    <td class="right">1.0%</td>
+    <td class="right">13.2%</td>
+    <td class="right">2.8%</td>
+    <td class="right">0.6%</td>
+    <td class="right">4.3%</td>
+    </tr>
+	<tr>
+    <td>February</td>
+    <td class="right">22.9%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">0.3%</td>
+    <td class="right">2.0%</td>
+    <td class="right">14.9%</td>
+    <td class="right">0.7%</td>
+    <td class="right">5.0%</td>
+    </tr>
+	<tr>
+    <td>January</td>
+    <td class="right">23.4%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">0.7%</td>
+    <td class="right">8.5%</td>
+    <td class="right">8.7%</td>
+    <td class="right">5.5%</td>
+    </tr>
+</table>
+</div>
+<br>
+    
+<div class="table-responsive">
+<table class="w3-table-all notranslate">
+    <tr>
+    <th>2014</th>
+    <th class="right">Total</th>
+    <th class="right">FF 34</th>
+    <th class="right">FF 33</th>
+    <th class="right">FF 32</th>
+    <th class="right">FF 31</th>
+    <th class="right">FF 30</th>
+    <th class="right">FF 29</th>
+    <th class="right">FF 28</th>
+    <th class="right">FF 27</th>
+    <th class="right">FF 26</th>
+    <th class="right">FF 25</th>
+    <th class="right">Older</th> 
+    </tr>
+	<tr>
+    <td>December</td>
+    <td class="right">23.6%</td>
+    <td class="right">11.3%</td>
+    <td class="right">6.2%</td>
+    <td class="right">0.6%</td>
+    <td class="right">1.0%</td>
+    <td class="right">0.5%</td>
+    <td class="right">0.3%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.1%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.1%</td>
+    <td class="right">3.1%</td>
+    </tr>
+	<tr>
+    <td>November</td>
+    <td class="right">23.4%</td>
+    <td class="right">1.2%</td>
+    <td class="right">15.4%</td>
+    <td class="right">2.3%</td>
+    <td class="right">1.1%</td>
+    <td class="right">0.7%</td>
+    <td class="right">0.3%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.1%</td>
+    <td class="right">1.7%</td>
+    </tr>
+	<tr>
+    <td>October</td>
+    <td class="right">23.4%</td>
+    <td class="right">0.4%</td>
+    <td class="right">4.0%</td>
+    <td class="right">13.4%</td>
+    <td class="right">1.3%</td>
+    <td class="right">0.6%</td>
+    <td class="right">0.4%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.1%</td>
+    <td class="right">2.6%</td>
+    </tr>
+	<tr>
+    <td>September</td>
+    <td class="right">24.0%</td>
+    <td>&nbsp;</td>
+    <td class="right">0.8%</td>
+    <td class="right">10.9%</td>
+    <td class="right">6.7%</td>
+    <td class="right">1.0%</td>
+    <td class="right">0.5%</td>
+    <td class="right">0.3%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.2%</td>
+    <td class="right">3.2%</td>
+    </tr>
+	<tr>
+    <td>August</td>
+    <td class="right">24.7%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">1.3%</td>
+    <td class="right">17.0%</td>
+    <td class="right">1.5%</td>
+    <td class="right">0.8%</td>
+    <td class="right">0.4%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.3%</td>
+    <td class="right">0.2%</td>
+    <td class="right">3.0%</td>
+    </tr>
+	<tr>
+    <td>July</td>
+    <td class="right">24.9%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">3.1%</td>
+    <td class="right">15.6%</td>
+    <td class="right">1.1%</td>
+    <td class="right">0.6%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.4%</td>
+    <td class="right">0.2%</td>
+    <td class="right">3.7%</td>
+    </tr>
+	<tr>
+    <td>June</td>
+    <td class="right">25.1%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">9.0%</td>
+    <td class="right">10.5%</td>
+    <td class="right">0.7%</td>
+    <td class="right">0.4%</td>
+    <td class="right">0.4%</td>
+    <td class="right">0.2%</td>
+    <td class="right">3.9%</td>
+    </tr>
+	<tr>
+    <td>May</td>
+    <td class="right">24.9%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">0.1%</td>
+    <td class="right">14.2%</td>
+    <td class="right">5.2%</td>
+    <td class="right">0.5%</td>
+    <td class="right">0.5%</td>
+    <td class="right">0.2%</td>
+    <td class="right">4.2%</td>
+    </tr>
+	<tr>
+    <td>April</td>
+    <td class="right">25.0%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">1.1%</td>
+    <td class="right">18.1%</td>
+    <td class="right">1.2%</td>
+    <td class="right">0.7%</td>
+    <td class="right">0.3%</td>
+    <td class="right">3.6%</td>
+    </tr>
+	<tr>
+    <td>March</td>
+    <td class="right">25.6%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">0.3%</td>
+    <td class="right">3.4%</td>
+    <td class="right">16.3%</td>
+    <td class="right">1.0%</td>
+    <td class="right">0.4%</td>
+    <td class="right">4.2%</td>
+    </tr>
+	<tr>
+    <td>February</td>
+    <td class="right">26.4%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">0.6%</td>
+    <td class="right">11.7%</td>
+    <td class="right">8.7%</td>
+    <td class="right">0.6%</td>
+    <td class="right">4.8%</td>
+    </tr>
+	<tr>
+    <td>January</td>
+    <td class="right">26.9%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">1.2%</td>
+    <td class="right">18.9%</td>
+    <td class="right">1.0%</td>
+    <td class="right">5.8%</td>
+    </tr>
+</table>
+</div>
+<br>
+    
+<div class="table-responsive">
+<table class="w3-table-all notranslate">
+    <tr>
+    <th>2013</th>
+    <th class="right">Total</th>
+    <th class="right">FF 26</th>
+    <th class="right">FF 25</th>
+    <th class="right">FF 24</th>
+    <th class="right">FF 23</th>
+    <th class="right">FF 22</th>
+    <th class="right">FF 21</th>
+    <th class="right">FF 20</th>
+    <th class="right">FF 19</th>
+    <th class="right">FF 18</th>
+    <th class="right">FF 17</th>
+    <th class="right">Older</th> 
+    </tr>
+	<tr>
+    <td>December</td>
+    <td class="right">26.8%</td>
+    <td class="right">6.9%</td>
+    <td class="right">13.3%</td>
+    <td class="right">1.1%</td>
+    <td class="right">0.5%</td>
+    <td class="right">0.4%</td>
+    <td class="right">0.3%</td>
+    <td class="right">0.4%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.5%</td>
+    <td class="right">3.0%</td>
+    </tr>
+	<tr>
+    <td>November</td>
+    <td class="right">26.8%</td>
+    <td class="right">1.0%</td>
+    <td class="right">16.2%</td>
+    <td class="right">3.5%</td>
+    <td class="right">0.7%</td>
+    <td class="right">0.5%</td>
+    <td class="right">0.4%</td>
+    <td class="right">0.4%</td>
+    <td class="right">0.3%</td>
+    <td class="right">0.2%</td>
+    <td class="right">0.7%</td>
+    <td class="right">2.9%</td>
+    </tr>
+	<tr>
+    <td>October</td>
+    <td class="right">27.2%</td>
+    <td class="right">0.1%</td>
+    <td class="right">1.3%</td>
+    <td class="right">18.4%</td>
+    <td class="right">2.0%</td>
+    <td class="right">0.7%</td>
+    <td class="right">0.4%</td>
+    <td class="right">0.5%</td>
+    <td class="right">0.3%</td>
+    <td class="right">0.4%</td>
+    <td class="right">0.7%</td>
+    <td class="right">2.5%</td>
+    </tr>
+	<tr>
+    <td>September</td>
+    <td class="right">27.8%</td>
+    <td class="right">0.1%</td>
+    <td class="right">0.3%</td>
+    <td class="right">3.1%</td>
+    <td class="right">17.5%</td>
+    <td class="right">1.0%</td>
+    <td class="right">0.6%</td>
+    <td class="right">0.5%</td>
+    <td class="right">0.3%</td>
+    <td class="right">0.4%</td>
+    <td class="right">0.9%</td>
+    <td class="right">3.2%</td>
+    </tr>
+	<tr>
+    <td>August</td>
+    <td class="right">28.2%</td>
+    <td>&nbsp;</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">0.7%</td>
+    <td class="right">10.8%</td>
+    <td class="right">9.9%</td>
+    <td class="right">1.0%</td>
+    <td class="right">0.7%</td>
+    <td class="right">0.4%</td>
+    <td class="right">0.4%</td>
+    <td class="right">0.8%</td>
+    <td class="right">3.5%</td>
+    </tr>
+	<tr>
+    <td>July</td>
+    <td class="right">28.9%</td>
+    <td>&nbsp;</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">0.1%</td>
+    <td class="right">1.2%</td>
+    <td class="right">18.0%</td>
+    <td class="right">3.1%</td>
+    <td class="right">1.0%</td>
+    <td class="right">0.5%</td>
+    <td class="right">0.5%</td>
+    <td class="right">0.8%</td>
+    <td class="right">3.7%</td>
+    </tr>
+	<tr>
+    <td>June</td>
+    <td class="right">28.9%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">0.1%</td>
+    <td class="right">1.7%</td>
+    <td class="right">19.8%</td>
+    <td class="right">1.3%</td>
+    <td class="right">0.7%</td>
+    <td class="right">0.5%</td>
+    <td class="right">0.8%</td>
+    <td class="right">4.0%</td>
+    </tr>
+	<tr>
+    <td>May</td>
+    <td class="right">27.7%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">0.1%</td>
+    <td class="right">0.5%</td>
+    <td class="right">6.5%</td>
+    <td class="right">14.0%</td>
+    <td class="right">0.9%</td>
+    <td class="right">0.6%</td>
+    <td class="right">0.8%</td>
+    <td class="right">4.3%</td>
+    </tr>
+	<tr>
+    <td>April</td>
+    <td class="right">27.9%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">0.1%</td>
+    <td class="right">0.7%</td>
+    <td class="right">12.9%</td>
+    <td class="right">7.3%</td>
+    <td class="right">0.8%</td>
+    <td class="right">0.8%</td>
+    <td class="right">5.9%</td>
+    </tr>
+	<tr>
+    <td>March</td>
+    <td class="right">28.5%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">0.1%</td>
+    <td class="right">0.9%</td>
+    <td class="right">19.0%</td>
+    <td class="right">1.4%</td>
+    <td class="right">0.9%</td>
+    <td class="right">6.2%</td>
+    </tr>
+	<tr>
+    <td>February</td>
+    <td class="right">29.6%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">0.1%</td>
+    <td class="right">0.2%</td>
+    <td class="right">4.6%</td>
+    <td class="right">16.0%</td>
+    <td class="right">1.2%</td>
+    <td class="right">7.5%</td>
+    </tr>
+	<tr>
+    <td>January</td>
+    <td class="right">30.2%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">&nbsp;</td>
+    <td class="right">0.1%</td>
+    <td class="right">0.6%</td>
+    <td class="right">12.4%</td>
+    <td class="right">8.3%</td>
+    <td class="right">8.8%</td>
+    </tr>
+</table>
+</div>
+<br>
+    
+<div class="table-responsive">
+<table class="w3-table-all notranslate">
+    <tr>
+    <th>2012</th>
+    <th class="right">Total</th>
+    <th class="right">FF 17</th>
+    <th class="right">FF 16</th>
+    <th class="right">FF 15</th>
+    <th class="right">FF 14</th>
+    <th class="right">FF 13</th>
+    <th class="right">FF 12</th>
+    <th class="right">FF 11</th>
+    <th class="right">FF 9-10</th>
+    <th class="right">FF 4-8</th>
+    <th class="right">FF 3.6</th>
+    <th class="right">Older</th> 
+    </tr>
+	<tr>
+    <td>December</td>
+    <td class="right">31.1%</td>
+    <td class="right">16.3%</td>
+    <td class="right">5.6%</td>
+    <td class="right">1.3%</td>
+    <td class="right">1.0%</td>
+    <td class="right">0.7%</td>
+    <td class="right">1.1%</td>
+    <td class="right">0.6%</td>
+    <td class="right">1.2%</td>
+    <td class="right">1.2%</td>
+    <td class="right">0.8%</td>
+    <td class="right">1.3%</td>
+    </tr>
+	<tr>
+    <td>November</td>
+    <td class="right">31.2%</td>
+    <td class="right">2.5%</td>
+    <td class="right">19.4%</td>
+    <td class="right">1.8%</td>
+    <td class="right">1.2%</td>
+    <td class="right">0.8%</td>
+    <td class="right">1.2%</td>
+    <td class="right">0.6%</td>
+    <td class="right">1.3%</td>
+    <td class="right">1.3%</td>
+    <td class="right">0.8%</td>
+    <td class="right">0.3%</td>
+    </tr>
+	<tr>
+    <td>October</td>
+    <td class="right">31.8%</td>
+    <td class="right">0.4%</td>
+    <td class="right">9.5%</td>
+    <td class="right">12.4%</td>
+    <td class="right">1.8%</td>
+    <td class="right">1.0%</td>
+    <td class="right">1.4%</td>
+    <td class="right">0.8%</td>
+    <td class="right">1.4%</td>
+    <td class="right">1.6%</td>
+    <td class="right">1.0%</td>
+    <td class="right">0.5%</td>
+    </tr>
+	<tr>
+    <td>September</td>
+    <td class="right">32.2%</td>
+    <td>&nbsp;</td>
+    <td class="right">0.8%</td>
+    <td class="right">17.7%</td>
+    <td class="right">4.8%</td>
+    <td class="right">1.3%</td>
+    <td class="right">1.6%</td>
+    <td class="right">1.0%</td>
+    <td class="right">1.6%</td>
+    <td class="right">1.9%</td>
+    <td class="right">1.2%</td>
+    <td class="right">0.3%</td>
+    </tr>
+	<tr>
+    <td>August</td>
+    <td class="right">32.8%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">1.9%</td>
+    <td class="right">20.3%</td>
+    <td class="right">2.1%</td>
+    <td class="right">1.8%</td>
+    <td class="right">1.1%</td>
+    <td class="right">1.7%</td>
+    <td class="right">2.1%</td>
+    <td class="right">1.2%</td>
+    <td class="right">0.7%</td>
+    </tr>
+	<tr>
+    <td>July</td>
+    <td class="right">33.7%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">0.3%</td>
+    <td class="right">7.4%</td>
+    <td class="right">15.2%</td>
+    <td class="right">3.0%</td>
+    <td class="right">1.3%</td>
+    <td class="right">2.1%</td>
+    <td class="right">2.4%</td>
+    <td class="right">1.5%</td>
+    <td class="right">0.5%</td>
+    </tr>
+	<tr>
+    <td>June</td>
+    <td class="right">34.4%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">0.6%</td>
+    <td class="right">12.1%</td>
+    <td class="right">12.5%</td>
+    <td class="right">1.6%</td>
+    <td class="right">2.3%</td>
+    <td class="right">2.7%</td>
+    <td class="right">1.8%</td>
+    <td class="right">0.8%</td>
+    </tr>
+	<tr>
+    <td>May</td>
+    <td class="right">35.2%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">0.1%</td>
+    <td class="right">0.8%</td>
+    <td class="right">21.4%</td>
+    <td class="right">3.8%</td>
+    <td class="right">2.7%</td>
+    <td class="right">3.4%</td>
+    <td class="right">2.3%</td>
+    <td class="right">0.7%</td>
+    </tr>
+	<tr>
+    <td>April</td>
+    <td class="right">35.8%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">0.1%</td>
+    <td class="right">2.6%</td>
+    <td class="right">21.6%</td>
+    <td class="right">3.8%</td>
+    <td class="right">3.8%</td>
+    <td class="right">3.1%</td>
+    <td class="right">0.8%</td>
+    </tr>
+	<tr>
+    <td>March</td>
+    <td class="right">36.3%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">0.3%</td>
+    <td class="right">9.1%</td>
+    <td class="right">17.3%</td>
+    <td class="right">5.0%</td>
+    <td class="right">3.7%</td>
+    <td class="right">0.9%</td>
+    </tr>
+	<tr>
+    <td>February</td>
+    <td class="right">37.1%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">0.1%</td>
+    <td class="right">0.6%</td>
+    <td class="right">24.2%</td>
+    <td class="right">6.5%</td>
+    <td class="right">4.3%</td>
+    <td class="right">1.4%</td>
+    </tr>
+	<tr>
+    <td>January</td>
+    <td class="right">37.2%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">0.1%</td>
+    <td class="right">18.6%</td>
+    <td class="right">12.4%</td>
+    <td class="right">5.0%</td>
+    <td class="right">1.1%</td>
+    </tr>
+</table>
+</div>
+<br>
+    
+<div class="table-responsive">
+<table class="w3-table-all notranslate">
+    <tr>
+    <th>2011</th>
+    <th class="right">Total</th>
+    <th>&nbsp;</th>
+    <th class="right">FF 9</th>
+    <th class="right">FF 8</th>
+    <th class="right">FF 7</th>
+    <th class="right">FF 6</th>
+    <th class="right">FF 5</th>
+    <th class="right">FF 4</th>
+    <th class="right">FF 3.6</th>
+    <th class="right">FF 3.5</th>
+    <th class="right">FF 3.0</th>
+    <th class="right">Older</th> 
+    </tr>
+	<tr>
+    <td>December</td>
+    <td class="right">37.7%</td>
+    <td>&nbsp;</td>
+    <td class="right">1.8%</td>
+    <td class="right">22.8%</td>
+    <td class="right">2.1%</td>
+    <td class="right">1.5%</td>
+    <td class="right">1.2%</td>
+    <td class="right">1.3%</td>
+    <td class="right">5.6%</td>
+    <td class="right">0.6%</td>
+    <td class="right">0.5%</td>
+    <td class="right">0.3%</td>
+    </tr>
+	<tr>
+    <td>November</td>
+    <td class="right">38.1%</td>
+    <td>&nbsp;</td>
+    <td class="right">0.4%</td>
+    <td class="right">12.7%</td>
+    <td class="right">11.5%</td>
+    <td class="right">2.2%</td>
+    <td class="right">1.5%</td>
+    <td class="right">1.5%</td>
+    <td class="right">6.9%</td>
+    <td class="right">0.6%</td>
+    <td class="right">0.5%</td>
+    <td class="right">0.3%</td>
+    </tr>
+	<tr>
+    <td>October</td>
+    <td class="right">38.7%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">0.6%</td>
+    <td class="right">19.8%</td>
+    <td class="right">5.1%</td>
+    <td class="right">2.0%</td>
+    <td class="right">1.8%</td>
+    <td class="right">7.9%</td>
+    <td class="right">0.7%</td>
+    <td class="right">0.5%</td>
+    <td class="right">0.3%</td>
+    </tr>
+	<tr>
+    <td>September</td>
+    <td class="right">39.7%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">1.5%</td>
+    <td class="right">22.2%</td>
+    <td class="right">3.1%</td>
+    <td class="right">2.2%</td>
+    <td class="right">9.0%</td>
+    <td class="right">0.7%</td>
+    <td class="right">0.7%</td>
+    <td class="right">0.3%</td>
+    </tr>
+	<tr>
+    <td>August</td>
+    <td class="right">40.6%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">9.5%</td>
+    <td class="right">15.9%</td>
+    <td class="right">2.9%</td>
+    <td class="right">10.3%</td>
+    <td class="right">0.8%</td>
+    <td class="right">0.8%</td>
+    <td class="right">0.4%</td>
+    </tr>
+	<tr>
+    <td>July</td>
+    <td class="right">42.0%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">0.6%</td>
+    <td class="right">23.2%</td>
+    <td class="right">4.6%</td>
+    <td class="right">11.5%</td>
+    <td class="right">0.9%</td>
+    <td class="right">0.9%</td>
+    <td class="right">0.3%</td>
+    </tr>
+	<tr>
+    <td>June</td>
+    <td class="right">42.2%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">5.6%</td>
+    <td class="right">21.5%</td>
+    <td class="right">12.3%</td>
+    <td class="right">1.5%</td>
+    <td class="right">0.9%</td>
+    <td class="right">0.4%</td>
+    </tr>
+	<tr>
+    <td>May</td>
+    <td class="right">42.4%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">0.3%</td>
+    <td class="right">23.4%</td>
+    <td class="right">15.6%</td>
+    <td class="right">1.8%</td>
+    <td class="right">1.0%</td>
+    <td class="right">0.3%</td>
+    </tr>
+	<tr>
+    <td>April</td>
+    <td class="right">42.9%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">15.7%</td>
+    <td class="right">23.8%</td>
+    <td class="right">2.1%</td>
+    <td class="right">1.1%</td>
+    <td class="right">0.2%</td>
+    </tr>
+	<tr>
+    <td>March</td>
+    <td class="right">42.2%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">5.2%</td>
+    <td class="right">32.9%</td>
+    <td class="right">2.5%</td>
+    <td class="right">1.3%</td>
+    <td class="right">0.3%</td>
+    </tr>
+	<tr>
+    <td>February</td>
+    <td class="right">42.4%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">1.9%</td>
+    <td class="right">35.8%</td>
+    <td class="right">2.9%</td>
+    <td class="right">1.5%</td>
+    <td class="right">0.3%</td>
+    </tr>
+	<tr>
+    <td>January</td>
+    <td class="right">42.8%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">1.5%</td>
+    <td class="right">36.1%</td>
+    <td class="right">3.1%</td>
+    <td class="right">1.7%</td>
+    <td class="right">0.4%</td>
+    </tr>
+</table>
+</div>
+<br>
+    
+<div class="table-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th>2010</th>
+    <th class="right">Total</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th class="right">FF 4</th>
+    <th class="right">FF 3.6</th>
+    <th class="right">FF 3.5</th>
+    <th class="right">FF 3.0</th>
+    <th class="right">Older</th>      
+    </tr>
+	<tr>
+    <td>December</td>
+    <td class="right">43.5%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">1.1%</td>
+    <td class="right">36.5%</td>
+    <td class="right">3.5%</td>
+    <td class="right">2.0%</td>
+    <td class="right">0.4%</td>
+    </tr>
+	<tr>
+    <td>November</td>
+    <td class="right">44.0%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">0.8%</td>
+    <td class="right">36.9%</td>
+    <td class="right">3.8%</td>
+    <td class="right">2.0%</td>
+    <td class="right">0.5%</td>
+    </tr>
+	<tr>
+    <td>October</td>
+    <td class="right">44.4%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">0.7%</td>
+    <td class="right">36.2%</td>
+    <td class="right">4.5%</td>
+    <td class="right">2.4%</td>
+    <td class="right">0.6%</td>
+    </tr>
+	<tr>
+    <td>September</td>
+    <td class="right">45.1%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">0.8%</td>
+    <td class="right">35.3%</td>
+    <td class="right">5.6%</td>
+    <td class="right">2.9%</td>
+    <td class="right">0.5%</td>
+    </tr>
+	<tr>
+    <td>August</td>
+    <td class="right">45.8%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">0.6%</td>
+    <td class="right">35.2%</td>
+    <td class="right">6.1%</td>
+    <td class="right">3.1%</td>
+    <td class="right">0.6%</td>
+    </tr>
+	<tr>
+    <td>July</td>
+    <td class="right">46.4%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">0.4%</td>
+    <td class="right">34.5%</td>
+    <td class="right">7.3%</td>
+    <td class="right">3.6%</td>
+    <td class="right">0.6%</td>
+    </tr>
+	<tr>
+    <td>June</td>
+    <td class="right">46.6%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">32.7%</td>
+    <td class="right">9.1%</td>
+    <td class="right">4.0%</td>
+    <td class="right">0.8%</td>
+    </tr>
+	<tr>
+    <td>May</td>
+    <td class="right">46.9%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">31.7%</td>
+    <td class="right">10.0%</td>
+    <td class="right">4.4%</td>
+    <td class="right">0.8%</td>
+    </tr>
+	<tr>
+    <td>April</td>
+    <td class="right">46.4%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">29.4%</td>
+    <td class="right">11.5%</td>
+    <td class="right">4.6%</td>
+    <td class="right">0.9%</td>
+    </tr>
+	<tr>
+    <td>March</td>
+    <td class="right">46.2%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">22.1%</td>
+    <td class="right">17.6%</td>
+    <td class="right">5.6%</td>
+    <td class="right">0.9%</td>
+    </tr>
+	<tr>
+    <td>February</td>
+    <td class="right">46.5%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">10.5%</td>
+    <td class="right">28.5%</td>
+    <td class="right">6.5%</td>
+    <td class="right">1.0%</td>
+    </tr>
+	<tr>
+    <td>January</td>
+    <td class="right">46.3%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">2.2%</td>
+    <td class="right">34.2%</td>
+    <td class="right">8.6%</td>
+    <td class="right">1.3%</td>
+    </tr>
+</table>
+</div>
+<br>
+    
+<div class="table-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th>2009</th>
+    <th class="right">Total</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th class="right">FF 3.5</th>
+    <th class="right">FF 3.0</th>
+    <th class="right">FF 2.0</th>
+    <th class="right">Older</th>      
+    </tr>
+	<tr>
+    <td>December</td>
+    <td class="right">46.4%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">33.3%</td>
+    <td class="right">11.2%</td>
+    <td class="right">1.2%</td>
+    <td class="right">0.7%</td>
+    </tr>
+	<tr>
+    <td>November</td>
+    <td class="right">47.0%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">31.4%</td>
+    <td class="right">13.6%</td>
+    <td class="right">1.5%</td>
+    <td class="right">0.5%</td>
+    </tr>
+	<tr>
+    <td>October</td>
+    <td class="right">47.5%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">29.8%</td>
+    <td class="right">15.7%</td>
+    <td class="right">1.6%</td>
+    <td class="right">0.4%</td>
+    </tr>
+	<tr>
+    <td>September</td>
+    <td class="right">46.6%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">27.3%</td>
+    <td class="right">17.2%</td>
+    <td class="right">1.8%</td>
+    <td class="right">0.3%</td>
+    </tr>
+	<tr>
+    <td>August</td>
+    <td class="right">47.4%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">21.0%</td>
+    <td class="right">24.0%</td>
+    <td class="right">1.9%</td>
+    <td class="right">0.5%</td>
+    </tr>
+	<tr>
+    <td>July</td>
+    <td class="right">47.9%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">12.1%</td>
+    <td class="right">33.3%</td>
+    <td class="right">1.9%</td>
+    <td class="right">0.6%</td>
+    </tr>
+	<tr>
+    <td>June</td>
+    <td class="right">47.3%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">1.2%</td>
+    <td class="right">43.4%</td>
+    <td class="right">2.3%</td>
+    <td class="right">0.4%</td>
+    </tr>
+	<tr>
+    <td>May</td>
+    <td class="right">47.7%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">44.3%</td>
+    <td class="right">2.9%</td>
+    <td class="right">0.5%</td>
+    </tr>
+	<tr>
+    <td>April</td>
+    <td class="right">47.1%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">43.4%</td>
+    <td class="right">2.8%</td>
+    <td class="right">0.9%</td>
+    </tr>
+	<tr>
+    <td>March</td>
+    <td class="right">46.5%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">42.2%</td>
+    <td class="right">3.0%</td>
+    <td class="right">1.3%</td>
+    </tr>
+	<tr>
+    <td>February</td>
+    <td class="right">46.4%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">41.5%</td>
+    <td class="right">3.8%</td>
+    <td class="right">1.1%</td>
+    </tr>
+	<tr>
+    <td>January</td>
+    <td class="right">45.5%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">39.5%</td>
+    <td class="right">4.6%</td>
+    <td class="right">1.4%</td>
+    </tr>
+</table>
+</div>
+<br>
+    
+<div class="table-responsive">
+<table class="w3-table-all notranslate">
+  <tr> 
+    <th>2008</th>
+    <th class="right">Total</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th class="right">FF 3.0</th>
+    <th class="right">FF 2.0</th>
+    <th class="right">FF 1.5</th>
+    <th class="right">Moz</th>    
+  </tr>
+	<tr>
+    <td>December</td>
+    <td class="right">44.7%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">38.1%</td>
+    <td class="right">6.2%</td>
+    <td class="right">0.1%</td>
+    <td class="right">0.3%</td>
+  </tr>
+	<tr>
+    <td>November</td>
+    <td class="right">44.6%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">35.9%</td>
+    <td class="right">8.0%</td>
+    <td class="right">0.3%</td>
+    <td class="right">0.4%</td>
+  </tr>
+	<tr>
+    <td>October</td>
+    <td class="right">44.5%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">34.9%</td>
+    <td class="right">8.7%</td>
+    <td class="right">0.4%</td>
+    <td class="right">0.5%</td>
+  </tr>
+	<tr>
+    <td>September</td>
+    <td class="right">43.1%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">31.9%</td>
+    <td class="right">10.1%</td>
+    <td class="right">0.6%</td>
+    <td class="right">0.5%</td>
+  </tr>
+	<tr>
+    <td>August</td>
+    <td class="right">44.2%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">25.5%</td>
+    <td class="right">17.5%</td>
+    <td class="right">0.7%</td>
+    <td class="right">0.5%</td>
+  </tr>
+	<tr>
+    <td>July</td>
+    <td class="right">43.1%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">20.7%</td>
+    <td class="right">21.1%</td>
+    <td class="right">0.8%</td>
+    <td class="right">0.5%</td>
+  </tr>
+	<tr>
+    <td>June</td>
+    <td class="right">41.5%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">8.9%</td>
+    <td class="right">31.2%</td>
+    <td class="right">0.9%</td>
+    <td class="right">0.5%</td>
+    </tr>
+	<tr>
+    <td>May</td>
+    <td class="right">40.5%</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="right">2.9%</td>
+    <td class="right">35.9%</td>
+    <td class="right">1.0%</td>
+    <td class="right">0.7%</td>
+  </tr>
+</table>
+</div>
+<hr>
+
+<h2>Firefox 43</h2>
+<p>Firefox 43 was released on December 15, 2015.</p>
+<p>Firefox 43 is available for Windows, Mac, Linux, and  
+Android.</p>
+<p>New features:</p>
+<ul>
+	<li><strong>Private Browsing with Tracking Protection offers choice of 
+	blocking additional trackers</strong></li>
+	<li><strong>Improved API support for m4v video playback</strong></li>
+	<li><strong>Firefox 64-bit for Windows is now available via the Firefox 
+	download page</strong></li>
+	<li><strong>Users can choose search suggestions from the Awesome Bar</strong></li>
+	<li><strong>On-screen keyboard displayed on selecting input field on devices 
+	running Windows 8 or greater</strong></li>
+	<li><strong>Firefox Health Report has switched to use the same data 
+	collection mechanism as telemetry</strong></li>
+	<li><strong>CSS3: Unprefixed &quot;hyphens&quot; property is now supported</strong></li>
+	<li><strong>CSS3: The &quot;transform-origin&quot; property is now supported on SVG 
+	elements<br></strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 42</h2>
+<p>Firefox 42 was released on November 3, 2015.</p>
+<p>Firefox 42 is available for Windows, Mac, Linux, and  
+Android.</p>
+<p>New features:</p>
+<ul>
+	<li><strong>Private Browsing with Tracking Protection blocks certain Web 
+	elements that could be used to record your behavior across sites</strong></li>
+	<li><strong>Control Center that contains site security and privacy controls</strong></li>
+	<li><strong>Indicator added to tabs that play audio with one-click muting</strong></li>
+	<li><strong>Login Manager improvements</strong></li>
+	<li><strong>WebRTC improvements</strong></li>
+	<li><strong>View HTML source in a tab</strong></li>
+	<li><strong>Remote website debugging over WiFi (no USB cable or ADB needed)</strong></li>
+	<li><strong>Asynchronous call stacks now allow web developers to follow the 
+	code flow through setTimeout, DOM event handlers, and Promise handlers</strong></li>
+	<li><strong>Configurable Firefox OS Simulator in WebIDE, to simulate 
+	reference devices like phones, tablets, even TVs</strong></li>
+	<li><strong>CSS filter presets in the Inspector</strong></li>
+	<li><strong>Ability to save filter presets inside CSS Filter Tooltip</strong></li>
+	<li><strong>Implemented ES6 Reflect</strong></li>
+	<li><strong>Support ImageBitmap and createImageBitmap()</strong></li>
+	<li><strong>Media Source Extension for HTML5 video available for all sites</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 41</h2>
+<p>Firefox 41 was released on September 22, 2015.</p>
+<p>Firefox 41 is available for Windows, Mac, Linux, and  
+Android.</p>
+<p>New features:</p>
+<ul>
+	<li><strong>Enhance IME support on Windows (Vista +) using TSF (Text 
+	Services Framework)</strong></li>
+	<li><strong>Firefox Hello now includes instant messaging</strong></li>
+	<li style="font-weight: 700">SVG images can be used as favicons</li>
+	<li class="auto-style1">Added support for the transform-origin property on 
+	SVG elements</li>
+	<li><strong>Implemented Cache API for querying named caches that are 
+	accessible Window, Worker, and ServiceWorker</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 40</h2>
+<p>Firefox 40 was released on August 11, 2015.</p>
+<p>Firefox 40 is available for Windows, Mac, Linux, and  
+Android.</p>
+<p>New features:</p>
+<ul>
+	<li><strong>Support for Windows 10</strong></li>
+	<li><strong>Making Third Party Add-ons Safer</strong></li>
+	<li><strong>HTML5 IndexedDB transactions are now non-durable by default</strong></li>
+	<li><strong>HTML5 now support for CSS Scroll Snap Points</strong></li>
+	<li><strong>Cascading of CSS transitions and animations now matches the 
+	current spec</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 39</h2>
+<p>Firefox 39 was released on July 2, 2015.</p>
+<p>Firefox 39 is available for Windows, Mac, Linux, and  
+Android.</p>
+<p>New features:</p>
+<ul>
+	<li><strong>Share Hello link with social networks</strong></li>
+	<li><strong>HTML5 list-style-type now accepts a string value</strong></li>
+	<li><strong>HTML5 now support for CSS Scroll Snap Points</strong></li>
+	<li><strong>Cascading of CSS transitions and animations now matches the 
+	current spec</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 38</h2>
+<p>Firefox 38 was released on May 12, 2015.</p>
+<p>Firefox 38 is available for Windows, Mac, Linux, and  
+Android.</p>
+<p>New features:</p>
+<ul>
+	<li><strong>Responsive image support </strong>- now supports both the 
+	&lt;picture&gt; element and srcset attribute on images</li>
+	<li><strong>Now allows code running in a Web Worker to open up a WebSocket 
+	connection</strong></li>
+	<li><strong>Redesigned Options panel</strong></li>
+	<li><strong>Now supports the Encrypted Media Extensions (EME) API on Windows 
+	desktop, and also Automatically downloads Adobe's Content Decryption Module</strong></li>
+	<li><strong>HTML5 &lt;ruby&gt; markup support</strong></li>
+	<li><strong>New Firefox ESR released</strong></li>
+	<li><strong>13 security fixes</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 37</h2>
+<p>Firefox 37 was released on March 31, 2015.</p>
+<p>Firefox 37 is available for Windows, Mac, Linux, and  
+Android.</p>
+<p>New features:</p>
+<ul>
+	<li><strong>Heartbeat user rating system</strong> - Firefox's new way for 
+	getting feedback from users on how well the browser is performing</li>
+	<li><strong>Animations Panel in Inspector</strong> - new tool for working 
+	with web animations</li>
+	<li><strong>Bing search will now be using HTTPS for secure searching</strong></li>
+	<li><strong>Fake and fraud websites are better handled</strong> - by the new 
+	OneCRL centralized certificate revocation</li>
+</ul>
+<hr>
+
+<h2>Firefox 36</h2>
+<p>Firefox 36 was released on February 24, 2015.</p>
+<p>Firefox 36 is available for Windows, Mac, Linux, and  
+Android.</p>
+<p>New features:</p>
+<ul>
+	<li><strong>Full HTTP/2 support</strong> - enables a faster, more scalable, 
+	and more responsive web</li>
+	<li><strong>HTML5: Support for meta name=&quot;referrer&quot;</strong></li>
+	<li><strong>CSS3 will-change property implemented</strong></li>
+	<li><strong>For Android: New interface</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 35</h2>
+<p>Firefox 35 was released on January 13, 2015.</p>
+<p>Firefox 35 is available for Windows, Mac, Linux, and  
+Android.</p>
+<p>New features:</p>
+<ul>
+	<li><strong>Firefox Hello Chat Room</strong></li>
+	<li><strong>Marketplace button</strong> - faster access to the Firefox 
+	marketplace</li>
+	<li><strong>Native H264 support on OS X 10.6 and above</strong> - H264 is a 
+	proprietary video encoding format for playing MP4 (MPEG) files</li>
+	<li><strong>For Android: Download Manager added</strong></li>
+	<li><strong>For Android: Search bar on network error page</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 34</h2>
+<p>Firefox 34 was released on December 1, 2014.</p>
+<p>Firefox 34 is available for Windows, Mac, Linux, and  
+Android.</p>
+<p>New features:</p>
+<ul>
+	<li><strong>Default Googling is over</strong> - Mozilla's lucrative 
+	partnership with Google has ended and Firefox users will have an alternative 
+	for the 100 billion searches they perform every year</li>
+	<li><strong>Improved search bar</strong></li>
+	<li><b>Added &quot;Firefox Hello&quot;</b> - a plugin-free video/voice chat based on WebRTC</li>
+	<li><strong>A number of CSS3 Font features have been added</strong></li>
+	<li><strong>JavaScript updates</strong></li>
+	<li><strong>New Storage Inspector</strong> - allows you to view site data in 
+	cookies, localStorage, sessionStorage and IndexDB</li>
+	<li><strong>App Manager is replaced by WebIDE</strong></li>
+	<li><strong>New Themes button is shown in customize</strong></li>
+	<li><strong>HTTP/2 implementation</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 33</h2>
+<p>Firefox 33 was released on October 13, 2014.</p>
+<p>Firefox 33 is available for Windows, Mac, Linux, and  
+Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Improved search experience - </b>speed up search</li>
+	<li><b>More reliable Session restore</b></li>
+	<li><strong>New Media sidebar in Style editor - </strong>displays a list of 
+	shortcuts to every @media rule in the current stylesheet</li>
+	<li><strong>New Paint Flashing Tool</strong></li>
+	<li><strong>For Android: Clear data when quitting Firefox (if you want) -
+	</strong>Look under Settings&gt;Privacy</li>
+</ul>
+<hr>
+
+<h2>Firefox 32</h2>
+<p>Firefox 32 was released on September 2, 2014.</p>
+<p>Firefox 32 is available for Windows, Mac, Linux, and  
+Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Faster HTTP caching by default</b></li>
+	<li><strong>New public key pinning feature (enables enhanced security for 
+	SSL certificate authenticity)</strong></li>
+	<li><strong>View historical use information for logins stored in password 
+	manager</strong></li>
+	<li><strong>Display the number of found items in the find toolbar</strong></li>
+	<li><strong>Easier back, forward, reload, and bookmarking through the 
+	context menu</strong></li>
+	<li><strong>HTML5 Vibration API updated to latest W3C spec</strong></li>
+	<li><strong>New Web Audio Editor</strong></li>
+	<li><strong>HiDPI support in Developer Tools UI</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 31</h2>
+<p>Firefox 31 was released on July 22, 2014.</p>
+<p>Firefox 31 is available for Windows, Mac, Linux, and  
+Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Block malware from downloaded files</b></li>
+	<li><strong>A new search box to the New Tab page</strong></li>
+	<li><strong>Automatically handle PDF files and audio/video .ogg files internally 
+	(for Windows users)</strong></li>
+	<li><strong>New certificate verification library (mozilla:pkix)</strong></li>
+	<li><strong>Support for HTML5 WebVTT (allow users 
+	to watch video content with embedded subtitles)</strong></li>
+	<li><strong>Support for CSS3 variables</strong></li>
+	<li><strong>Developer tools: Add-on Debugger</strong></li>
+	<li><strong>Developer tools: Canvas Debugger</strong></li>
+	<li><strong>Developer tools: Eyedropper tool added to the color picker</strong></li>
+	<li><strong>Removal of the CAPS infrastructure for specifying site-specific permissions</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 30</h2>
+<p>Firefox 30 was released on June 10, 2014.</p>
+<p>Firefox 30 is available for Windows, Mac, Linux, and Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Sidebars button enables faster access to social, bookmark, and history sidebars</b></li>
+	<li><strong>Mac users can now use Command-E to search a Web page for the current text selection</strong></li>
+	<li><strong>The Android version of Firefox adds Quickshare buttons to the context menu</strong></li>
+	<li><strong>Support for GStreamer 1.0 (for multimedia streaming)</strong></li>
+	<li><strong>Fixes to CSS box-shadow</strong></li>
+	<li><strong>Mute/Volume available per window when using WebAudio</strong></li>
+	<li><strong>Support for CSS line-height property on &lt;input type=&quot;reset|button|submit&quot;&gt;</strong></li>
+	<li><strong>Support for alpha option in canvas context options</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 29</h2>
+<p>Firefox 29 was released on April 29, 2014.</p>
+<p>Firefox 29 is available for Windows, Mac, Linux, and Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>A few re-designed tools and a refreshed interface</b></li>
+	<li><strong>Enhanced Firefox Sync service</strong></li>
+	<li><strong>The menu is moved to the right corner</strong></li>
+	<li><strong>New &quot;Customization tool&quot; where you can move features or add-ons or add on</strong></li>
+	<li><strong>Users can now create a bookmark with a single click</strong></li>
+	<li><strong>Support for CSS box-sizing property (without -moz- prefix)</strong></li>
+	<li><strong>Support for HTML5 input type=&quot;number&quot;</strong></li>
+	<li><strong>Support for HTML5 input type=&quot;color&quot;</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 28</h2>
+<p>Firefox 28 was released on March 18, 2014.</p>
+<p>Firefox 28 is available for Windows, Mac, Linux, and Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Mac OS X: Notification Center support for web notifications</b></li>
+	<li><strong>Horizontal HTML5 audio/video volume control</strong></li>
+	<li><strong>Support for Opus in WebM</strong></li>
+	<li><strong>VP9 video decoding implemented</strong></li>
+	<li><strong>Support for MathML 2.0 'mathvariant' attribute</strong></li>
+	<li><strong>Background thread hang reporting</strong></li>
+	<li><strong>Support for multi-line flexbox in layout</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 27</h2>
+<p>Firefox 27 was released on February 4, 2014.</p>
+<p>Firefox 27 is available for Windows, Mac, Linux, and Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>A major update to the Firefox Social API</b> - now allows users to run more than one service at a time</li>
+	<li><strong>Support for Google's SPDY 3.1 protocol and Transport Layer Security (TLS) versions 1.1 and 1.2</strong> - These are essentially the 
+	successors of the well-known SSL cryptographic protocol</li>
+	<li><strong>Ability to reset style sheets using &quot;all:unset&quot;</strong></li>
+	<li><strong>Support for scrolled fieldsets</strong></li>
+	<li><strong>CSS cursor keywords -moz-grab and -moz-grabbing have been unprefixed</strong></li>
+	<li><strong>Support for mathematical function Math.hypot()</strong></li>
+	<li><strong>Dashed line support on Canvas</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 26</h2>
+<p>Firefox 26 was released on December 10, 2013.</p>
+<p>Firefox 26 is available for Windows, Mac, Linux, and Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>All Java plug-ins are defaulted to &quot;click to play&quot;</b></li>
+	<li><strong>Password manager now supports script-generated password fields</strong></li>
+	<li><strong>Support for H.264 encoded video on Linux</strong></li>
+	<li><strong>MP3 audio is supported on Windows XP</strong> (this completes MP3 support across Windows OS versions)</li>
+	<li><strong>Removed the prompt when a site requests the AppCache</strong></li>
+	<li><strong>Support for the CSS3 image-orientation property</strong></li>
+	<li><strong>New App Manager</strong> allows you to deploy and debug HTML5 webapps on Firefox OS phones and the Firefox OS Simulator</li>
+	<li><strong>IndexedDB can now be used as a &quot;optimistic&quot; storage area</strong>
+	(doesn't require any prompts and data is stored in a pool with LRU eviction policy, in short temporary storage)</li>
+	<li><strong>Reduced memory usage and image handling improvements</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 25</h2>
+<p>Firefox 25 was released on October 29, 2013.</p>
+<p>Firefox 25 is available for Windows, Mac, Linux, and Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Web Audio support</b></li>
+	<li><strong>CSS3 background-attachment:local support</strong></li>
+	<li><strong>iframe document content can now be specified inline</strong></li>
+	<li><strong>Many new ECMAScript 6 functions are available</strong></li>
+	<li><strong>The Profiler tool can save and import test results</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 24</h2>
+<p>Firefox 24 was released on September 17, 2013.</p>
+<p>Firefox 24 is available for Windows, Mac, Linux, and Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Enabled support for WebRTC (on Android)</b></li>
+	<li><strong>NFC sharing on Android</strong></li>
+	<li><strong>Option to mass close tabs &quot;to the right&quot;</strong></li>
+	<li><strong>New scrollbar style on OS X 10.7</strong></li>
+	<li><strong>Ability to tear-off chat windows to view separately by simply dragging them out</strong></li>
+	<li><strong>Major SVG rendering improvements around Image tiling and scaling</strong></li>
+	<li><strong>Improved Browser console for enhanced debugging experience, replacing existing Error console</strong></li>
+	<li><strong>Removed support for Revocation Lists feature</strong></li>
+	<li><strong>Removed support for sherlock files that are loaded from application or profile directory</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 23</h2>
+<p>Firefox 23 was released on August 07, 2013.</p>
+<p>Firefox 23 is available for Windows, Mac, Linux, and a mobile version for Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>New logo</b></li>
+	<li><strong>Mixed content blocker - prevents reading the non-secured content on web by completely blocking the URL</strong></li>
+	<li><strong>Share button - let users share content with friends/family in just one click</strong> </li>
+	<li><strong>Network monitor tool for developers - breaks down website components and notifies the developer about load timings</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 22</h2>
+<p>Firefox 22 was released on June 25, 2013.</p>
+<p>Firefox 22 is available for Windows, Mac, Linux, and a mobile version for Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Fixed 14 security issues</b></li>
+	<li><strong>WebRTC is now enabled by default</strong></li>
+	<li><strong>OdinMonkey - Improves JavaScript performance</strong></li>
+	<li><strong>HTML5 audio/video playback rate can now be changed</strong></li>
+	<li><strong>New display scaling option that is enabled by default - renders larger text on high-resolution displays</strong></li>
+	<li><strong>Word wrap for text files</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 21</h2>
+<p>Firefox 21 was released on May 14, 2013.</p>
+<p>Firefox 21 is available for Windows, Mac, Linux, and a mobile version for Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Firefox Health Report - A tool for tuning up the browser</b></li>
+	<li><strong>Improved Startup Time</strong></li>
+	<li><strong>HTML5 &lt;main&gt; element support</strong></li>
+	<li><strong>Scoped stylesheets support</strong></li>
+	<li><strong>Three &quot;Do Not Track&quot; options: &quot;Do Track&quot;, &quot;Do Not Track&quot;, and &quot;No Preference&quot;</strong></li>
+	<li><strong>Expanded Social API - Added new social providers: Cliqz, Mixi and msnNOW,&nbsp; and Facebook Messenger for Firefox</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 20</h2>
+<p>Firefox 20 was released on April 2, 2013.</p>
+<p>Firefox 20 is available for Windows, Mac, Linux, and a mobile version for Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>New Download Manager</b></li>
+	<li><strong>Per-window Private Browsing</strong></li>
+	<li><strong>View Developer tools in a separate window</strong></li>
+	<li><strong>Ability to close hanging plugins, without the browser hanging</strong></li>
+	<li><strong>&lt;canvas&gt; now supports blend modes</strong></li>
+	<li><strong>Various &lt;audio&gt; and &lt;video&gt; improvements</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 19</h2>
+<p>Firefox 19 was released on February 20, 2013.</p>
+<p>Firefox 19 is available for Windows, Mac, and Linux.</p>
+<p>New features:</p>
+<ul>
+	<li><b>New built-in PDF viewer</b> - Now you can read PDFs without needing a plugin</li>
+	<li><strong>@page support for printed documents</strong></li>
+	<li><strong>Export canvas content to an image</strong> - The content of a canvas element can be exported to an image blob with toBlob()</li>
+	<li><strong>Implemented CSS viewport-percentage length units (vh, vw, vmin and vmax)</strong></li>
+	<li><strong>Support for CSS text-transform:full-width</strong></li>
+	<li><strong>Faster start-up</strong></li>
+	<li><strong>XForms</strong> has been removed</li>
+</ul>
+<hr>
+
+<h2>Firefox 18</h2>
+<p>Firefox 18 was released on January 8, 2013.</p>
+<p>Firefox 18 is available for Windows, Mac OS X (Snow Leopard, Lion, and Mountain Lion), Linux, and Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>IonMonkey</b> - New JavaScript compiler (7% - 26% faster than Firefox 17)</li>
+	<li><strong>Support for Retina displays</strong></li>
+	<li><b>Inline PDF viewer</b></li>
+	<li><strong>Preliminary support for Web Real Time Communication (WebRTC)</strong></li>
+</ul>
+<hr>
+
+<h2>Firefox 17</h2>
+<p>Firefox 17 was released on November 20, 2012.</p>
+<p>Firefox 17 is available for Windows, Mac OS X, Linux, and Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Updated Awesome Bar</b> - with larger icons</li>
+	<li><b>Tab animations</b></li>
+	<li><b>Social API - </b>Allows you to sign in to your social networks (Facebook) via your browser</li>
+	<li><b>Implemented Click-To-Play blocklisting -</b> to prevent vulnerable plugin versions from running without the user's permission</li>
+	<li><b>New Markup Panel For HTML/DOM in Page Inspector</b></li>
+	<li><b>HTML5 sandbox attribute (for iframes) implemented</b></li>
+	<li><b>Support for Mountain Lion’s Notification Center</b></li>
+</ul>
+<hr>
+
+<h2>Firefox 16</h2>
+<p>Firefox 16 was released on October 9, 2012.</p>
+<p>Firefox 16 is available for Windows, Mac OS X, Linux, and Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Native support for PDFs</b></li>
+	<li><b>New Developer Toolbar </b>(lets you access the Web Console, Inspector and Debugger + the toolbar itself supports some commands)</li>
+	<li><b>VoiceOver support for OS X</b></li>
+	<li><b>Web App Support </b>(start using apps in the
+	<a target="_blank" href="https://apps.mozillalabs.com/appdir/">Mozilla app directory</a>)</li>
+	<li><b>Incremental Garbage Collection </b>(speeds up your browser - recycles/reuses memory that a JavaScript program is no longer using)</li>
+	<li><b>CSS3 Animations, Transitions, Transforms and Gradients unprefixed in Firefox 16</b></li>
+</ul>
+<hr>
+
+<h2>Firefox 15</h2>
+<p>Firefox 15 was released on August 28, 2012.</p>
+<p>Firefox 15 is available for Windows, Mac OS X, Linux, and Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Seamless background updates</b></li>
+	<li><b>Stopped most memory leaks caused by add-ons</b></li>
+	<li><b>Support for the SPDY networking protocol v3</b></li>
+	<li><b>WebGL enhancements</b></li>
+	<li><b>HTML5 - Support for the media attribute in &lt;source&gt;</b></li>
+	<li><b>HTML5 - Support for the played attribute in &lt;audio&gt; and &lt;video&gt;</b></li>
+	<li><b>CSS3 - Support for the CSS word-break property</b></li>
+	<li><b>Faster debugger</b></li>
+	<li><b>New design tool that allows web developers to switch between desktop and mobile views of sites</b></li>
+	<li><b>Native support for the Opus audio codec</b></li>
+</ul>
+<hr>
+
+<h2>Firefox 14</h2>
+<p>Firefox 14 was released on July 17, 2012.</p>
+<p>Firefox 14 is available for Windows, Mac OS X, Linux, and Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Privacy feature</b> - Firefox now encrypts your Google searches using HTTPS</li>
+	<li><b>Bug fix</b> - Full screen support for Mac OS X Lion</li>
+	<li><b>Security feature</b> - You can now whitelist sites that you visit often and trust</li>
+</ul>
+<hr>
+
+<h2>Firefox 13</h2>
+<p>Firefox 13 was released on June 5, 2012.</p>
+<p>Firefox 13 is available for Windows, Mac OS X, Linux, and Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>The default home page now has quicker access to bookmarks, history, settings, etc.</b></li>
+	<li><b>When opening a new tab, users are now presented with their most visited pages</b></li>
+	<li><b>SPDY protocol now enabled by default for faster browsing on supported sites</b></li>
+	<li><b>72 total improvements to Page Inspector, HTML panel, Style Inspector, Scratchpad and Style Editor</b></li>
+	<li><b>Implemented support for the following CSS properties: column-fill, CSS3 background-position</b></li>
+	<li><b>Support for the :invalid pseudo-class</b></li>
+	<li><b>The CSS3 &lt;angle&gt; type unit is now supported</b></li>
+</ul>
+<hr>
+
+<h2>Firefox 12</h2>
+<p>Firefox 12 was released on April 24, 2012.</p>
+<p>Firefox 12 is available for Windows, Mac OS X, Linux, and Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Windows: Firefox is now easier to update with one less prompt (User Account Control)</b></li>
+	<li><b>Page Source now has line numbers</b></li>
+	<li><b>Line breaks are now supported in the title attribute</b></li>
+	<li><b>Support for the text-align-last CSS property</b></li>
+</ul>
+<hr>
+
+<h2>Firefox 11</h2>
+<p>Firefox 11 was released on March 13, 2012.</p>
+<p>Firefox 11 is available for Windows, Mac OS X, Linux, and Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Style Editor - A new stylesheet editor. Visit any page, then select Style Editor from the Web Developer menu</b></li>
+	<li><b>&quot;Tilt&quot; 3D Page Structure View - The Inspector tool now offers a &quot;3D&quot; button</b></li>
+	<li><b>Support for the CSS text-size-adjust property (controls how mobile devices size text and show scrollbars when zooming into a web page)</b></li>
+	<li><b>Support for the outerHTML property</b></li>
+	<li><b>Firefox can now migrate your bookmarks, history, and cookies from Google Chrome</b></li>
+	<li><b>HTML5 tags are correctly highlighted when viewing the source</b></li>
+	<li><b>Files can be stored in IndexedDB.</b></li>
+	<li><b>The moz prefix has been removed from the Websockets API</b></li>
+</ul>
+<hr>
+
+<h2>Firefox 10</h2>
+<p>Firefox 10 was released on January 31, 2012.</p>
+<p>Firefox 10 is available for Windows, Mac OS X, Linux, and Android.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Page Inspector/CSS Inspector - lets developers inspect the HTML and CSS</b></li>
+	<li><b>Scratchpad - A code editor that highlights syntax for JavaScript developers</b></li>
+	<li><b>New 3D graphics capabilities and anti-aliasing for WebGL content</b></li>
+	<li><b>Full-Screen API - enables developers to create full screen apps and games and deliver full screen video content</b></li>
+	<li><b>Support for CSS 3D Transforms</b></li>
+</ul>
+<hr>
+
+<h2>Firefox 9</h2>
+<p>Firefox 9 was released on December 20, 2011.</p>
+<p>Firefox 9 is available for Windows, Mac OS X and Linux.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Added Type Inference; improving JavaScript performance (up to 30% faster than Firefox 8)</b></li>
+	<li><b>Improved theme integration for Mac OS X Lion</b></li>
+	<li><b>Added two finger swipe navigation for Mac OS X Lion</b></li>
+	<li><b>Added support for querying &quot;Do Not Track&quot; status via JavaScript</b></li>
+	<li><b>Added support for CSS3 font-stretch</b></li>
+	<li><b>Improved support for HTML5, MathML, and CSS</b></li>
+</ul>
+<hr>
+
+<h2>Firefox 8</h2>
+<p>Firefox 8 was released on November 8, 2011.</p>
+<p>Firefox 8 is available for Windows, Mac OS X and Linux.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Twitter search engine installed by default</b></li>
+	<li><b>Third-party add-ons are disabled by default</b></li>
+	<li><b>A new &quot;add-on selection dialog&quot; allows to verify add-ons on upgrading</b></li>
+	<li><b>Tabs can be loaded &quot;on demand&quot; (making it much faster to restore windows with many tabs)</b></li>
+	<li><b>Support for Cross-Origin Resource Sharing (CORS), which lets developers load WebGL textures from other domains in a secure way</b></li>
+	<li><b>HTML5 context menu support</b></li>
+	<li><b>Firefox for Android: Mozilla has also added further functionality for the Firefox browser into Android devices</b></li>
+</ul>
+<hr>
+
+<h2>Firefox 7</h2>
+<p>Firefox 7 was released on September 27, 2011.</p>
+<p>Firefox 7 is available for Windows, Mac OS X and Linux.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Improved memory handling</b></li>
+	<li><b>Bookmark and password changes now sync almost instantly when using Firefox Sync</b></li>
+	<li><b>The &quot;http://&quot; URL prefix is now hidden by default (just like Chrome)</b></li>
+	<li><b>Updated the WebSocket protocol from version 7 to version 8</b></li>
+	<li><b>Added a system for users to send performance data back to Mozilla</b></li>
+</ul>
+<hr>
+
+<h2>Firefox 6</h2>
+<p>Firefox 6 was released on August 16, 2011.</p>
+<p>Firefox 6 is available for Windows, Mac OS X and Linux.</p>
+<p>New features:</p>
+<ul>
+	<li><b>The address bar now highlights the domain of the website you're visiting</b></li>
+	<li><b>Streamlined the look of the site identity block</b></li>
+	<li><b>Added support for the latest draft version of WebSockets with a prefixed API</b></li>
+	<li><b>Added support for EventSource / server-sent events</b></li>
+	<li><b>Added support for window.matchMedia</b></li>
+	<li><b>Added Scratchpad, an interactive JavaScript prototyping environment</b></li>
+	<li><b>Added a new Web Developer menu item and moved development-related items into it</b></li>
+	<li><b>Improved usability of the Web Console</b></li>
+	<li><b>Improved the discoverability of Firefox Sync</b></li>
+	<li><b>Reduced browser startup time when using Panorama</b></li>
+</ul>
+<hr>
+
+<h2>Firefox 5</h2>
+<p>Firefox 5 was released in June, 2011.</p>
+<p>Firefox 5 is available for Windows, Mac OS X and Linux.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Added support for CSS animations</b></li>
+	<li><b>Tuned HTTP idle connection logic for increased performance</b></li>
+	<li><b>Improved canvas, JavaScript, memory, and networking performance</b></li>
+	<li><b>Improved standards support for HTML5, XHR, MathML, SMIL, and canvas</b></li>
+	<li><b>Improved spell checking</b></li>
+	<li><b>Improved desktop environment integration for Linux users</b></li>
+	<li><b>WebGL content can no longer load cross-domain textures</b></li>
+	<li><b>Background tabs have setTimeout and setInterval clamped to 1000ms to improve performance</b></li>
+</ul>
+<hr>
+
+<h2>Firefox 4</h2>
+<p>Firefox 4 was released in March 2011.</p>
+<p>Firefox 4 is available for Windows, Mac OS X and Linux.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Available in over 80 languages!</b></li>
+	<li><b>Fastest Firefox Ever - </b>Firefox is up to six times faster than the previous release.</li>
+	<li><b>App Tabs</b> - A permanent home to frequently visited sites like Web mail, Twitter, Pandora, Flickr.</li>
+	<li><b>Switch to Tab</b> - Easily find and switch to any open tab from your Awesome Bar without opening duplicate tabs.</li>
+	<li><b>Panorama</b> - Drag and drop tabs into manageable groups to save time while navigating many open tabs.</li>
+	<li><b>Firefox Sync</b> - Access your Awesome Bar history, bookmarks, open tabs, passwords and form data across multiple computers and mobile devices.</li>
+	<li><b>New Add-ons Manager</b> - More than 200,000 add-ons to customize the	features, functionality and look of Firefox.</li>
+	<li><b>Do Not Track</b> - Allows users to opt-out of tracking used for behavioral advertising.</li>
+	<li><b>Privacy first</b> - Prevent others from accessing your browser history.</li>
+	<li><b>HTTP Strict Transport Security (HSTS)</b> - Establishes secure connections to stop &quot;man in the middle&quot; attacks and keep sensitive data safe.</li>
+	<li><b>Content Security Policy (CSP)</b> - Prevents cross-scripting attacks by allowing sites to explicitly tell the browser which content is legitimate.</li>
+	<li><b>JägerMonkey JIT compiler</b> - along with enhancements to the existing TraceMonkey JIT and SpiderMonkey's interpreter for faster page-load speed and better performance.</li>
+	<li><b>HTML5 support</b> - Includes hardware accelerated, high-definition video (WebM), 3D graphics, offline data storage, professional typography, 
+	touchscreen interfaces and the Mozilla Audio API.</li>
+	<li><b>Improves existing tools</b> - like CSS, Canvas and SVG.</li>
+	<li><b>Uninterrupted browsing</b> - when there is a crash in the Adobe Flash, Apple QuickTime or Microsoft Silverlight plugins.</li>
+</ul>
+<hr>
+
+<h2>Firefox 3.6</h2>
+<p>Firefox 3.6 was released in January 2010.</p>
+<p>Firefox 3.6 is built on Mozilla's Gecko 1.9.2 web rendering platform, which 
+has been under development since early 2009 and contains many improvements for 
+web developers, add-on developers, and users. This version is also faster and 
+more responsive than previous versions and has been optimized to run on small 
+device operating systems such as Maemo.</p>
+<p>New features:</p>
+<ul>
+	<li><b>Personas theme</b> - allow users to change Firefox's appearance with a single click</li>
+	<li><b>Protection from out-of-date plugins</b> - keep users safer as they browse</li>
+	<li><b>Open, native video can be displayed full screen and supports poster frames</b></li>
+	<li><b>Improved JavaScript performance</b></li>
+	<li><b>Ability for web developers to run asynchronously scripts</b> - to speed up page load times</li>
+	<li><b>Support for downloadable web fonts</b> - using the new WOFF font format</li>
+	<li><b>Improved support for CSS3, DOM, and HTML5</b></li>
+</ul>
+<hr>
+
+<h2>Older Firefox Versions</h2>
+<p><b>Firefox 3.5 </b>- Released in June 2009.</p>
+<p><b>Firefox 3.0 </b>- Released in June 2008.</p>
+<p><b>Firefox 2.0 </b>- Released in December 2006.</p>
+<p><b>Firefox 1.5 </b>- Released in November 2005.</p>
+<p><b>Firefox 1.0 </b>- Released in November 2004.</p>
+<hr>
+
+<h2>Firefox Resources</h2>
+<p><a target="_blank" href="http://support.mozilla.com/">Firefox's support website</a><br>
+Firefox's support website has a searchable knowledge database, articles, forums, and tutorials full of solutions and tips for a better experience.</p>
+<br>
+<div class="chapter">
+<div class="prev"><a class="chapter" href="browsers_chrome.html">&laquo; Previous</a></div>
+<div class="next"><a class="chapter" href="browsers_safari.html">Next Chapter &raquo;</a></div>
+</div>
+</div>
+<div class="w3-col l2 m12" id="right">
+
+<div class="sidesection">
+<div id="skyscraper">
+<div id="div-gpt-ad-1422003450156-5">
+<script>
+ googletag.cmd.push(function() {
+ googletag.display('div-gpt-ad-1422003450156-5');
+ });
+ </script> 
+</div>
+</div>
+</div>
+
+<div class="sidesection">
+<h3>W3SCHOOLS EXAMS</h3>
+<a target="_blank" href="../cert/default.html">HTML, CSS, JavaScript, PHP, jQuery, and XML Certifications</a>
+</div>
+
+<div class="sidesection">
+<h3>COLOR PICKER</h3>
+<a href="../colors/colors_picker.html">
+<img src="../images/colorpicker.gif" alt="colorpicker"></a>
+</div>
+
+<div class="sidesection">
+<h3>SHARE THIS PAGE</h3>
+<div class="w3-text-grey sharethis">
+<script>
+<!--
+try{
+loc=location.pathname;
+if (loc.toUpperCase().indexOf(".ASP")<0) loc=loc+"default.asp";
+txt='<a href="http://www.facebook.com/sharer.php?u=http://www.w3schools.com'+loc+'" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a>';
+txt=txt+'<a href="http://twitter.com/home?status=Currently reading http://www.w3schools.com'+loc+'" target="_blank" title="Twitter"><span class="fa fa-twitter-square fa-2x"></span></a>';
+txt=txt+'<a href="https://plus.google.com/share?url=http://www.w3schools.com'+loc+'" target="_blank" title="Google+"><span class="fa fa-google-plus-square fa-2x"></span></a>';
+document.write(txt);
+} catch(e) {}
+//-->
+</script>
+</div>
+</div>
+
+<div class="sidesection w3-text-grey sharethis">
+<a href="javascript:void(0);" onclick="clickFBLike()" title="Like W3Schools on Facebook">
+<span class="fa fa-thumbs-o-up fa-2x"></span></a>
+<div id="fblikeframe">
+<div id="popupframe"></div>
+<div id="popupDIV"></div>
+</div>
+</div>       
+
+<div class="sidesection">
+<h3>LEARN MORE:</h3>
+<p>
+<a href="../colors/colors_converter.html">Color Converter</a><br>
+<a href="../howto/howto_google_maps.html">Google Maps</a><br>
+<a href="../howto/howto_css_animate_buttons.html">Animated Buttons</a><br>
+<a href="../howto/howto_css_modals.html">Modal Boxes</a><br>
+<a href="../howto/howto_css_modal_images.html">Modal Images</a><br>
+<a href="../howto/howto_css_tooltip.html">Tooltips</a><br>
+<a href="../howto/howto_css_loader.html">Loaders</a><br>
+<a href="../howto/howto_js_animate.html">JS Animations</a><br>
+<a href="../howto/howto_js_progressbar.html">Progress Bars</a><br>
+<a href="../howto/howto_js_dropdown.html">Dropdowns</a><br>
+<a href="../howto/howto_js_slideshow.html">Slideshow</a><br>
+<a href="../howto/howto_js_sidenav.html">Side Navigation</a><br>
+<a href="../howto/howto_html_include.html">HTML Includes</a><br>
+<a href="../w3css/w3css_color_palettes.html">Color Palettes</a>
+</p>
+</div>
+
+</div>
+</div>
+<div class="footer w3-container w3-white">      
+
+<hr>
+<div style="overflow:auto">
+<!-- BottomMediumRectangle -->
+<div class="bottomad" id='div-gpt-ad-1422003450156-0'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-0'); });
+</script>
+</div>
+<!-- RightBottomMediumRectangle -->
+<div class="bottomad" id='div-gpt-ad-1422003450156-3'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-3'); });
+</script>
+</div>
+</div>
+
+<hr>
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m3 s12">
+<a href="javascript:void(0);" onclick="displayError();return false" style="white-space:nowrap;">REPORT ERROR</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="#" target="_blank" onclick="printPage();return false;">PRINT PAGE</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="http://w3schools.invisionzone.com/" target="_blank">FORUM</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="../about/default.html" target="_top">ABOUT</a>
+</div>
+</div>
+<hr>
+<div class="w3-light-grey w3-padding w3-center" id="err_form" style="display:none;">
+<span onclick="this.parentElement.style.display='none'" class="w3-closebtn">&times;</span>     
+<h2>Your Suggestion:</h2>
+<form>
+<div class="w3-group">      
+<label for="err_email">Your E-mail:</label>
+<input class="w3-input" type="text" style="width:100%" id="err_email" name="err_email">
+</div>
+<div class="w3-group">      
+<label for="err_email">Page address:</label>
+<input class="w3-input" type="text" style="width:100%" id="err_url" name="err_url" disabled="disabled">
+</div>
+<div class="w3-group">
+<label for="err_email">Description:</label>
+<textarea rows="10" class="w3-input" id="err_desc" name="err_desc" style="width:100%;"></textarea>
+</div>
+<div class="form-group">        
+<button type="button" onclick="sendErr()">Submit</button>
+</div>
+<br>
+</form>
+</div>
+<div class="w3-container w3-light-grey w3-padding" id="err_sent" style="display:none;">
+<span onclick="this.parentElement.style.display='none'" class="w3-closebtn">&times;</span>     
+<h2>Thank You For Helping Us!</h2>
+<p>Your message has been sent to W3Schools.</p>
+</div>
+
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 Tutorials</h4>
+<a href="../html/default.html">HTML Tutorial</a><br>
+<a href="../css/default.html">CSS Tutorial</a><br>
+<a href="../js/default.html">JavaScript Tutorial</a><br>
+<a href="../w3css/default.html">W3.CSS Tutorial</a><br>
+<a href="../bootstrap/default.html">Bootstrap Tutorial</a><br>
+<a href="../sql/default.html">SQL Tutorial</a><br>
+<a href="../php/default.html">PHP Tutorial</a><br>
+<a href="../jquery/default.html">jQuery Tutorial</a><br>
+<a href="../angular/default.html">Angular Tutorial</a><br>
+<a href="../xml/default.html">XML Tutorial</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 References</h4>
+<a href="../tags/default.html">HTML Reference</a><br>
+<a href="../cssref/default.html">CSS Reference</a><br>
+<a href="../jsref/default.html">JavaScript Reference</a><br>
+<a href="../w3css/w3css_references.html">W3.CSS Reference</a><br>
+<a href="default.html">Browser Statistics</a><br>
+<a href="../php/php_ref_array.asp">PHP Reference</a><br>
+<a href="../colors/colors_names.html">HTML Colors</a><br>
+<a href="../charsets/default.html">HTML Character Sets</a><br>
+<a href="../jquery/jquery_ref_selectors.html">jQuery Reference</a><br>
+<a href="../angular/angular_ref_directives.html">AngularJS Reference</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 Examples</h4>
+<a href="../html/html_examples.html">HTML Examples</a><br>
+<a href="../css/css_examples.html">CSS Examples</a><br>
+<a href="../js/js_examples.html">JavaScript Examples</a><br>
+<a href="../w3css/w3css_examples.html">W3.CSS Examples</a><br>
+<a href="../js/js_dom_examples.html">HTML DOM Examples</a><br>
+<a href="../php/php_examples.html">PHP Examples</a><br>
+<a href="../jquery/jquery_examples.html">jQuery Examples</a><br>
+<a href="../asp/asp_examples.html">ASP Examples</a><br>
+<a href="../xml/xml_examples.html">XML Examples</a><br>
+<a href="../svg/svg_examples.html">SVG Examples</a>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Web Certificates</h4>
+<a href="../cert/default.html">HTML Certificate</a><br>
+<a href="../cert/default.html">HTML5 Certificate</a><br>
+<a href="../cert/default.html">CSS Certificate</a><br>
+<a href="../cert/default.html">JavaScript Certificate</a><br>
+<a href="../cert/default.html">jQuery Certificate</a><br>
+<a href="../cert/default.html">PHP Certificate</a><br>
+<a href="../cert/default.html">Bootstrap Certificate</a><br>
+<a href="../cert/default.html">XML Certificate</a><br>
+</div>
+</div>        
+</div>        
+
+<hr>
+<div class="w3-center w3-small w3-opacity">
+W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding.
+Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.
+While using this site, you agree to have read and accepted our <a href="../about/about_copyright.html">terms of use</a>,
+<a href="../about/about_privacy.html">cookie and privacy policy</a>.
+<a href="../about/about_copyright.html">Copyright 1999-2016</a> by Refsnes Data. All Rights Reserved.<br><br>
+<a href="../index.html">
+<img style="width:150px;height:28px;border:0" src="../images/w3schoolscom_gray.gif" alt="W3Schools.com"></a>
+</div>
+<br><br>
+</div>
+</div>
+</div>
+
+<div id="nav_tutorials_content" style="display:none;">
+<span onclick='w3_close_nav("tutorials")' class='w3-closebtn w3-xlarge'>&times;</span>
+<div class='w3-row-padding'>
+<div class='w3-col l2 m4'>
+<h3>HTML/CSS</h3>
+<a href='../html/default.html'>Learn HTML</a>
+<a href='../css/default.html'>Learn CSS</a>
+<a href='../w3css/default.html'>Learn W3.CSS</a>
+<a href='../colors/default.html'>Learn Colors</a>
+<a href='../bootstrap/default.html'>Learn Bootstrap</a>
+</div>
+<div class='w3-col l2 m4'>  
+<h3>JavaScript</h3>
+<a href='../js/default.html'>Learn JavaScript</a>
+<a href='../jquery/default.html'>Learn jQuery</a>
+<a href='../jquerymobile/default.html'>Learn jQueryMobile</a>
+<a href='../appml/default.html'>Learn AppML</a>
+<a href='../angular/default.html'>Learn AngularJS</a>
+<a href='../ajax/default.html'>Learn AJAX</a>
+<a href='../json/default.html'>Learn JSON</a>
+</div>
+<div class='w3-col l2 m4'>   
+<h3>HTML Graphics</h3>
+<a href='../canvas/default.html'>Learn Canvas</a>
+<a href='../svg/default.html'>Learn SVG</a>
+<a href='../icons/default.html'>Learn Icons</a>
+<a href='../googleapi/default.html'>Learn Google Maps</a>
+<a href="../games/default.html">Learn HTML Games</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Server Side</h3>
+<a href='../sql/default.html'>Learn SQL</a>
+<a href='../php/default.html'>Learn PHP</a>
+<a href='../asp/default.html'>Learn ASP</a>
+<a href='../aspnet/default.html'>Learn ASP.NET</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Web Building</h3>
+<a href='../website/default.html'>Web Building</a>
+<a href='default.html'>Web Statistics</a>
+<a href='../cert/default.html'>Web Certificates</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>XML Tutorials</h3>
+<a href='../xml/default.html'>Learn XML</a>
+<a href='../xsl/default.html'>Learn XSLT</a>
+</div>
+</div>
+</div>
+<div id="nav_references_content" style="display:none;">
+<span onclick='w3_close_nav("references")' class='w3-closebtn w3-xlarge'>&times;</span>
+<div class='w3-row-padding'>
+<div class='w3-col l2 m4'>
+<h3>HTML</h3>
+<a href='../tags/default.html'>HTML Tag Reference</a>
+<a href='../tags/ref_eventattributes.html'>HTML Event Reference</a>
+<a href='../colors/default.html'>HTML Color Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>CSS</h3>
+<a href='../cssref/default.html'>CSS Reference</a>
+<a href='../cssref/css_selectors.html'>CSS Selector Reference</a>
+<a href='../w3css/w3css_references.html'>W3.CSS Reference</a>
+<a href='../bootstrap/bootstrap_ref_css_text.html'>Bootstrap Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>JavaScript</h3>
+<a href='../jsref/default.html'>JavaScript Reference</a>
+<a href='../jsref/default.html'>HTML DOM Reference</a>
+<a href='../jquery/jquery_ref_selectors.html'>jQuery Reference</a>
+<a href='../jquerymobile/jquerymobile_ref_data.html'>jQuery Mobile Reference</a>
+<a href='../angular/angular_ref_directives.html'>AngularJS Reference</a>
+<a href='../googleAPI/google_maps_ref.html'>Google Maps Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Server Side</h3>
+<a href='../php/php_ref_array.asp'>PHP Reference</a>
+<a href='../sql/sql_quickref.html'>SQL Reference</a>
+<a href='../asp/asp_ref_response.html'>ASP Reference</a>
+<a href='../aspnet/webpages_ref_classes.html'>Razor Reference</a>
+<a href='../aspnet/aspnet_intro.html'>ASP.NET Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>XML</h3>
+<a href='../xml/dom_nodetype.html'>XML Reference</a>
+<a href='../xsl/xsl_w3celementref.html'>XSLT Reference</a>
+<a href='../xml/schema_elements_ref.html'>XML Schema Reference</a>
+<a href='../svg/svg_reference.html'>SVG Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Charsets</h3>
+<a href='../charsets/default.html'>HTML Character Sets</a>
+<a href='../charsets/ref_html_ascii.html'>HTML ASCII</a>
+<a href='../charsets/ref_html_ansi.html'>HTML ANSI</a>
+<a href='../charsets/ref_html_ansi.html'>HTML Windows-1252</a>
+<a href='../charsets/ref_html_8859.html'>HTML ISO-8859-1</a>
+<a href='../charsets/ref_html_symbols.html'>HTML Symbols</a>
+<a href='../charsets/ref_html_utf8.html'>HTML UTF-8</a>
+</div>
+</div>
+</div>
+<div id="nav_examples_content" style="display:none;">
+<span onclick='w3_close_nav("examples")' class='w3-closebtn w3-xlarge'>&times;</span>
+<div class='w3-row-padding'>
+<div class='w3-col l3 m6'>
+<h3>HTML/CSS</h3>
+<a href='../html/html_examples.html'>HTML Examples</a>
+<a href='../css/css_examples.html'>CSS Examples</a>
+<a href='../w3css/w3css_examples.html'>W3.CSS Examples</a>
+</div>
+<div class='w3-col l3 m6'>
+<h3>JavaScript</h3>
+<a href='../js/js_examples.html' target='_top'>JavaScript Examples</a>
+<a href='../js/js_dom_examples.html' target='_top'>HTML DOM Examples</a>
+<a href='../jquery/jquery_examples.html' target='_top'>jQuery Examples</a>
+<a href='../jquerymobile/jquerymobile_examples.html' target='_top'>jQuery Mobile Examples</a>
+<a href='../angular/angular_examples.html' target='_top'>AngularJS Examples</a>
+<a href='../ajax/ajax_examples.html' target='_top'>AJAX Examples</a>
+</div>
+<div class='w3-col l3 m6'>
+<h3>Server Side</h3>
+<a href='../php/php_examples.html' target='_top'>PHP Examples</a>
+<a href='../asp/asp_examples.html' target='_top'>ASP Examples</a>
+<a href='../aspnet/webpages_examples.html' target='_top'>Razor Examples</a>
+<a href='../aspnet/aspnet_examples.html' target='_top'>.NET Examples</a>
+</div>
+<div class='w3-col l3 m6'>
+<h3>XML</h3>
+<a href='../xml/xml_examples.html' target='_top'>XML Examples</a>
+<a href='../xsl/xsl_examples.html' target='_top'>XSL Examples</a>
+<a href='../xsl/xsl_examples.html' target='_top'>XSLT Examples</a>
+<a href='../xsl/xpath_examples.html' target='_top'>XPath Examples</a>
+<a href='../xml/schema_example.html' target='_top'>XML Schema Examples</a>
+<a href='../svg/svg_examples.html' target='_top'>SVG Examples</a>
+</div>
+</div>
+</div>
+<div id='nav_translate_content' style="display:none">
+<span onclick='w3_close_nav("translate")' class='w3-closebtn w3-xlarge'>&times;</span>
+<br><br>Translate w3schools.com:
+<div id='google_translate_element'></div>
+<br>
+</div>
+<div id='nav_search_content' style="display:none">
+<span onclick='w3_close_nav("search")' class='w3-closebtn w3-xlarge'>&times;</span>
+<br><br>
+<div class='searchdiv'>
+Search w3schools.com:
+<div id='googleSearch'><div class='gcse-search'></div></div>
+</div>
+<br>
+</div>
+<script src="../lib/w3schools_footer.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
+<![endif]-->
+</body>
+
+<!-- Mirrored from www.w3schools.com/browsers/browsers_firefox.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:01:10 GMT -->
+</html>

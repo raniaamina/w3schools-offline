@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        id          = "com.maleo.w3school"
+        version     = "1.0"
+        height      = "671"
+        width       = "671">
+ 
+  <name short="w3school">
+    w3schools offline
+  </name>
+
+  <description>
+	w3shools offline Running From Maleo
+  </description>
+
+  <author href="github.com/raniaamina">Rania el-Amina</author>
+
+  <icon src="w3-green-logo.png"/>
+  <content src="index.html"/>
+
+  <license>
+    (c) © 2016 w3schools.com
+  </license>
+</widget>

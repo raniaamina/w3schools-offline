@@ -1,0 +1,32 @@
+﻿div.top {
+    padding-top:20px;
+}
+div.top img{
+    margin-bottom:15px;
+}
+div.topnav {
+	margin:0;
+	padding:0;
+}
+a:link, a:visited {
+    text-decoration:underline;
+}
+.w3schools-logo:link, .w3-logo:visited {
+    text-decoration:none;
+}
+.img-responsive {
+    display:inline;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height:1.5;
+}
+@media (max-width: 992px){
+.top {
+    line-height: 20px;
+}
+}
+@media (max-width: 415px){
+.top {
+    line-height: 10px;
+}
+}

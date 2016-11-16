@@ -1,0 +1,1138 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/css/css3_flexbox.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 09:29:47 GMT -->
+<head>
+
+<title>CSS3 Flexible Box</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,ASP,XML,DOM,Bootstrap,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,source code,colors,demos,tips">
+<meta name="Description" content="Well organized and easy to understand Web bulding tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, and XML.">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../lib/w3.css">
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3855518-1', 'auto');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script>
+
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type='text/javascript'>
+// GPT slots
+var gptAdSlots = [];
+googletag.cmd.push(function() {
+var leaderMapping = googletag.sizeMapping().
+// Mobile ad
+addSize([0, 0], [320, 50]). 
+// Vertical Tablet ad
+addSize([480, 0], [468, 60]). 
+// Horizontal Tablet
+addSize([750, 0], [728, 90]).
+// Small Desktop
+addSize([993, 0], [468, 60]).
+// Normal Desktop
+addSize([1135, 0], [728, 90]).
+// Large Desktop and bigger ad
+addSize([1425, 0], [[728, 90], [970, 90]]).build();
+gptAdSlots[0] = googletag.defineSlot('/16833175/MainLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1422003450156-2').
+defineSizeMapping(leaderMapping).addService(googletag.pubads());
+var skyMapping = googletag.sizeMapping().
+// Mobile ad
+addSize([0, 0], [320, 50]). 
+// Tablet ad
+addSize([975, 0], [120, 600]). 
+// Desktop
+addSize([1135, 0], [160, 600]).   
+// Large Desktop
+addSize([1675, 0], [[160, 600], [300, 600], [300, 1050]]).build();
+gptAdSlots[1] = googletag.defineSlot('/16833175/WideSkyScraper', [[160, 600], [300, 600], [300, 1050]], 'div-gpt-ad-1422003450156-5').
+defineSizeMapping(skyMapping).addService(googletag.pubads());
+var bmrMapping = googletag.sizeMapping().
+// Smaller
+addSize([0, 0], [[300, 250], [336, 280]]). 
+// Large Desktop
+addSize([1200, 0], [[300, 250], [336, 280], [970, 250]]).build();
+gptAdSlots[2] = googletag.defineSlot('/16833175/BottomMediumRectangle', [[300, 250], [336, 280], [970, 250]], 'div-gpt-ad-1422003450156-0').
+defineSizeMapping(bmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+gptAdSlots[3] = googletag.defineSlot('/16833175/RightBottomMediumRectangle', [[300, 250], [336, 280]], 'div-gpt-ad-1422003450156-3').addService(googletag.pubads());
+googletag.pubads().setTargeting("content","css");
+googletag.enableServices();
+});
+</script>
+<link rel="stylesheet" type="text/css" href="../browserref.css">
+<link rel="stylesheet" type="text/css" href="../stdtheme.css">
+</head>
+<body>
+<div class='w3-container top'>
+<a class='w3schools-logo' href='../index.html'>w3schools<span class='dotcom'>.com</span></a>
+<div class='w3-right toptext w3-wide'>THE WORLD'S LARGEST WEB DEVELOPER SITE</div></div>
+<div class='w3-topnav w3-card-2 w3-slim topnav' id='topnav'>
+<div style='overflow:auto;'>
+<div style='float:left;width:50%;overflow:hidden;height:44px'>
+<a href='javascript:void(0);' class='topnav-localicons w3-hide-large w3-left' onclick='open_menu()' title='Menu'>&#9776;</a>
+<a href='../default.html' class='topnav-icons fa fa-home w3-left' title='Home'></a>
+<a href='../html/default.html' class='w3-hide-small' title='HTML Tutorial'>HTML</a><a href='default.html' class='w3-hide-small' title='CSS Tutorial'>CSS</a><a href='../js/default.html' class='w3-hide-small' title='JavaScript Tutorial'>JAVASCRIPT</a><a href='../sql/default.html' class='w3-hide-small' title='SQL Tutorial'>SQL</a><a href='../php/default.html' class='w3-hide-small' title='PHP Tutorial'>PHP</a><a href='../bootstrap/default.html' class='w3-hide-small' title='Bootstrap Tutorial'>BOOTSTRAP</a><a href='../jquery/default.html' class='w3-hide-small' title='jQuery Tutorial'>JQUERY</a><a href='../angular/default.html' class='w3-hide-small' title='Angular Tutorial'>ANGULAR</a><a href='../xml/default.html' class='w3-hide-small' title='XML Tutorial'>XML</a></div>
+<div style='float:right;width:110px;overflow:hidden;height:44px;'>
+<a href='javascript:void(0);' class='topnav-icons fa fa-search w3-right' onclick='w3_open_nav("search")' title='Search W3Schools'></a>
+<a href='javascript:void(0);' class='topnav-icons fa fa-globe w3-right' onclick='openGoogleTranslate();w3_open_nav("translate")' title='Translate W3Schools'></a></div>
+<div class='w3-hide-small' style='float:right;width:30%;overflow:hidden;height:44px;'>
+<a id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='Tutorials'>TUTORIALS <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a><a id='topnavbtn_references' href='javascript:void(0);' onclick='w3_open_nav("references")' title='References'>REFERENCES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a><a id='topnavbtn_examples' href='javascript:void(0);' onclick='w3_open_nav("examples")' title='Examples'>EXAMPLES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a><a href='http://w3schools.invisionzone.com/'>FORUM</a></div></div>
+<div id='nav_tutorials' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_references' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_examples' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_translate' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_search' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div></div>
+<div class='w3-row w3-light-grey' id='belowtopnav'>
+<div class='w3-col w3-slim' id='leftmenu'>
+<div id='leftmenuinner'>
+<div class='w3-light-grey' id='leftmenuinnerinner'>
+<a href='javascript:void(0)' onclick='close_menu()' class='w3-closebtn w3-hide-large w3-large' style='padding:3px 12px;'>&times;</a>
+<h2 class="left"><span class="left_h2">CSS</span> Tutorial</h2>
+<a target="_top" href="default.html">CSS HOME</a>
+<a target="_top" href="css_intro.html">CSS Introduction</a>
+<a target="_top" href="css_syntax.html">CSS Syntax</a>
+<a target="_top" href="css_howto.html">CSS How To</a>
+<a target="_top" href="css_colors.html">CSS Colors</a>
+<a target="_top" href="css_background.html">CSS Backgrounds</a>
+<a target="_top" href="css_border.html">CSS Borders</a>
+<a target="_top" href="css_margin.html">CSS Margins</a>
+<a target="_top" href="css_padding.html">CSS Padding</a>
+<a target="_top" href="css_dimension.html">CSS Height/Width</a>
+<a target="_top" href="css_text.html">CSS Text</a>
+<a target="_top" href="css_font.html">CSS Fonts</a>
+<a target="_top" href="css_link.html">CSS Links</a>
+<a target="_top" href="css_list.html">CSS Lists</a>
+<a target="_top" href="css_table.html">CSS Tables</a>
+<a target="_top" href="css_boxmodel.html">CSS Box Model</a>
+<a target="_top" href="css_outline.html">CSS Outline</a>
+<a target="_top" href="css_display_visibility.html">CSS Display</a>
+<a target="_top" href="css_max-width.html">CSS Max-width</a>
+<a target="_top" href="css_positioning.html">CSS Position</a>
+<a target="_top" href="css_float.html">CSS Float</a>
+<a target="_top" href="css_inline-block.html">CSS Inline-block</a>
+<a target="_top" href="css_align.html">CSS Align</a>
+<a target="_top" href="css_combinators.html">CSS Combinators</a>
+<a target="_top" href="css_pseudo_classes.html">CSS Pseudo-class</a>
+<a target="_top" href="css_pseudo_elements.html">CSS Pseudo-element</a>
+<a target="_top" href="css_navbar.html">CSS Navigation Bar</a>
+<a target="_top" href="css_dropdowns.html">CSS Dropdowns</a>
+<a target="_top" href="css_tooltip.html">CSS Tooltips</a>
+<a target="_top" href="css_image_gallery.html">CSS Image Gallery</a>
+<a target="_top" href="css_image_transparency.html">CSS Image Opacity</a>
+<a target="_top" href="css_image_sprites.html">CSS Image Sprites</a>
+<a target="_top" href="css_attribute_selectors.html">CSS Attr Selectors</a>
+<a target="_top" href="css_form.html">CSS Forms</a>
+<a target="_top" href="css_counters.html">CSS Counters</a>
+<br>
+<h2 class="left"><span class="left_h2">CSS3</span></h2>
+<a target="_top" href="css3_intro.html">CSS3 Introduction</a>
+<a target="_top" href="css3_borders.html">CSS3 Rounded Corners</a>
+<a target="_top" href="css3_border_images.html">CSS3 Border Images</a>
+<a target="_top" href="css3_backgrounds.html">CSS3 Backgrounds</a>
+<a target="_top" href="css3_colors.html">CSS3 Colors</a>
+<a target="_top" href="css3_gradients.html">CSS3 Gradients</a>
+<a target="_top" href="css3_shadows.html">CSS3 Shadows</a>
+<a target="_top" href="css3_text_effects.html">CSS3 Text</a>
+<a target="_top" href="css3_fonts.html">CSS3 Fonts</a>
+<a target="_top" href="css3_2dtransforms.asp">CSS3 2D Transforms</a>
+<a target="_top" href="css3_3dtransforms.html">CSS3 3D Transforms</a>
+<a target="_top" href="css3_transitions.html">CSS3 Transitions</a>
+<a target="_top" href="css3_animations.html">CSS3 Animations</a>
+<a target="_top" href="css3_images.html">CSS3 Images</a>
+<a target="_top" href="css3_buttons.html">CSS3 Buttons</a>
+<a target="_top" href="css3_pagination.html">CSS3 Pagination</a>
+<a target="_top" href="css3_multiple_columns.html">CSS3 Multiple Columns</a>
+<a target="_top" href="css3_user_interface.html">CSS3 User Interface</a>
+<a target="_top" href="css3_box-sizing.html">CSS3 Box Sizing</a>
+<a target="_top" href="css3_flexbox.html">CSS3 Flexbox</a>
+<a target="_top" href="css3_mediaqueries.html">CSS3 Media Queries</a>
+<a target="_top" href="css3_mediaqueries_ex.html">CSS3 MQ Examples</a>
+<br>
+<h2 class="left"><span class="left_h2">CSS</span> Responsive</h2>
+<a target="_top" href="css_rwd_intro.html">RWD Intro</a>
+<a target="_top" href="css_rwd_viewport.html">RWD Viewport</a>
+<a target="_top" href="css_rwd_grid.html">RWD Grid View</a>
+<a target="_top" href="css_rwd_mediaqueries.html">RWD Media Queries</a>
+<a target="_top" href="css_rwd_images.html">RWD Images</a>
+<a target="_top" href="css_rwd_videos.html">RWD Videos</a>
+<a target="_top" href="css_rwd_frameworks.html">RWD Frameworks</a>
+<br>
+<h2 class="left"><span class="left_h2">CSS</span> Examples</h2>
+<a target="_top" href="css_examples.html">CSS Examples</a>
+<a target="_top" href="css_quiz.html">CSS Quiz</a>
+<a target="_top" href="css_exam.html">CSS Certificate</a>
+<br>
+<h2 class="left"><span class="left_h2">CSS</span> References</h2>
+<a target="_top" href="../cssref/default.html">CSS Reference</a>
+<a target="_top" href="../cssref/css_selectors.html">CSS Selectors</a>
+<a target="_top" href="../cssref/css_functions.html">CSS Functions</a>
+<a target="_top" href="../cssref/css_ref_aural.html">CSS Reference Aural</a>
+<a target="_top" href="../cssref/css_websafe_fonts.html">CSS Web Safe Fonts</a>
+<a target="_top" href="../cssref/css_animatable.html">CSS Animatable</a>
+<a target="_top" href="../cssref/css_units.html">CSS Units</a>
+<a target="_top" href="../cssref/css_pxtoemconversion.html">CSS PX-EM Converter</a>
+<a target="_top" href="../cssref/css_colors.html">CSS Colors</a>
+<a target="_top" href="../cssref/css_colors_legal.html">CSS Color Values</a>
+<a target="_top" href="../colors/colors_names.html">CSS Color Names</a>
+<a target="_top" href="../cssref/css3_browsersupport.html">CSS3 Browser Support</a><br><br></div></div>&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-row w3-white'>
+<div class='w3-col l10 m12' id='main'>
+<div id='mainLeaderboard' style='overflow:hidden;'>
+<!-- MainLeaderboard-->
+<div id='div-gpt-ad-1422003450156-2'>
+<script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+</div></div>
+<h1>CSS3 <span class="color_h1">Flexible Box</span></h1>
+<div class="chapter">
+<div class="prev"><a class="chapter" href="css3_box-sizing.html">&laquo; Previous</a></div>
+<div class="next"><a class="chapter" href="css3_mediaqueries.html">Next Chapter &raquo;</a></div>
+</div>
+<hr>
+<h2>CSS3 Flexbox</h2>
+<p>Flexible boxes, or flexbox, is a new layout mode in CSS3.</p>
+<p>Use of flexbox ensures that elements 
+behave predictably when the page layout must accommodate different screen sizes 
+and different display devices.</p>
+<p>For many applications, the flexible box model 
+provides an improvement over the block model in that it does not use floats, nor 
+do the flex container's margins collapse with the margins of its contents.</p>
+<hr>
+<h2>Browser Support</h2>
+<p>The numbers in the table specify the first browser version that fully supports the feature.</p>
+<p>Numbers followed by -webkit- or -moz- specify the first version that worked with a prefix.</p>
+<div class="w3-responsive">
+<table class="browserref notranslate">
+  <tr>
+    <th style="width:22%;font-size:16px;text-align:left;">Property</th>
+    <th style="width:13%;" class="bsChrome" title="Chrome"></th>
+    <th style="width:13%;" class="bsEdge" title="Edge"></th>
+    <th style="width:13%;" class="bsIE" title="Internet Explorer"></th>
+    <th style="width:13%;" class="bsFirefox" title="Firefox"></th>
+    <th style="width:13%;" class="bsSafari" title="Safari"></th>
+    <th style="width:13%;" class="bsOpera" title="Opera"></th>                
+  </tr>
+  <tr>
+    <td style="text-align:left;">Basic support<br>(single-line flexbox)</td>
+    <td>29.0<br>21.0&nbsp;-webkit-</td>
+    <td>12.0</td>
+    <td>11.0</td>
+    <td>22.0<br>18.0&nbsp;-moz-</td>
+    <td>6.1&nbsp;-webkit-</td>
+    <td>12.1&nbsp;-webkit-</td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">Multi-line flexbox</td>
+    <td>29.0<br>21.0&nbsp;-webkit-</td>
+    <td>12.0</td>
+    <td>11.0</td>
+    <td>28.0</td>
+    <td>6.1&nbsp;-webkit-</td>
+    <td>17.0<br>15.0&nbsp;-webkit-<br>12.1</td>
+  </tr>
+  </table>
+</div>  
+<hr>
+
+<h2>CSS3 Flexbox Concepts</h2>
+<p>Flexbox consists of flex containers and flex items.</p>
+<p>A flex container is declared by setting the <code>display</code> property of 
+an element to either <code>flex</code> (rendered as a block) or <code>
+inline-flex</code> (rendered as inline).</p>
+<p>Inside a flex container there is one or more flex items.</p>
+<p><strong>Note:</strong> Everything outside a flex container and 
+inside a flex item is rendered as usual. Flexbox defines how flex 
+items are laid out inside a flex container.</p>
+<p>Flex items are positioned inside a flex container along a flex line. By 
+default there is only one flex line per flex container.</p>
+<p>The following example shows three flex items. They are positioned by 
+default: along the horizontal flex line, from left to right:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+	&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;style&gt; <br><span style="color:brown">.flex-container</span> {<br>&nbsp;&nbsp;&nbsp; <span style="color:red">display:</span> <span style="color:mediumblue">-webkit-flex;</span><br>&nbsp;&nbsp;&nbsp; <span style="color:red">display:</span> <span style="color:mediumblue">flex;</span><br>&nbsp;&nbsp;&nbsp; <span style="color:red">width:</span> 
+	<span style="color:mediumblue">400px;</span><br>&nbsp;&nbsp;&nbsp; <span style="color:red">height:</span> <span style="color:mediumblue">250px;</span><br>&nbsp;&nbsp;&nbsp; <span style="color:red">background-color:</span> 
+	<span style="color:mediumblue">lightgrey;</span><br>}<br><br><span style="color:brown">.flex-item</span>
+	{<br>&nbsp;&nbsp;&nbsp; <span style="color:red">background-color:</span> <span style="color:mediumblue">cornflowerblue;</span><br>&nbsp;&nbsp;&nbsp; <span style="color:red">width:</span> <span style="color:mediumblue">100px;</span><br>&nbsp;&nbsp;&nbsp; <span style="color:red">height:</span> <span style="color:mediumblue">100px;</span><br>
+	&nbsp;&nbsp;&nbsp;
+	<span style="color:red">margin:</span> <span style="color:mediumblue">10px;</span><br>}<br>&lt;/style&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;div 
+	class=&quot;flex-container&quot;&gt;<br>&nbsp; &lt;div class=&quot;flex-item&quot;&gt;flex item 1&lt;/div&gt;<br>&nbsp; 
+	&lt;div class=&quot;flex-item&quot;&gt;flex item 2&lt;/div&gt;<br>&nbsp; &lt;div 
+	class=&quot;flex-item&quot;&gt;flex item 3&lt;/div&gt; <br>&lt;/div&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;</div>
+<p>
+<a class="w3-btn" target="_blank" href="tryit87f9.html?filename=trycss3_flexbox_flexline">Try it yourself &raquo;</a>
+</p>
+</div>
+
+<p>It is also possible to change the direction of the flex line.</p>
+<p>If we set the <code>direction</code> 
+property to <code>rtl</code> (right-to-left), the text is drawn right to left, 
+and also the flex line changes 
+direction, which will change the page layout:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	body {<br>&nbsp;&nbsp;&nbsp; direction: rtl;<br>}<br><br>.flex-container {<br>&nbsp;&nbsp;&nbsp; display: -webkit-flex;<br>&nbsp;&nbsp;&nbsp; display: flex;<br>&nbsp;&nbsp;&nbsp; width:
+	400px;<br>&nbsp;&nbsp;&nbsp; height: 250px;<br>&nbsp;&nbsp;&nbsp; background-color: 
+	lightgrey;<br>}<br><br>.flex-item 
+	{<br>&nbsp;&nbsp;&nbsp; background-color: cornflowerblue;<br>&nbsp;&nbsp;&nbsp; width: 100px;<br>&nbsp;&nbsp;&nbsp; height: 100px;<br>
+	&nbsp;&nbsp;&nbsp;
+	margin: 10px;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryit4339.html?filename=trycss3_flexbox_flexline_rtl">Try it yourself &raquo;</a>
+</p>
+</div>
+<hr>
+
+<h2>Flex Direction</h2>
+<p>The <code>flex-direction</code> property specifies the direction of the 
+flexible items inside the flex container. The 
+default value of <code>flex-direction</code> is <code>row</code> (left-to-right, 
+top-to-bottom).</p>
+<p>The other values are as follows:</p>
+<ul>
+	<li><code>row-reverse</code> - If the 
+	writing-mode (direction) is left to right, the flex items will be laid out right to left</li>
+	<li><code>column</code> - If the writing 
+	system is horizontal, the flex items will be laid out vertically</li>
+	<li><code>column-reverse</code> - Same as column, but reversed</li>
+</ul>
+
+<p>The following example shows the result of using the <code>row-reverse</code> value:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-container {<br>&nbsp;&nbsp;&nbsp; display: -webkit-flex;<br>&nbsp;&nbsp;&nbsp; display: flex;<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-flex-direction: row-reverse;<br>&nbsp;&nbsp;&nbsp; flex-direction: 
+	row-reverse;<br>&nbsp;&nbsp;&nbsp; width: 
+	400px;<br>&nbsp;&nbsp;&nbsp; height: 250px;<br>&nbsp;&nbsp;&nbsp; background-color: 
+	lightgrey;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryit5a9c.html?filename=trycss3_flexbox_direction_row-reverse">Try it yourself &raquo;</a>
+</p>
+</div>
+
+<p>The following example shows the result of using the <code>column</code> value:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-container {<br>&nbsp;&nbsp;&nbsp; display: -webkit-flex;<br>&nbsp;&nbsp;&nbsp; display: flex;<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-flex-direction: column;<br>&nbsp;&nbsp;&nbsp; flex-direction: 
+	column;<br>&nbsp;&nbsp;&nbsp; width: 
+	400px;<br>&nbsp;&nbsp;&nbsp; height: 250px;<br>&nbsp;&nbsp;&nbsp; background-color: 
+	lightgrey;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryit4735.html?filename=trycss3_flexbox_direction_column">Try it yourself &raquo;</a>
+</p>
+</div>
+
+<p>The following example shows the result of using the <code>column-reverse</code> value:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-container {<br>&nbsp;&nbsp;&nbsp; display: -webkit-flex;<br>&nbsp;&nbsp;&nbsp; display: flex;<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-flex-direction: column-reverse;<br>&nbsp;&nbsp;&nbsp; flex-direction: 
+	column-reverse;<br>&nbsp;&nbsp;&nbsp; width: 
+	400px;<br>&nbsp;&nbsp;&nbsp; height: 250px;<br>&nbsp;&nbsp;&nbsp; background-color: 
+	lightgrey;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryite672.html?filename=trycss3_flexbox_direction_column-reverse">Try it yourself &raquo;</a>
+</p>
+</div>
+<hr>
+
+<h2>The justify-content Property</h2>
+<p>The <code>justify-content</code> property horizontally aligns the flexible 
+container's items when the items do not use all available space on the 
+main-axis.</p>
+<p>The possible values are as follows:</p>
+<ul>
+	<li><code>flex-start</code> - Default value. Items are positioned at the beginning of the container</li>
+	<li><code>flex-end</code> - Items are positioned at the end of the container</li>
+	<li><code>center</code> - Items are positioned at the center of the container</li>
+	<li><code>space-between</code> - Items are positioned with space between the lines</li>
+	<li><code>space-around</code> - Items are positioned with space before, between, and after the lines</li>
+</ul>
+
+<p>The following example shows the result of using the <code>flex-end</code> value:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-container {<br>&nbsp;&nbsp;&nbsp; display: -webkit-flex;<br>&nbsp;&nbsp;&nbsp; display: flex;<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-justify-content: flex-end;<br>&nbsp;&nbsp;&nbsp; justify-content: 
+	flex-end;<br>&nbsp;&nbsp;&nbsp; width: 
+	400px;<br>&nbsp;&nbsp;&nbsp; height: 250px;<br>&nbsp;&nbsp;&nbsp; background-color: 
+	lightgrey;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryit3e4a.html?filename=trycss3_flexbox_justify_flex-end">Try it yourself &raquo;</a>
+</p>
+</div>
+
+<p>The following example shows the result of using the <code>center</code> value:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-container {<br>&nbsp;&nbsp;&nbsp; display: -webkit-flex;<br>&nbsp;&nbsp;&nbsp; display: flex;<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-justify-content: center;<br>&nbsp;&nbsp;&nbsp; justify-content: 
+	center;<br>&nbsp;&nbsp;&nbsp; width: 
+	400px;<br>&nbsp;&nbsp;&nbsp; height: 250px;<br>&nbsp;&nbsp;&nbsp; background-color: 
+	lightgrey;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryit9f91.html?filename=trycss3_flexbox_justify_center">Try it yourself &raquo;</a>
+</p>
+</div>
+
+<p>The following example shows the result of using the <code>space-between</code> value:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-container {<br>&nbsp;&nbsp;&nbsp; display: -webkit-flex;<br>&nbsp;&nbsp;&nbsp; display: flex;<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-justify-content: space-between;<br>&nbsp;&nbsp;&nbsp; justify-content: 
+	space-between;<br>&nbsp;&nbsp;&nbsp; width: 
+	400px;<br>&nbsp;&nbsp;&nbsp; height: 250px;<br>&nbsp;&nbsp;&nbsp; background-color: 
+	lightgrey;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryit30a0.html?filename=trycss3_flexbox_justify_space-between">Try it yourself &raquo;</a>
+</p>
+</div>
+
+<p>The following example shows the result of using the <code>space-around</code> value:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-container {<br>&nbsp;&nbsp;&nbsp; display: -webkit-flex;<br>&nbsp;&nbsp;&nbsp; display: flex;<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-justify-content: space-around;<br>&nbsp;&nbsp;&nbsp; justify-content: 
+	space-around;<br>&nbsp;&nbsp;&nbsp; width: 
+	400px;<br>&nbsp;&nbsp;&nbsp; height: 250px;<br>&nbsp;&nbsp;&nbsp; background-color: 
+	lightgrey;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryit9239.html?filename=trycss3_flexbox_justify_space-around">Try it yourself &raquo;</a>
+</p>
+</div>
+<hr>
+
+<h2>The align-items Property</h2>
+<p>The <code>align-items</code> property vertically aligns the flexible container's items when the items do not use
+all available space on the cross-axis.</p>
+<p>The possible values are as follows:</p>
+<ul>
+	<li><code>stretch</code> - Default value. Items are stretched to fit the container</li>
+	<li><code>flex-start</code> - Items are positioned at the top of the container</li>
+	<li><code>flex-end</code> - Items are positioned at the bottom of the container</li>
+	<li><code>center</code> - Items are positioned at the center of the container 
+	(vertically)</li>
+	<li><code>baseline</code> - Items are positioned at the baseline of the 
+	container</li>
+</ul>
+
+<p>The following example shows the result of using the <code>stretch</code> value 
+(this is the default value):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-container {<br>&nbsp;&nbsp;&nbsp; display: -webkit-flex;<br>&nbsp;&nbsp;&nbsp; display: flex;<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-align-items: stretch;<br>&nbsp;&nbsp;&nbsp; align-items: 
+	stretch;<br>&nbsp;&nbsp;&nbsp; width: 
+	400px;<br>&nbsp;&nbsp;&nbsp; height: 250px;<br>&nbsp;&nbsp;&nbsp; background-color: 
+	lightgrey;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryit5421.html?filename=trycss3_flexbox_align_stretch">Try it yourself &raquo;</a>
+</p>
+</div>
+
+<p>The following example shows the result of using the <code>flex-start</code> value:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-container {<br>&nbsp;&nbsp;&nbsp; display: -webkit-flex;<br>&nbsp;&nbsp;&nbsp; display: flex;<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-align-items: flex-start;<br>&nbsp;&nbsp;&nbsp; align-items: 
+	flex-start;<br>&nbsp;&nbsp;&nbsp; width: 
+	400px;<br>&nbsp;&nbsp;&nbsp; height: 250px;<br>&nbsp;&nbsp;&nbsp; background-color: 
+	lightgrey;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryit45d3.html?filename=trycss3_flexbox_align_flex-start">Try it yourself &raquo;</a>
+</p>
+</div>
+
+<p>The following example shows the result of using the <code>flex-end</code> value:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-container {<br>&nbsp;&nbsp;&nbsp; display: -webkit-flex;<br>&nbsp;&nbsp;&nbsp; display: flex;<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-align-items: flex-end;<br>&nbsp;&nbsp;&nbsp; align-items: 
+	flex-end;<br>&nbsp;&nbsp;&nbsp; width: 
+	400px;<br>&nbsp;&nbsp;&nbsp; height: 250px;<br>&nbsp;&nbsp;&nbsp; background-color: 
+	lightgrey;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryitfc32.html?filename=trycss3_flexbox_align_flex-end">Try it yourself &raquo;</a>
+</p>
+</div>
+
+<p>The following example shows the result of using the <code>center</code> value:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-container {<br>&nbsp;&nbsp;&nbsp; display: -webkit-flex;<br>&nbsp;&nbsp;&nbsp; display: flex;<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-align-items: center;<br>&nbsp;&nbsp;&nbsp; align-items: 
+	center;<br>&nbsp;&nbsp;&nbsp; width: 
+	400px;<br>&nbsp;&nbsp;&nbsp; height: 250px;<br>&nbsp;&nbsp;&nbsp; background-color: 
+	lightgrey;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryitfe2f.html?filename=trycss3_flexbox_align_center">Try it yourself &raquo;</a>
+</p>
+</div>
+
+<p>The following example shows the result of using the <code>baseline</code> value:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-container {<br>&nbsp;&nbsp;&nbsp; display: -webkit-flex;<br>&nbsp;&nbsp;&nbsp; display: flex;<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-align-items: baseline;<br>&nbsp;&nbsp;&nbsp; align-items: 
+	baseline;<br>&nbsp;&nbsp;&nbsp; width: 
+	400px;<br>&nbsp;&nbsp;&nbsp; height: 250px;<br>&nbsp;&nbsp;&nbsp; background-color: 
+	lightgrey;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryit2cbd.html?filename=trycss3_flexbox_align_baseline">Try it yourself &raquo;</a>
+</p>
+</div>
+<hr>
+
+<h2>The flex-wrap Property</h2>
+<p>The <code>flex-wrap</code> property specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line.</p>
+<p>The possible values are as follows:</p>
+<ul>
+	<li><code>nowrap</code> - Default value. The flexible items will not wrap</li>
+	<li><code>wrap</code> - The flexible items will wrap if necessary</li>
+	<li><code>wrap-reverse</code> - The flexible items will wrap, if necessary, 
+	in reverse order</li>
+</ul>
+
+<p>The following example shows the result of using the <code>nowrap</code> value 
+(this is the default value):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-container {<br>&nbsp;&nbsp;&nbsp; display: -webkit-flex;<br>&nbsp;&nbsp;&nbsp; display: flex;<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-flex-wrap: nowrap;<br>&nbsp;&nbsp;&nbsp; flex-wrap: nowrap;<br>&nbsp;&nbsp;&nbsp; width: 
+	300px;<br>&nbsp;&nbsp;&nbsp; height: 250px;<br>&nbsp;&nbsp;&nbsp; background-color: 
+	lightgrey;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryit803f.html?filename=trycss3_flexbox_nowrap">Try it yourself &raquo;</a>
+</p>
+</div>
+
+<p>The following example shows the result of using the <code>wrap</code> value:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-container {<br>&nbsp;&nbsp;&nbsp; display: -webkit-flex;<br>&nbsp;&nbsp;&nbsp; display: flex;<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-flex-wrap: wrap;<br>&nbsp;&nbsp;&nbsp; flex-wrap: wrap;<br>&nbsp;&nbsp;&nbsp; width: 
+	300px;<br>&nbsp;&nbsp;&nbsp; height: 250px;<br>&nbsp;&nbsp;&nbsp; background-color: 
+	lightgrey;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryit889c.html?filename=trycss3_flexbox_wrap">Try it yourself &raquo;</a>
+</p>
+</div>
+
+<p>The following example shows the result of using the <code>wrap-reverse</code> value:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-container {<br>&nbsp;&nbsp;&nbsp; display: -webkit-flex;<br>&nbsp;&nbsp;&nbsp; display: flex;<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-flex-wrap: wrap-reverse;<br>&nbsp;&nbsp;&nbsp; flex-wrap: 
+	wrap-reverse;<br>&nbsp;&nbsp;&nbsp; width: 
+	300px;<br>&nbsp;&nbsp;&nbsp; height: 250px;<br>&nbsp;&nbsp;&nbsp; background-color: 
+	lightgrey;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryit6ab3.html?filename=trycss3_flexbox_wrap-reverse">Try it yourself &raquo;</a>
+</p>
+</div>
+<hr>
+
+<h2>The align-content Property</h2>
+<p>The <code>align-content</code> property modifies the behavior of the <code>
+flex-wrap</code> property. It is similar to <code>align-items</code>, but 
+instead of aligning flex items, it aligns flex lines.</p>
+<p>The possible values are as follows:</p>
+<ul>
+	<li><code>stretch</code> - Default value. Lines stretch to take up the 
+	remaining space</li>
+	<li><code>flex-start</code> - Lines are packed toward the start of the flex 
+	container</li>
+	<li><code>flex-end</code> - Lines are packed toward the end of the flex 
+	container</li>
+	<li><code>center</code> - Lines are packed toward the center of the flex 
+	container</li>
+	<li><code>space-between</code> - Lines are evenly distributed in the flex 
+	container</li>
+	<li><code>space-around</code> - Lines are evenly distributed in the flex 
+	container, with half-size spaces on either end</li>
+</ul>
+
+<p>The following example shows the result of using the <code>center</code> value:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-container {<br>&nbsp;&nbsp;&nbsp; display: -webkit-flex;<br>&nbsp;&nbsp;&nbsp; display: flex;<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-flex-wrap: wrap;<br>&nbsp;&nbsp;&nbsp; flex-wrap: 
+	wrap;<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-align-content: center;<br>&nbsp;&nbsp;&nbsp; align-content: 
+	center;<br>&nbsp;&nbsp;&nbsp; width: 
+	300px;<br>&nbsp;&nbsp;&nbsp; height: 300px;<br>&nbsp;&nbsp;&nbsp; background-color: 
+	lightgrey;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryit74bb.html?filename=trycss3_flexbox_align-content">Try it yourself &raquo;</a>
+</p>
+</div>
+<hr>
+
+<h2>Flex Item Properties</h2>
+<h3>Ordering</h3>
+<p>The <code>order</code> property specifies the order of a flexible item 
+relative to the rest of the flexible items inside the same container:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-item {<br>&nbsp;&nbsp;&nbsp; background-color: cornflowerblue;<br>&nbsp;&nbsp;&nbsp; 
+	width: 100px;<br>&nbsp;&nbsp;&nbsp; height: 100px;<br>&nbsp;&nbsp;&nbsp; 
+	margin: 10px;<br>}<br>
+	<br>.first {<br>&nbsp;&nbsp;&nbsp; -webkit-order: -1;<br>&nbsp;&nbsp;&nbsp; 
+	order: -1;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryit0143.html?filename=trycss3_flexbox_order">Try it yourself &raquo;</a>
+</p>
+</div>
+
+<h3>Margin</h3>
+<p>Setting <code>margin: auto;</code> will absorb extra space. It can be used to push flex items into different positions.</p>
+<p>In the following example we set <code>margin-right: auto;</code> on the 
+first flex item. This will cause all the extra space to be absorbed to the right of that element:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-item {<br>&nbsp;&nbsp;&nbsp; background-color: cornflowerblue;<br>&nbsp;&nbsp;&nbsp; 
+	width: 75px;<br>&nbsp;&nbsp;&nbsp; height: 75px;<br>&nbsp;&nbsp;&nbsp; 
+	margin: 10px;<br>}<br><br>.flex-item:first-child {<br>&nbsp;&nbsp;&nbsp; 
+	margin-right: auto;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryitd3f1.html?filename=trycss3_flexbox_margin">Try it yourself &raquo;</a>
+</p>
+</div>
+
+<h3>Perfect Centering</h3>
+<p>In the following example we will solve an almost daily problem: perfect 
+centering.</p>
+<p>It is very easy with flexbox. Setting <code>margin: auto;</code> will make 
+the item perfectly centered in both axis:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-item {<br>&nbsp;&nbsp;&nbsp; background-color: cornflowerblue;<br>&nbsp;&nbsp;&nbsp; 
+	width: 75px;<br>&nbsp;&nbsp;&nbsp; height: 75px;<br>&nbsp;&nbsp;&nbsp; 
+	margin: auto;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryitebb8.html?filename=trycss3_flexbox_margin2">Try it yourself &raquo;</a>
+</p>
+</div>
+
+<h3>align-self</h3>
+<p>The <code>align-self</code> property of flex items overrides the flex 
+container's align-items property for that item. It has the same possible values 
+as the <code>align-items</code> property.</p>
+<p>The following example sets different align-self values to each flex item:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-item {<br>&nbsp;&nbsp;&nbsp; background-color: cornflowerblue;<br>&nbsp;&nbsp;&nbsp; 
+	width: 60px;<br>&nbsp;&nbsp;&nbsp; min-height: 100px;<br>&nbsp;&nbsp;&nbsp; 
+	margin: 10px;<br>}<br><br>.item1 {<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-align-self: flex-start;<br>&nbsp;&nbsp;&nbsp; align-self: 
+	flex-start;<br>}<br>.item2 {<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-align-self: flex-end;<br>&nbsp;&nbsp;&nbsp; align-self: flex-end;<br>
+	}<br><br>.item3 {<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-align-self: center;<br>&nbsp;&nbsp;&nbsp; align-self: center;<br>}<br><br>.item4 {<br>&nbsp;&nbsp;&nbsp; -webkit-align-self: 
+	baseline;<br>&nbsp;&nbsp;&nbsp; align-self: baseline;<br>}<br><br>.item5 {<br>&nbsp;&nbsp;&nbsp; 
+	-webkit-align-self: stretch;<br>&nbsp;&nbsp;&nbsp; align-self: stretch;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryit85f3.html?filename=trycss3_flexbox_align-self">Try it yourself &raquo;</a>
+</p>
+</div>
+
+<h3>flex</h3>
+<p>The <code>flex</code> property specifies the length of the flex item, 
+relative to the rest of the flex items inside the same container.</p>
+<p>In the following example, the first flex item will consume 2/4 of the free space, 
+and the other two flex items will consume 1/4 of the free space each:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	.flex-item {<br>&nbsp;&nbsp;&nbsp; background-color: cornflowerblue;<br>&nbsp;&nbsp;&nbsp; 
+	margin: 10px;<br>}<br><br>.item1 {<br>&nbsp;&nbsp;&nbsp; -webkit-flex: 2;<br>&nbsp;&nbsp;&nbsp; 
+	flex: 2;<br>}<br><br>.item2 {<br>&nbsp;&nbsp;&nbsp; -webkit-flex: 1;<br>&nbsp;&nbsp;&nbsp; 
+	flex: 1;<br>}<br><br>.item3 {<br>&nbsp;&nbsp;&nbsp; -webkit-flex: 1;<br>&nbsp;&nbsp;&nbsp; 
+	flex: 1;<br>} </div>
+<p>
+<a class="w3-btn" target="_blank" href="tryit2c69.html?filename=trycss3_flexbox_flex_number">Try it yourself &raquo;</a>
+</p>
+</div>
+<hr>
+<div class="tryit_ex">
+<img src="../images/tryitimg.gif" style="height:46px;width:40px" alt="Examples">
+<h2>More Examples</h2>
+</div>
+<p><a target="_blank" href="tryit3ff7.html?filename=trycss3_flexbox_website">Create a responsive website with flexbox</a><br>
+This example demonstrates how to create a responsive website layout with flexbox.</p>
+<hr>
+
+<h2>CSS3 Flexbox Properties</h2>
+<p>The following table lists the CSS properties used with flexbox:</p>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:25%">Property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="../cssref/pr_class_display.html">display</a></td>
+    <td>Specifies the type of box used for an HTML element</td>
+  </tr>
+  <tr>
+    <td><a href="../cssref/css3_pr_flex-direction.html">flex-direction</a></td>
+    <td>Specifies the direction of the flexible items inside a flex container</td>
+  </tr>
+  <tr>
+    <td><a href="../cssref/css3_pr_justify-content.html">justify-content</a></td>
+    <td>Horizontally aligns the flex items when the items do not use all available space on the main-axis</td>
+  </tr>
+  <tr>
+    <td><a href="../cssref/css3_pr_align-items.html">align-items</a></td>
+    <td>Vertically aligns the flex items when the items do not use all available space on the cross-axis</td>
+  </tr>
+  <tr>
+    <td><a href="../cssref/css3_pr_flex-wrap.html">flex-wrap</a></td>
+    <td>Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line</td>
+  </tr>
+  <tr>
+    <td><a href="../cssref/css3_pr_align-content.html">align-content</a></td>
+    <td>Modifies the behavior of the flex-wrap property. It is similar to 
+	align-items, but instead of aligning flex items, it aligns flex lines</td>
+  </tr>
+  <tr>
+    <td><a href="../cssref/css3_pr_flex-flow.html">flex-flow</a></td>
+    <td>A shorthand propert for flex-direction and flex-wrap</td>
+  </tr>
+  <tr>
+    <td><a href="../cssref/css3_pr_order.html">order</a></td>
+    <td>Specifies the order of a flexible item relative to the rest of the flex items inside the same container</td>
+  </tr>
+  <tr>
+    <td><a href="../cssref/css3_pr_align-self.html">align-self</a></td>
+    <td>Used on flex items. Overrides the container's align-items property</td>
+  </tr>
+  <tr>
+    <td><a href="../cssref/css3_pr_flex.html">flex</a></td>
+    <td>Specifies the length of a flex item, relative to the rest of the flex items inside the same container</td>
+  </tr>
+</table>
+
+<br>
+<div class="chapter">
+<div class="prev"><a class="chapter" href="css3_box-sizing.html">&laquo; Previous</a></div>
+<div class="next"><a class="chapter" href="css3_mediaqueries.html">Next Chapter &raquo;</a></div>
+</div>
+</div>
+<div class="w3-col l2 m12" id="right">
+
+<div class="sidesection">
+<div id="skyscraper">
+<div id="div-gpt-ad-1422003450156-5">
+<script>
+ googletag.cmd.push(function() {
+ googletag.display('div-gpt-ad-1422003450156-5');
+ });
+ </script> 
+</div>
+</div>
+</div>
+
+<div class="sidesection">
+<h3>W3SCHOOLS EXAMS</h3>
+<a target="_blank" href="../cert/default.html">HTML, CSS, JavaScript, PHP, jQuery, and XML Certifications</a>
+</div>
+
+<div class="sidesection">
+<h3>COLOR PICKER</h3>
+<a href="../colors/colors_picker.html">
+<img src="../images/colorpicker.gif" alt="colorpicker"></a>
+</div>
+
+<div class="sidesection">
+<h3>SHARE THIS PAGE</h3>
+<div class="w3-text-grey sharethis">
+<script>
+<!--
+try{
+loc=location.pathname;
+if (loc.toUpperCase().indexOf(".ASP")<0) loc=loc+"default.asp";
+txt='<a href="http://www.facebook.com/sharer.php?u=http://www.w3schools.com'+loc+'" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a>';
+txt=txt+'<a href="http://twitter.com/home?status=Currently reading http://www.w3schools.com'+loc+'" target="_blank" title="Twitter"><span class="fa fa-twitter-square fa-2x"></span></a>';
+txt=txt+'<a href="https://plus.google.com/share?url=http://www.w3schools.com'+loc+'" target="_blank" title="Google+"><span class="fa fa-google-plus-square fa-2x"></span></a>';
+document.write(txt);
+} catch(e) {}
+//-->
+</script>
+</div>
+</div>
+
+<div class="sidesection w3-text-grey sharethis">
+<a href="javascript:void(0);" onclick="clickFBLike()" title="Like W3Schools on Facebook">
+<span class="fa fa-thumbs-o-up fa-2x"></span></a>
+<div id="fblikeframe">
+<div id="popupframe"></div>
+<div id="popupDIV"></div>
+</div>
+</div>       
+
+<div class="sidesection">
+<h3>LEARN MORE:</h3>
+<p>
+<a href="../colors/colors_converter.html">Color Converter</a><br>
+<a href="../howto/howto_google_maps.html">Google Maps</a><br>
+<a href="../howto/howto_css_animate_buttons.html">Animated Buttons</a><br>
+<a href="../howto/howto_css_modals.html">Modal Boxes</a><br>
+<a href="../howto/howto_css_modal_images.html">Modal Images</a><br>
+<a href="../howto/howto_css_tooltip.html">Tooltips</a><br>
+<a href="../howto/howto_css_loader.html">Loaders</a><br>
+<a href="../howto/howto_js_animate.html">JS Animations</a><br>
+<a href="../howto/howto_js_progressbar.html">Progress Bars</a><br>
+<a href="../howto/howto_js_dropdown.html">Dropdowns</a><br>
+<a href="../howto/howto_js_slideshow.html">Slideshow</a><br>
+<a href="../howto/howto_js_sidenav.html">Side Navigation</a><br>
+<a href="../howto/howto_html_include.html">HTML Includes</a><br>
+<a href="../w3css/w3css_color_palettes.html">Color Palettes</a>
+</p>
+</div>
+
+</div>
+</div>
+<div class="footer w3-container w3-white">      
+
+<hr>
+<div style="overflow:auto">
+<!-- BottomMediumRectangle -->
+<div class="bottomad" id='div-gpt-ad-1422003450156-0'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-0'); });
+</script>
+</div>
+<!-- RightBottomMediumRectangle -->
+<div class="bottomad" id='div-gpt-ad-1422003450156-3'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-3'); });
+</script>
+</div>
+</div>
+
+<hr>
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m3 s12">
+<a href="javascript:void(0);" onclick="displayError();return false" style="white-space:nowrap;">REPORT ERROR</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="#" target="_blank" onclick="printPage();return false;">PRINT PAGE</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="http://w3schools.invisionzone.com/" target="_blank">FORUM</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="../about/default.html" target="_top">ABOUT</a>
+</div>
+</div>
+<hr>
+<div class="w3-light-grey w3-padding w3-center" id="err_form" style="display:none;">
+<span onclick="this.parentElement.style.display='none'" class="w3-closebtn">&times;</span>     
+<h2>Your Suggestion:</h2>
+<form>
+<div class="w3-group">      
+<label for="err_email">Your E-mail:</label>
+<input class="w3-input" type="text" style="width:100%" id="err_email" name="err_email">
+</div>
+<div class="w3-group">      
+<label for="err_email">Page address:</label>
+<input class="w3-input" type="text" style="width:100%" id="err_url" name="err_url" disabled="disabled">
+</div>
+<div class="w3-group">
+<label for="err_email">Description:</label>
+<textarea rows="10" class="w3-input" id="err_desc" name="err_desc" style="width:100%;"></textarea>
+</div>
+<div class="form-group">        
+<button type="button" onclick="sendErr()">Submit</button>
+</div>
+<br>
+</form>
+</div>
+<div class="w3-container w3-light-grey w3-padding" id="err_sent" style="display:none;">
+<span onclick="this.parentElement.style.display='none'" class="w3-closebtn">&times;</span>     
+<h2>Thank You For Helping Us!</h2>
+<p>Your message has been sent to W3Schools.</p>
+</div>
+
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 Tutorials</h4>
+<a href="../html/default.html">HTML Tutorial</a><br>
+<a href="default.html">CSS Tutorial</a><br>
+<a href="../js/default.html">JavaScript Tutorial</a><br>
+<a href="../w3css/default.html">W3.CSS Tutorial</a><br>
+<a href="../bootstrap/default.html">Bootstrap Tutorial</a><br>
+<a href="../sql/default.html">SQL Tutorial</a><br>
+<a href="../php/default.html">PHP Tutorial</a><br>
+<a href="../jquery/default.html">jQuery Tutorial</a><br>
+<a href="../angular/default.html">Angular Tutorial</a><br>
+<a href="../xml/default.html">XML Tutorial</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 References</h4>
+<a href="../tags/default.html">HTML Reference</a><br>
+<a href="../cssref/default.html">CSS Reference</a><br>
+<a href="../jsref/default.html">JavaScript Reference</a><br>
+<a href="../w3css/w3css_references.html">W3.CSS Reference</a><br>
+<a href="../browsers/default.html">Browser Statistics</a><br>
+<a href="../php/php_ref_array.asp">PHP Reference</a><br>
+<a href="../colors/colors_names.html">HTML Colors</a><br>
+<a href="../charsets/default.html">HTML Character Sets</a><br>
+<a href="../jquery/jquery_ref_selectors.html">jQuery Reference</a><br>
+<a href="../angular/angular_ref_directives.html">AngularJS Reference</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 Examples</h4>
+<a href="../html/html_examples.html">HTML Examples</a><br>
+<a href="css_examples.html">CSS Examples</a><br>
+<a href="../js/js_examples.html">JavaScript Examples</a><br>
+<a href="../w3css/w3css_examples.html">W3.CSS Examples</a><br>
+<a href="../js/js_dom_examples.html">HTML DOM Examples</a><br>
+<a href="../php/php_examples.html">PHP Examples</a><br>
+<a href="../jquery/jquery_examples.html">jQuery Examples</a><br>
+<a href="../asp/asp_examples.html">ASP Examples</a><br>
+<a href="../xml/xml_examples.html">XML Examples</a><br>
+<a href="../svg/svg_examples.html">SVG Examples</a>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Web Certificates</h4>
+<a href="../cert/default.html">HTML Certificate</a><br>
+<a href="../cert/default.html">HTML5 Certificate</a><br>
+<a href="../cert/default.html">CSS Certificate</a><br>
+<a href="../cert/default.html">JavaScript Certificate</a><br>
+<a href="../cert/default.html">jQuery Certificate</a><br>
+<a href="../cert/default.html">PHP Certificate</a><br>
+<a href="../cert/default.html">Bootstrap Certificate</a><br>
+<a href="../cert/default.html">XML Certificate</a><br>
+</div>
+</div>        
+</div>        
+
+<hr>
+<div class="w3-center w3-small w3-opacity">
+W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding.
+Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.
+While using this site, you agree to have read and accepted our <a href="../about/about_copyright.html">terms of use</a>,
+<a href="../about/about_privacy.html">cookie and privacy policy</a>.
+<a href="../about/about_copyright.html">Copyright 1999-2016</a> by Refsnes Data. All Rights Reserved.<br><br>
+<a href="../index.html">
+<img style="width:150px;height:28px;border:0" src="../images/w3schoolscom_gray.gif" alt="W3Schools.com"></a>
+</div>
+<br><br>
+</div>
+</div>
+</div>
+
+<div id="nav_tutorials_content" style="display:none;">
+<span onclick='w3_close_nav("tutorials")' class='w3-closebtn w3-xlarge'>&times;</span>
+<div class='w3-row-padding'>
+<div class='w3-col l2 m4'>
+<h3>HTML/CSS</h3>
+<a href='../html/default.html'>Learn HTML</a>
+<a href='default.html'>Learn CSS</a>
+<a href='../w3css/default.html'>Learn W3.CSS</a>
+<a href='../colors/default.html'>Learn Colors</a>
+<a href='../bootstrap/default.html'>Learn Bootstrap</a>
+</div>
+<div class='w3-col l2 m4'>  
+<h3>JavaScript</h3>
+<a href='../js/default.html'>Learn JavaScript</a>
+<a href='../jquery/default.html'>Learn jQuery</a>
+<a href='../jquerymobile/default.html'>Learn jQueryMobile</a>
+<a href='../appml/default.html'>Learn AppML</a>
+<a href='../angular/default.html'>Learn AngularJS</a>
+<a href='../ajax/default.html'>Learn AJAX</a>
+<a href='../json/default.html'>Learn JSON</a>
+</div>
+<div class='w3-col l2 m4'>   
+<h3>HTML Graphics</h3>
+<a href='../canvas/default.html'>Learn Canvas</a>
+<a href='../svg/default.html'>Learn SVG</a>
+<a href='../icons/default.html'>Learn Icons</a>
+<a href='../googleapi/default.html'>Learn Google Maps</a>
+<a href="../games/default.html">Learn HTML Games</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Server Side</h3>
+<a href='../sql/default.html'>Learn SQL</a>
+<a href='../php/default.html'>Learn PHP</a>
+<a href='../asp/default.html'>Learn ASP</a>
+<a href='../aspnet/default.html'>Learn ASP.NET</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Web Building</h3>
+<a href='../website/default.html'>Web Building</a>
+<a href='../browsers/default.html'>Web Statistics</a>
+<a href='../cert/default.html'>Web Certificates</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>XML Tutorials</h3>
+<a href='../xml/default.html'>Learn XML</a>
+<a href='../xsl/default.html'>Learn XSLT</a>
+</div>
+</div>
+</div>
+<div id="nav_references_content" style="display:none;">
+<span onclick='w3_close_nav("references")' class='w3-closebtn w3-xlarge'>&times;</span>
+<div class='w3-row-padding'>
+<div class='w3-col l2 m4'>
+<h3>HTML</h3>
+<a href='../tags/default.html'>HTML Tag Reference</a>
+<a href='../tags/ref_eventattributes.html'>HTML Event Reference</a>
+<a href='../colors/default.html'>HTML Color Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>CSS</h3>
+<a href='../cssref/default.html'>CSS Reference</a>
+<a href='../cssref/css_selectors.html'>CSS Selector Reference</a>
+<a href='../w3css/w3css_references.html'>W3.CSS Reference</a>
+<a href='../bootstrap/bootstrap_ref_css_text.html'>Bootstrap Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>JavaScript</h3>
+<a href='../jsref/default.html'>JavaScript Reference</a>
+<a href='../jsref/default.html'>HTML DOM Reference</a>
+<a href='../jquery/jquery_ref_selectors.html'>jQuery Reference</a>
+<a href='../jquerymobile/jquerymobile_ref_data.html'>jQuery Mobile Reference</a>
+<a href='../angular/angular_ref_directives.html'>AngularJS Reference</a>
+<a href='../googleAPI/google_maps_ref.html'>Google Maps Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Server Side</h3>
+<a href='../php/php_ref_array.asp'>PHP Reference</a>
+<a href='../sql/sql_quickref.html'>SQL Reference</a>
+<a href='../asp/asp_ref_response.html'>ASP Reference</a>
+<a href='../aspnet/webpages_ref_classes.html'>Razor Reference</a>
+<a href='../aspnet/aspnet_intro.html'>ASP.NET Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>XML</h3>
+<a href='../xml/dom_nodetype.html'>XML Reference</a>
+<a href='../xsl/xsl_w3celementref.html'>XSLT Reference</a>
+<a href='../xml/schema_elements_ref.html'>XML Schema Reference</a>
+<a href='../svg/svg_reference.html'>SVG Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Charsets</h3>
+<a href='../charsets/default.html'>HTML Character Sets</a>
+<a href='../charsets/ref_html_ascii.html'>HTML ASCII</a>
+<a href='../charsets/ref_html_ansi.html'>HTML ANSI</a>
+<a href='../charsets/ref_html_ansi.html'>HTML Windows-1252</a>
+<a href='../charsets/ref_html_8859.html'>HTML ISO-8859-1</a>
+<a href='../charsets/ref_html_symbols.html'>HTML Symbols</a>
+<a href='../charsets/ref_html_utf8.html'>HTML UTF-8</a>
+</div>
+</div>
+</div>
+<div id="nav_examples_content" style="display:none;">
+<span onclick='w3_close_nav("examples")' class='w3-closebtn w3-xlarge'>&times;</span>
+<div class='w3-row-padding'>
+<div class='w3-col l3 m6'>
+<h3>HTML/CSS</h3>
+<a href='../html/html_examples.html'>HTML Examples</a>
+<a href='css_examples.html'>CSS Examples</a>
+<a href='../w3css/w3css_examples.html'>W3.CSS Examples</a>
+</div>
+<div class='w3-col l3 m6'>
+<h3>JavaScript</h3>
+<a href='../js/js_examples.html' target='_top'>JavaScript Examples</a>
+<a href='../js/js_dom_examples.html' target='_top'>HTML DOM Examples</a>
+<a href='../jquery/jquery_examples.html' target='_top'>jQuery Examples</a>
+<a href='../jquerymobile/jquerymobile_examples.html' target='_top'>jQuery Mobile Examples</a>
+<a href='../angular/angular_examples.html' target='_top'>AngularJS Examples</a>
+<a href='../ajax/ajax_examples.html' target='_top'>AJAX Examples</a>
+</div>
+<div class='w3-col l3 m6'>
+<h3>Server Side</h3>
+<a href='../php/php_examples.html' target='_top'>PHP Examples</a>
+<a href='../asp/asp_examples.html' target='_top'>ASP Examples</a>
+<a href='../aspnet/webpages_examples.html' target='_top'>Razor Examples</a>
+<a href='../aspnet/aspnet_examples.html' target='_top'>.NET Examples</a>
+</div>
+<div class='w3-col l3 m6'>
+<h3>XML</h3>
+<a href='../xml/xml_examples.html' target='_top'>XML Examples</a>
+<a href='../xsl/xsl_examples.html' target='_top'>XSL Examples</a>
+<a href='../xsl/xsl_examples.html' target='_top'>XSLT Examples</a>
+<a href='../xsl/xpath_examples.html' target='_top'>XPath Examples</a>
+<a href='../xml/schema_example.html' target='_top'>XML Schema Examples</a>
+<a href='../svg/svg_examples.html' target='_top'>SVG Examples</a>
+</div>
+</div>
+</div>
+<div id='nav_translate_content' style="display:none">
+<span onclick='w3_close_nav("translate")' class='w3-closebtn w3-xlarge'>&times;</span>
+<br><br>Translate w3schools.com:
+<div id='google_translate_element'></div>
+<br>
+</div>
+<div id='nav_search_content' style="display:none">
+<span onclick='w3_close_nav("search")' class='w3-closebtn w3-xlarge'>&times;</span>
+<br><br>
+<div class='searchdiv'>
+Search w3schools.com:
+<div id='googleSearch'><div class='gcse-search'></div></div>
+</div>
+<br>
+</div>
+<script src="../lib/w3schools_footer.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
+<![endif]-->
+</body>
+
+<!-- Mirrored from www.w3schools.com/css/css3_flexbox.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 09:29:47 GMT -->
+</html>

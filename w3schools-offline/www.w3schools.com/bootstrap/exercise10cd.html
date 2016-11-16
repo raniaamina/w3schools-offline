@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/bootstrap/exercise.asp?filename=exercise_images1 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:55 GMT -->
+<head>
+<title>Exercise v1.3</title>
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-3855518-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<script>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+<script type='text/javascript'>
+ // GPT slots
+ var gptAdSlots = [];
+ googletag.cmd.push(function() {
+
+   var leaderMapping = googletag.sizeMapping().
+   // Mobile ad
+   addSize([0, 0], [320, 50]). 
+   // Vertical Tablet ad
+   addSize([468, 0], [468, 60]). 
+   // Horizontal Tablet
+   addSize([728, 0], [728, 90]).
+   // Desktop and bigger ad
+   addSize([1280, 0], [[728, 90], [970, 90]]).build();
+// addSize([970, 0], [728, 90]).build();
+   gptAdSlots[0] = googletag.defineSlot('/16833175/TryitLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1428407818244-0').
+// gptAdSlots[0] = googletag.defineSlot('/16833175/TryitLeaderboard', [728, 90], 'div-gpt-ad-1428407818244-0').
+   defineSizeMapping(leaderMapping).addService(googletag.pubads());
+   googletag.pubads().setTargeting("content","exercisebootstrap");
+   googletag.enableServices();
+ });
+</script>
+<script>
+if (window.addEventListener) {              
+    window.addEventListener("resize", browserResize);
+} else if (window.attachEvent) {                 
+    window.attachEvent("onresize", browserResize);
+}
+var xbeforeResize = window.innerWidth;
+
+function browserResize() {
+    var afterResize = window.innerWidth;
+    if ((xbeforeResize < (1280) && afterResize >= (1280)) || (xbeforeResize >= (1280) && afterResize < (1280)) ||
+        (xbeforeResize < (728) && afterResize >= (728)) || (xbeforeResize >= (728) && afterResize < (728)) ||
+        (xbeforeResize < (468) && afterResize >= (468)) ||(xbeforeResize >= (468) && afterResize < (468))) {
+        xbeforeResize = afterResize;
+        googletag.cmd.push(function() {
+            googletag.pubads().refresh([gptAdSlots[0]]);
+        });
+    }
+}
+</script>
+<script type="text/javascript">
+function submitTryit(n)
+{
+var t=document.getElementById("textareaCode" + n).value;
+t=t.replace(/=/gi,"w3equalsign");
+var pos=t.search(/script/i)
+while (pos>0)
+	{
+	t=t.substring(0,pos) + "w3" + t.substr(pos,3) + "w3" + t.substr(pos+3,3) + "tag" + t.substr(pos+6);
+	pos=t.search(/script/i);
+	}
+	
+document.getElementById("code" + n).value=t;
+document.getElementById("tryitform" + n).action="tryit_view52a0.asp?x=" + Math.random();
+validateForm(n);
+document.getElementById("tryitform" + n).submit();
+}
+function validateForm(n)
+{
+var code=document.getElementById("code" + n).value;
+if (code.length>8000)
+	{
+	document.getElementById("code" + n).value="<h1>Error</h1>";
+	}
+}
+function showCorrectAnswer() {
+	document.getElementById("editSection").style.display = "none";
+    document.getElementById("correctSection").style.display = "table-row";
+	document.getElementById("showCorrectBtn").style.display = "none";
+	document.getElementById("hideCorrectBtn").style.display = "inline";
+	submitTryit("2");
+}
+function hideCorrectAnswer() {
+	document.getElementById("editSection").style.display = "table-row";
+    document.getElementById("correctSection").style.display = "none";
+	document.getElementById("hideCorrectBtn").style.display = "none";
+	document.getElementById("showCorrectBtn").style.display = "inline";
+}
+</script>
+<link rel="stylesheet" href="../exercise.css">
+<style>
+.hintBtn {
+    border:none;
+    background-color:#f0ad4e;
+    padding:5px 10px;
+    color:#ffffff;
+    font-size:16px;
+    border-radius:4px;
+    margin-bottom:12px;
+    cursor:pointer;
+    position:absolute;
+}
+.hintBtn:hover {
+    background-color:#ec971f;
+}
+#hint {
+	visibility:hidden;
+}
+</style>
+<!--[if IE]>
+<style>
+#textareaCode, #iframeResult, #textareaCode2, #iframeResult2 {height:400px;}
+td {vertical-align:top;}
+</style>
+<![endif]-->
+<script>
+var x, hint;
+window.onload = function() {
+    hint = document.getElementById("hint");
+    if (!hint) return false;
+    x = document.createElement("BUTTON");
+    x.setAttribute("type", "button");
+    x.setAttribute("class", "hintBtn");    
+    x.setAttribute("title", "Click to get a hint");
+    x.setAttribute("onclick", "needHint()");            
+    var t = document.createTextNode("Hint");
+    x.appendChild(t);
+    hint.parentNode.insertBefore(x, hint);
+}
+function needHint() {
+    x.style.display = "none";
+    hint.style.visibility = "visible";
+}
+</script>
+</head>
+<body>
+<table>
+  <tr>
+  <td style="padding-bottom:5px;">
+    <div id='tryitLeaderboard'>
+      <!-- TryitLeaderboard -->
+      <div id='div-gpt-ad-1428407818244-0'>
+        <script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1428407818244-0'); });</script>
+      </div>
+    </div>
+    <div style="padding-left:20px;">
+  	  <h1>Exercise:</h1>
+      <p>Use a Bootstrap class to shape the image to a circle.</p>
+<p id="hint">Hint: Use the .img-circle class.</p>
+
+    </div>
+  </td>	
+  </tr>
+  <tr id="editSection">
+  <td>
+  <div class="codeContainer">
+    <div>
+      <div class="header">Edit This Code:</div>
+      <div class="headerBtnDiv"><button class="submit" type="button" onclick="submitTryit('')">See Result &raquo;</button></div>
+    </div>
+    <div>
+      <textarea autocomplete="off" id="textareaCode" wrap="logical"><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">          
+  <img src="img_chania.jpg" alt="Chania" width="460" height="345"> 
+</div>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/bootstrap/exercise.asp?filename=exercise_images1 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:55 GMT -->
+</html>
+</textarea>
+      <form autocomplete="off" style="display:none;" action="http://www.w3schools.com/bootstrap/tryit_view.asp" method="post" target="view" id="tryitform" name="tryitform" onsubmit="validateForm('');">
+        <input type="hidden" name="code" id="code" />
+        <input type="hidden" id="bt" name="bt" />
+      </form>
+    </div>
+  </div>
+  <div class="resultContainer">
+    <div>
+      <div class="header">Result:</div>
+      <div class="headerBtnDiv">
+          <button id="showCorrectBtn" type="button" onclick="showCorrectAnswer()">Show Answer</button>
+      </div>
+    </div>
+    <div>
+      <iframe id="iframeResult" frameborder="0" name="view" src="exercise_images1.htm"></iframe>
+    </div>
+  </div>
+  </td>    
+  </tr>
+  <tr id="correctSection">
+  <td>
+  <div class="codeContainer">
+    <div>
+      <div class="header">Correct Code:</div>
+    </div>
+    <div>
+      <textarea autocomplete="off" id="textareaCode2" wrap="logical" readonly="readonly"><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="../../ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">          
+  <img src="img_chania.jpg" class="img-circle" alt="Chania" width="460" height="345"> 
+</div>
+
+</body>
+</html>
+</textarea>
+      <form autocomplete="off" style="display:none;" action="http://www.w3schools.com/bootstrap/tryit_view.asp" method="post" target="view2" id="tryitform2" name="tryitform2" onsubmit="validateForm('2');">
+        <input type="hidden" name="code" id="code2" />
+        <input type="hidden" id="bt2" name="bt" />
+      </form>
+    </div>
+  </div>
+  <div class="resultContainer">
+    <div>
+      <div class="header">Correct Result:</div>
+      <div class="headerBtnDiv">
+          <button id="hideCorrectBtn" type="button" onclick="hideCorrectAnswer()">Hide Answer</button>
+      </div>
+    </div>
+    <div>
+      <iframe id="iframeResult2" frameborder="0" name="view2"></iframe>
+    </div>
+  </div>
+  </td>    
+  </tr>
+  <tr>
+  <td>
+  <div class="footerText">Exercise - &copy; <a href="../index.html">w3schools.com</a></div>
+  </td>
+  </tr>
+  
+</table>
+<script>submitTryit('')</script>
+</body>
+</html>

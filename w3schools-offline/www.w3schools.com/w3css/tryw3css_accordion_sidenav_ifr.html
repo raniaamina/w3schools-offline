@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+
+<!-- Mirrored from www.w3schools.com/w3css/tryw3css_accordion_sidenav_ifr.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:50 GMT -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../lib/w3.css">
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<body>
+
+<nav class="w3-sidenav w3-light-grey w3-card-2" style="width:160px;">
+  <a href="javascript:void(0)">Link</a>				
+  <div class="w3-accordion">
+    <a onclick="myAccFunc()" href="javascript:void(0)">
+      Accordion <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-accordion-content w3-white w3-card-4">
+      <a href="javascript:void(0)">Link 1</a>
+      <a href="javascript:void(0)">Link 2</a>
+      <a href="javascript:void(0)">Link 3</a>
+    </div>
+  </div>
+  <div class="w3-dropdown-click">
+      <a onclick="myDropFunc()" href="javascript:void(0)">
+        Dropdown <i class="fa fa-caret-down"></i>
+      </a>
+      <div id="demoDrop" class="w3-dropdown-content w3-white w3-card-4">
+        <a href="javascript:void(0)">Link 1</a>
+        <a href="javascript:void(0)">Link 2</a>
+        <a href="javascript:void(0)">Link 3</a>
+      </div>
+  </div>
+  <a href="javascript:void(0)">Link</a>		
+  <a href="javascript:void(0)">Link</a>
+</nav>
+
+<div class="w3-container" style="margin-left:160px">
+  <h2>Accordions & Dropdowns</h2>
+  <h4>In Sidenav</h4>
+  <p>In this example, we have added an accordion and a dropdown menu inside the side navigation. Click on both to understand how they differ from each other. The accordion will push down the content, while the dropdown lays over the content.</p>
+</div>
+
+<script>
+function myAccFunc() {
+    document.getElementById("demoAcc").classList.toggle("w3-show");
+    document.getElementById("demoAcc").previousElementSibling.classList.toggle("w3-green");
+}
+
+function myDropFunc() {
+    document.getElementById("demoDrop").classList.toggle("w3-show");
+    document.getElementById("demoDrop").previousElementSibling.classList.toggle("w3-green");
+}
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/w3css/tryw3css_accordion_sidenav_ifr.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:50 GMT -->
+</html>

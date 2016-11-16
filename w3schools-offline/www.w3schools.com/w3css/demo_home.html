@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+
+<!-- Mirrored from www.w3schools.com/w3css/demo_home.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:03:01 GMT -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../lib/w3.css">
+<style>
+.w3-theme {color:#fff !important;background-color:#4CAF50 !important;}
+.w3-btn {background-color:#4CAF50 ;margin-bottom:4px;}
+.w3-code{border-left:4px solid #4CAF50}
+@media only screen and (max-width: 601px) {.w3-top{position:static;} #main{margin-top:0px !important}}
+</style>
+<body>
+
+<div class="w3-top">
+<div class="w3-row w3-white w3-padding">
+  <div class="w3-half" style="margin:4px 0 6px 0"><a href='../index.html'><img src='../images/w3schools.png' alt='W3Schools.com'></a></div>
+  <div class="w3-half w3-margin-top w3-wide w3-hide-medium w3-hide-small"><div class="w3-right">THE WORLD'S LARGEST WEB DEVELOPER SITE</div></div>
+</div>
+
+<ul class="w3-navbar w3-theme w3-large w3-card-4">
+  <li><a class="w3-hover-black w3-padding-16 w3-opennav" href="javascript:void(0)" onclick="w3_open()">&#9776;</a></li>
+  <li><a class="w3-hover-black w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menuTut')">TUTORIALS</a></li>
+  <li><a class="w3-hover-black w3-padding-16" href="javascript:void(0)" onclick="w3_show_nav('menuRef')">REFERENCES</a></li>
+</ul>
+</div>
+
+<div class="w3-sidenav w3-card-4" style="width:300px">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-xxlarge">&times;</a>
+  <div id="menuTut" class="myMenu">
+  <div class="w3-container"><h3>HTML and CSS</h3></div>
+  <a href="../html/default.html">Learn HTML</a>
+  <a href="../css/default.html">Learn CSS</a>
+  <a href="default.html">Learn W3.CSS</a>
+  <a href="../colors/default.html">Learn Colors</a>
+  <a href="../bootstrap/default.html">Learn Bootstrap</a>
+  <div class="w3-container"><h3>HTML Graphics</h3></div>
+  <a href="../canvas/default.html">Learn Canvas</a>
+  <a href="../svg/default.html">Learn SVG</a>
+  <a href="../icons/default.html">Learn Icons</a>
+  <a href="../googleapi/default.html">Learn Google Maps</a>
+  <a href="../games/default.html">Learn HTML Games</a>    
+  <div class="w3-container"><h3>JavaScript</h3></div>
+  <a href="../js/default.html">Learn JavaScript</a>
+  <a href="../jquery/default.html">Learn jQuery</a>
+  <a href="../jquerymobile/default.html">Learn jQueryMobile</a>
+  <a href="../appml/default.html">Learn AppML</a>
+  <a href="../angular/default.html">Learn AngularJS</a>
+  <a href="../json/default.html">Learn JSON</a>
+  <div class="w3-container"><h3>XML Tutorials</h3></div>
+  <a href="../xml/default.html">Learn XML</a>
+  <a href="../xsl/default.html">Learn XSLT</a>
+  <a href="../ajax/default.html">Learn AJAX</a>
+  <div class="w3-container"><h3>Server Side</h3></div>
+  <a href="../sql/default.html">Learn SQL</a>
+  <a href="../php/default.html">Learn PHP</a>
+  <a href="../asp/default.html">Learn ASP</a>
+  <a href="../aspnet/default.html">Learn ASP.NET</a>
+  <div class="w3-container"><h3>Web Building</h3></div>
+  <a href="../website/default.html">Web Building</a>
+  <a href="../browsers/default.html">Web Statistics</a>
+  <a href="../cert/default.html">Web Certificates</a>
+  </div>
+  <div id="menuRef" class="myMenu" style="display:none">
+  <div class="w3-container"><h3>HTML</h3></div>
+  <a href='../tags/default.html'>HTML Tag Reference</a>
+  <a href='../tags/ref_eventattributes.html'>HTML Event Reference</a>
+  <a href='../colors/default.html'>HTML Color Reference</a>
+  <div class="w3-container"><h3>CSS</h3></div>
+  <a href='../cssref/default.html'>CSS Reference</a>
+  <a href='../cssref/css_selectors.html'>CSS Selector Reference</a>
+  <a href='w3css_references.html'>W3.CSS Reference</a>
+  <a href='../bootstrap/bootstrap_ref_css_text.html'>Bootstrap Reference</a>
+  <div class="w3-container"><h3>JavaScript</h3></div>
+  <a href='../jsref/default.html'>JavaScript Reference</a>
+  <a href='../jsref/default.html'>HTML DOM Reference</a>
+  <a href='../jquery/jquery_ref_selectors.html'>jQuery Reference</a>
+  <a href='../jquerymobile/jquerymobile_ref_data.html'>jQuery Mobile Reference</a>
+  <a href='../angular/angular_ref_directives.html'>AngularJS Reference</a>    
+  <a href='../googleAPI/google_maps_ref.html'>Google Maps Reference</a>
+  <div class="w3-container"><h3>XML</h3></div>
+  <a href='../xml/dom_nodetype.html'>XML DOM Reference</a>
+  <a href='../xsl/xsl_w3celementref.html'>XSLT Reference</a>
+  <a href='../xml/schema_elements_ref.html'>XML Schema Reference</a>
+  <a href='../svg/svg_reference.html'>SVG Reference</a>
+  <div class="w3-container"><h3>Character Sets</h3></div>
+  <a href='../charsets/default.html'>HTML Character Sets</a>
+  <a href='../charsets/ref_html_ascii.html'>HTML ASCII</a>
+  <a href='../charsets/ref_html_ansi.html'>HTML ANSI</a>
+  <a href='../charsets/ref_html_ansi.html'>HTML Windows-1252</a>
+  <a href='../charsets/ref_html_8859.html'>HTML ISO-8859-1</a>
+  <a href='../charsets/ref_html_symbols.html'>HTML Symbols</a>
+  <a href='../charsets/ref_html_utf8.html'>HTML UTF-8</a>
+  <div class="w3-container"><h3>Server Side</h3></div>
+  <a href='../php/php_ref_array.asp'>PHP Reference</a>
+  <a href='../sql/sql_quickref.html'>SQL Reference</a>
+  <a href='../asp/asp_ref_response.html'>ASP Reference</a>
+  <a href='../aspnet/aspnet_intro.html'>ASP.NET Reference</a>
+  <a href='../aspnet/webpages_ref_classes.html'>Razor Reference</a>
+  </div>
+</div>
+
+<div id="main" class="w3-container" style="margin-left:300px;margin-top:118px">
+
+<div class="w3-container w3-section w3-padding-large w3-card-4 w3-light-grey">
+  <h1 class="w3-jumbo">HTML</h1>
+  <p class="w3-xlarge">The Language for Building Web Pages</p>
+  <a href="../html/default.html" class="w3-btn w3-hover-white">LEARN HTML</a>
+  <a href="../tags/default.html" class="w3-btn w3-hover-white">HTML REFERENCE</a>
+  <p><div class="w3-code htmlHigh notranslate">
+  &lt;!DOCTYPE html&gt;<br>
+  &lt;html&gt;<br>
+  &lt;title&gt;HTML Tutorial&lt;/title&gt;<br>
+  &lt;body&gt;<br><br>
+  &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
+  &lt;/body&gt;<br>
+  &lt;/html&gt;
+  </div>
+  <a href="../html/tryitfb35.html?filename=tryhtml_default" target="_blank" class="w3-btn w3-hover-white">Try it Yourself</a>
+</div>
+
+<div class="w3-container w3-section w3-padding-large w3-card-4 w3-light-grey">
+  <h1 class="w3-jumbo">CSS</h1>
+  <p class="w3-xlarge">The Language for Styling Web Pages</p>
+  <a class="w3-btn w3-hover-white" href="../css/default.html">LEARN CSS</a>
+  <a class="w3-btn w3-hover-white" href="../ccsref/default.asp">CSS REFERENCE</a>
+  <p class="w3-large">
+  <p><div class="w3-code cssHigh notranslate">
+  body {<br>
+  &nbsp;&nbsp;&nbsp; background-color: #d0e4fe;<br>}<br>h1 {<br>
+  &nbsp;&nbsp;&nbsp; color: orange;<br>
+  &nbsp;&nbsp;&nbsp; text-align: center;<br>}<br>p {<br>
+  &nbsp;&nbsp;&nbsp; font-family: &quot;Times New Roman&quot;;<br>
+  &nbsp;&nbsp;&nbsp; font-size: 20px;<br>}
+  </div>
+  <a class="w3-btn w3-hover-white" href="../css/tryit438d.html?filename=trycss_default" target="_blank">Try it Yourself</a>
+</div>
+
+<div class="w3-container w3-section w3-padding-large w3-card-4 w3-light-grey">
+  <h1 class="w3-jumbo">JavaScript</h1>
+  <p class="w3-xlarge">The Language for Programming Web Pages</p>
+  <a href="../js/default.html" class="w3-btn w3-hover-white">LEARN JS</a>
+  <a href="../jsref/default.html" class="w3-btn w3-hover-white">JS REFERENCE</a>
+
+  <p><div class="w3-code jsHigh notranslate">
+   // Click the button to change the color of this paragraph<br><br>function myFunction() {<br>
+  &nbsp;&nbsp;&nbsp; var x;<br>
+  &nbsp;&nbsp;&nbsp; x = document.getElementById(&quot;demo&quot;);<br>
+  &nbsp;&nbsp;&nbsp; x.style.fontSize = &quot;25px&quot;; <br>
+  &nbsp;&nbsp;&nbsp; x.style.color = &quot;red&quot;; <br>}
+  </div>
+  <a class="w3-btn w3-hover-white" href="../js/tryit8004.html?filename=tryjs_default" target="_blank">Try it Yourself</a>
+</div>
+
+<div class="w3-container w3-section w3-padding-large w3-card-4 w3-light-grey">
+  <h1 class="w3-jumbo">W3.CSS</h1>
+  <p class="w3-xlarge">The Framework for Building Responsive Sites</p>
+  <a href="default.html" class="w3-btn w3-hover-white">LEARN W3.CSS</a>
+  <a href="w3css_reference.asp" class="w3-btn w3-hover-white">W3.CSS REFERENCE</a>
+  <p><div class="w3-code htmlHigh notranslate">
+  &lt;div class=&quot;w3-container w3-teal&quot;&gt;<br>
+  &nbsp;&nbsp;&nbsp; &lt;h1&gt;My Header&lt;/h1&gt;<br>
+  &lt;/div&gt;<br><br>
+  &lt;img src=&quot;img_car.png&quot; alt=&quot;Car&quot; style=&quot;width:100%&quot;&gt;<br><br>
+  &lt;div class=&quot;w3-container&quot;&gt;<br>
+  &nbsp;&nbsp;&nbsp; &lt;p&gt;A car is a wheeled, self-powered motor vehicle used for transportation.&lt;/p&gt;<br>
+  &lt;/div&gt;<br><br>
+  &lt;div class=&quot;w3-container w3-teal&quot;&gt;<br>
+  &nbsp;&nbsp;&nbsp; &lt;p&gt;My Footer&lt;/p&gt;<br>
+  &lt;/div&gt;</div>
+  <a class="w3-btn w3-hover-white" href="tryit3a67.html?filename=tryw3css_intro" target="_blank">Try it Yourself</a>
+</div>
+
+<footer class="w3-container w3-section w3-padding-jumbo w3-card-4 w3-light-grey w3-center w3-opacity">
+  <p><nav>
+  <a href="http://w3schools.invisionzone.com/" target="_blank">FORUM</a> |
+  <a href="../about/default.html" target="_top">ABOUT</a>
+  </nav></p>
+  <p>
+  W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding.
+  Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.
+  While using this site, you agree to have read and accepted our <a href="../about/about_copyright.html">terms of use</a>, <a href="../about/about_privacy.html">cookie and privacy policy</a>.<br>
+  <a href="../about/about_copyright.html">Copyright 1999-2016</a> by Refsnes Data. All Rights Reserved.<br><br>
+  </p>
+</footer>
+
+</div>
+
+<script>
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.width = "300px";
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementById("main").style.marginLeft = "300px";
+}
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    document.getElementById("main").style.marginLeft = 0;
+}
+function w3_show_nav(name) {
+    document.getElementById("menuTut").style.display = "none";
+    document.getElementById("menuRef").style.display = "none";
+    document.getElementById(name).style.display = "block";
+    w3-open();
+}
+</script>
+     
+<script src="../lib/w3codecolors.js"></script>
+</body>
+
+<!-- Mirrored from www.w3schools.com/w3css/demo_home.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:03:01 GMT -->
+</html> 

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+
+<!-- Mirrored from www.w3schools.com/w3css/demo_template_blog.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:53 GMT -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../lib/w3.css">
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<body>
+
+<nav class="w3-sidenav w3-light-grey" style="width:25%">
+  <a href="javascript:void(0)" 
+  onclick="w3_close()"
+  class="w3-closenav w3-large">Close &times;</a>
+  <a class="w3-text-blue-grey" href="#">Home</a>
+  <a href="#">Friends</a>		
+  <a href="#">Family</a>		
+  <a href="#">Photos</a>				
+</nav>
+
+<div id="main" style="margin-left:25%"> <!-- Start main -->
+
+<header class="w3-container w3-blue-grey">
+  <span class="w3-opennav w3-xlarge" onclick="w3_open()" style="display:none">&#9776;</span>
+  <h1>My Blog</h1>
+</header>
+
+<div class="w3-container">
+  <h6 class="w3-opacity">RECENT POSTS</h6>
+  <hr>
+  <h2>I Love Food</h2>
+  <h5><i class="fa fa-clock-o"></i> Post by Jane Dane, Sep 27, 2015.</h5>
+  <p class="w3-small">Tags: <span class="w3-tag w3-small w3-red">Food</span> <span class="w3-tag w3-small w3-blue">Passion</span></p>
+  <p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <br><br>
+      
+  <h6 class="w3-opacity">RECENT POSTS</h6>
+  <hr>
+  <h2>Officially Blogging</h2>
+  <h5><i class="fa fa-clock-o"></i> Post by John Doe, Sep 24, 2015.</h5>
+  <p class="w3-small">Tags: <span class="w3-tag w3-small w3-green">Lorem</span></p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <hr>
+
+  <div class="w3-card-2 w3-container">
+    <h4>Leave a Comment:</h4>
+    <form>
+      <textarea class="w3-input" placeholder="Say something nice.." required></textarea>
+      <br>
+      <button type="submit" class="w3-section w3-btn w3-green">Submit</button>
+      <br>
+    </form>
+  </div>
+  <br>
+
+  <p><span class="w3-badge w3-black">1</span> Comment:</p><br>
+
+  <div class="w3-row">
+    <div class="w3-col s2 text-center">
+      <img class="w3-circle w3-image" src="img_avatar.jpg" width="96" height="96">
+    </div>
+    <div class="w3-col s10 w3-container">
+      <h4>John <span class="w3-opacity w3-medium">Sep 29, 2015, 9:12 PM</span></h4>
+      <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+    </div>
+  </div>
+</div>
+
+<footer class="w3-container w3-blue-grey">
+  <h5>Footer</h5>
+  <p>Footer information goes here</p>
+</footer>
+
+</div> <!-- End main -->
+     
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%"
+  document.getElementsByClassName("w3-sidenav")[0].style.width ="25%";
+  document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+  document.getElementsByClassName("w3-opennav")[0].style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+  document.getElementsByClassName("w3-opennav")[0].style.display = "inline-block";
+}
+</script>
+     
+</body>
+
+<!-- Mirrored from www.w3schools.com/w3css/demo_template_blog.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:53 GMT -->
+</html> 

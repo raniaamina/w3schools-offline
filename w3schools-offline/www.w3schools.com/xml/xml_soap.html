@@ -1,0 +1,1075 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/xml/xml_soap.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:00:33 GMT -->
+<head>
+
+<title>XML Soap</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,ASP,XML,DOM,Bootstrap,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,source code,colors,demos,tips">
+<meta name="Description" content="Well organized and easy to understand Web bulding tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, and XML.">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../lib/w3.css">
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3855518-1', 'auto');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script>
+
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type='text/javascript'>
+// GPT slots
+var gptAdSlots = [];
+googletag.cmd.push(function() {
+var leaderMapping = googletag.sizeMapping().
+// Mobile ad
+addSize([0, 0], [320, 50]). 
+// Vertical Tablet ad
+addSize([480, 0], [468, 60]). 
+// Horizontal Tablet
+addSize([750, 0], [728, 90]).
+// Small Desktop
+addSize([993, 0], [468, 60]).
+// Normal Desktop
+addSize([1135, 0], [728, 90]).
+// Large Desktop and bigger ad
+addSize([1425, 0], [[728, 90], [970, 90]]).build();
+gptAdSlots[0] = googletag.defineSlot('/16833175/MainLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1422003450156-2').
+defineSizeMapping(leaderMapping).addService(googletag.pubads());
+var skyMapping = googletag.sizeMapping().
+// Mobile ad
+addSize([0, 0], [320, 50]). 
+// Tablet ad
+addSize([975, 0], [120, 600]). 
+// Desktop
+addSize([1135, 0], [160, 600]).   
+// Large Desktop
+addSize([1675, 0], [[160, 600], [300, 600], [300, 1050]]).build();
+gptAdSlots[1] = googletag.defineSlot('/16833175/WideSkyScraper', [[160, 600], [300, 600], [300, 1050]], 'div-gpt-ad-1422003450156-5').
+defineSizeMapping(skyMapping).addService(googletag.pubads());
+var bmrMapping = googletag.sizeMapping().
+// Smaller
+addSize([0, 0], [[300, 250], [336, 280]]). 
+// Large Desktop
+addSize([1200, 0], [[300, 250], [336, 280], [970, 250]]).build();
+gptAdSlots[2] = googletag.defineSlot('/16833175/BottomMediumRectangle', [[300, 250], [336, 280], [970, 250]], 'div-gpt-ad-1422003450156-0').
+defineSizeMapping(bmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+gptAdSlots[3] = googletag.defineSlot('/16833175/RightBottomMediumRectangle', [[300, 250], [336, 280]], 'div-gpt-ad-1422003450156-3').addService(googletag.pubads());
+googletag.pubads().setTargeting("content","xml");
+googletag.enableServices();
+});
+</script>
+<link rel="stylesheet" type="text/css" href="../stdtheme.css" />
+</head>
+<body>
+<div class='w3-container top'>
+<a class='w3schools-logo' href='../index.html'>w3schools<span class='dotcom'>.com</span></a>
+<div class='w3-right toptext w3-wide'>THE WORLD'S LARGEST WEB DEVELOPER SITE</div></div>
+<div class='w3-topnav w3-card-2 w3-slim topnav' id='topnav'>
+<div style='overflow:auto;'>
+<div style='float:left;width:50%;overflow:hidden;height:44px'>
+<a href='javascript:void(0);' class='topnav-localicons w3-hide-large w3-left' onclick='open_menu()' title='Menu'>&#9776;</a>
+<a href='../default.html' class='topnav-icons fa fa-home w3-left' title='Home'></a>
+<a href='../html/default.html' class='w3-hide-small' title='HTML Tutorial'>HTML</a><a href='../css/default.html' class='w3-hide-small' title='CSS Tutorial'>CSS</a><a href='../js/default.html' class='w3-hide-small' title='JavaScript Tutorial'>JAVASCRIPT</a><a href='../sql/default.html' class='w3-hide-small' title='SQL Tutorial'>SQL</a><a href='../php/default.html' class='w3-hide-small' title='PHP Tutorial'>PHP</a><a href='../bootstrap/default.html' class='w3-hide-small' title='Bootstrap Tutorial'>BOOTSTRAP</a><a href='../jquery/default.html' class='w3-hide-small' title='jQuery Tutorial'>JQUERY</a><a href='../angular/default.html' class='w3-hide-small' title='Angular Tutorial'>ANGULAR</a><a href='default.html' class='w3-hide-small' title='XML Tutorial'>XML</a></div>
+<div style='float:right;width:110px;overflow:hidden;height:44px;'>
+<a href='javascript:void(0);' class='topnav-icons fa fa-search w3-right' onclick='w3_open_nav("search")' title='Search W3Schools'></a>
+<a href='javascript:void(0);' class='topnav-icons fa fa-globe w3-right' onclick='openGoogleTranslate();w3_open_nav("translate")' title='Translate W3Schools'></a></div>
+<div class='w3-hide-small' style='float:right;width:30%;overflow:hidden;height:44px;'>
+<a id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='Tutorials'>TUTORIALS <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a><a id='topnavbtn_references' href='javascript:void(0);' onclick='w3_open_nav("references")' title='References'>REFERENCES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a><a id='topnavbtn_examples' href='javascript:void(0);' onclick='w3_open_nav("examples")' title='Examples'>EXAMPLES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a><a href='http://w3schools.invisionzone.com/'>FORUM</a></div></div>
+<div id='nav_tutorials' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_references' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_examples' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_translate' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_search' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div></div>
+<div class='w3-row w3-light-grey' id='belowtopnav'>
+<div class='w3-col w3-slim' id='leftmenu'>
+<div id='leftmenuinner'>
+<div class='w3-light-grey' id='leftmenuinnerinner'>
+<a href='javascript:void(0)' onclick='close_menu()' class='w3-closebtn w3-hide-large w3-large' style='padding:3px 12px;'>&times;</a>
+<h2 class="left"><span class="left_h2">XML</span> Tutorial</h2>
+<a target="_top" href="default.html">XML HOME</a>
+<a target="_top" href="xml_whatis.html">XML Introduction</a>
+<a target="_top" href="xml_usedfor.html">XML How to use</a>
+<a target="_top" href="xml_tree.html">XML Tree</a>
+<a target="_top" href="xml_syntax.html">XML Syntax</a>
+<a target="_top" href="xml_elements.html">XML Elements</a>
+<a target="_top" href="xml_attributes.html">XML Attributes</a>
+<a target="_top" href="xml_namespaces.html">XML Namespaces</a>
+<a target="_top" href="xml_display.html">XML Display</a>
+<a target="_top" href="xml_xsl.html">XML XSLT</a>
+<a target="_top" href="xml_xpath.html">XML XPath</a>
+<a target="_top" href="xml_xlink.html">XML XLink</a>
+<a target="_top" href="xml_validator.html">XML Validator</a>
+<a target="_top" href="xml_dtd.html">XML DTD</a>
+<a target="_top" href="xml_schema.html">XML Schema</a>
+<a target="_top" href="xml_server.html">XML Server</a>
+<a target="_top" href="xml_applications.html">XML Applications</a>
+<a target="_top" href="xml_examples.html">XML Examples</a>
+<a target="_top" href="xml_quiz.html">XML Quiz</a>
+<a target="_top" href="xml_exam.html">XML Certificate</a>
+
+<br>
+<h2 class="left"><span class="left_h2">XML DOM</span></h2>
+<a target="_top" href="dom_intro.html">DOM Intro</a>
+<a target="_top" href="dom_nodes.html">DOM Nodes</a>
+<a target="_top" href="dom_httprequest.html">DOM XMLHttpRequest</a>
+<a target="_top" href="dom_nodes_access.html">DOM Accessing</a>
+<a target="_top" href="dom_nodes_info.html">DOM Node Info</a>
+<a target="_top" href="dom_nodes_nodelist.html">DOM Node List</a>
+<a target="_top" href="dom_nodes_traverse.html">DOM Traversing</a>
+<a target="_top" href="dom_nodes_navigate.html">DOM Navigating</a>
+<a target="_top" href="dom_nodes_get.html">DOM Get Values</a>
+<a target="_top" href="dom_nodes_set.html">DOM Change Nodes</a>
+<a target="_top" href="dom_nodes_remove.html">DOM Remove Nodes</a>
+<a target="_top" href="dom_nodes_replace.html">DOM Replace Nodes</a>
+<a target="_top" href="dom_nodes_create.html">DOM Create Nodes</a>
+<a target="_top" href="dom_nodes_add.html">DOM Add Nodes</a>
+<a target="_top" href="dom_nodes_clone.html">DOM Clone Nodes</a>
+<a target="_top" href="dom_examples.html">DOM Examples</a>
+
+<br>
+<h2 class="left"><span class="left_h2">DOM Reference</span></h2>
+<a target="_top" href="dom_nodetype.html">DOM Node Types</a>
+<a target="_top" href="dom_node.html">DOM Node</a>
+<a target="_top" href="dom_nodelist.html">DOM NodeList</a>
+<a target="_top" href="dom_namednodemap.html">DOM NamedNodeMap</a>
+<a target="_top" href="dom_document.html">DOM Document</a>
+<a target="_top" href="dom_element.html">DOM Element</a>
+<a target="_top" href="dom_attribute.html">DOM Attribute</a>
+<a target="_top" href="dom_text.html">DOM Text</a>
+<a target="_top" href="dom_cdatasection.html">DOM CDATA</a>
+<a target="_top" href="dom_comment.html">DOM Comment</a>
+<a target="_top" href="dom_http.html">DOM XMLHttpRequest</a>
+<a target="_top" href="dom_parser.html">DOM Parser</a>
+
+<br>
+<h2 class="left"><span class="left_h2">XML</span> DTD</h2>
+<a target="_top" href="xml_dtd_intro.html">DTD Intro</a>
+<a target="_top" href="xml_dtd_building.html">DTD Building Blocks</a>
+<a target="_top" href="xml_dtd_elements.html">DTD Elements</a>
+<a target="_top" href="xml_dtd_attributes.html">DTD Attributes</a>
+<a target="_top" href="xml_dtd_el_vs_attr.html">DTD Elements vs Attr</a>
+<a target="_top" href="xml_dtd_entities.html">DTD Entities</a>
+<a target="_top" href="xml_dtd_examples.html">DTD Examples</a>
+
+<br>
+<h2 class="left"><span class="left_h2">XSD</span> Schema</h2>
+<a target="_top" href="schema_intro.html">XSD Intro</a>
+<a target="_top" href="schema_howto.html">XSD How To</a>
+<a target="_top" href="schema_schema.html">XSD &lt;schema&gt;</a>
+<a target="_top" href="schema_simple.html">XSD Elements</a>
+<a target="_top" href="schema_simple_attributes.html">XSD Attributes</a>
+<a target="_top" href="schema_facets.html">XSD Restrictions</a>
+<br>
+<h2 class="left"><span class="left_h2">XSD</span> Complex</h2>
+<a target="_top" href="schema_complex.html">XSD Elements</a>
+<a target="_top" href="schema_complex_empty.html">XSD Empty</a>
+<a target="_top" href="schema_complex_elements.html">XSD Elements Only</a>
+<a target="_top" href="schema_complex_text.html">XSD Text Only</a>
+<a target="_top" href="schema_complex_mixed.html">XSD Mixed</a>
+<a target="_top" href="schema_complex_indicators.html">XSD Indicators</a>
+<a target="_top" href="schema_complex_any.html">XSD &lt;any&gt;</a>
+<a target="_top" href="schema_complex_anyattribute.html">XSD &lt;anyAttribute&gt;</a>
+<a target="_top" href="schema_complex_subst.html">XSD Substitution</a>
+<a target="_top" href="schema_example.html">XSD Example</a>
+<br>
+<h2 class="left"><span class="left_h2">XSD</span> Data</h2>
+<a target="_top" href="schema_dtypes_string.html">XSD String</a>
+<a target="_top" href="schema_dtypes_date.html">XSD Date</a>
+<a target="_top" href="schema_dtypes_numeric.html">XSD Numeric</a>
+<a target="_top" href="schema_dtypes_misc.html">XSD Misc</a>
+<a target="_top" href="schema_elements_ref.html">XSD Reference</a>
+<br>
+<h2 class="left"><span class="left_h2">Web</span> Services</h2>
+<a target="_top" href="xml_services.html">XML Services</a>
+<a target="_top" href="xml_wsdl.html">XML WSDL</a>
+<a target="_top" href="xml_soap.html">XML SOAP</a>
+<a target="_top" href="xml_rdf.html">XML RDF</a>
+<a target="_top" href="xml_rss.html">XML RSS</a>
+<br><br></div></div>&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-row w3-white'>
+<div class='w3-col l10 m12' id='main'>
+<div id='mainLeaderboard' style='overflow:hidden;'>
+<!-- MainLeaderboard-->
+<div id='div-gpt-ad-1422003450156-2'>
+<script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+</div></div>
+<h1>XML <span class="color_h1">Soap</span></h1>
+<div class="chapter">
+<div class="prev"><a class="chapter" href="xml_wsdl.html">&laquo; Previous</a></div>
+<div class="next"><a class="chapter" href="xml_rdf.html">Next Chapter &raquo;</a></div>
+</div>
+<hr>
+<ul>
+  <li>SOAP stands for <strong>S</strong>imple <strong>O</strong>bject <strong>A</strong>ccess 
+  <strong>P</strong>rotocol</li>
+  <li>SOAP is an application communication protocol</li>
+  <li>SOAP is a format for sending and receiving messages</li>
+  <li>SOAP is platform independent</li>
+  <li>SOAP is based on XML</li>
+  <li>SOAP is a W3C recommendation</li>
+</ul>
+<hr>
+
+<h2>Why SOAP?</h2>
+<p>It is important for web applications to be able to communicate over the Internet.</p>
+<p>The best way to communicate between applications is over HTTP,
+because HTTP is supported by all Internet browsers and
+servers. SOAP was created to accomplish this.</p>
+<p>SOAP provides a way to communicate between applications running on different
+operating systems, with different technologies and programming
+languages.</p>
+<hr>
+
+<h2>SOAP Building Blocks</h2>
+<p>A SOAP message is an ordinary XML document containing the following elements:</p>
+<ul>
+  <li>An Envelope element that identifies the XML document as a SOAP message</li>
+  <li>A Header element that contains header information</li>
+  <li>A Body element that contains call and response information</li>
+  <li>A Fault element containing errors and status information</li>
+</ul>
+<p>All the elements above are declared in the default namespace for the SOAP envelope:</p>
+<p><a href="http://www.w3.org/2003/05/soap-envelope/" target="_blank">
+http://www.w3.org/2003/05/soap-envelope/</a></p>
+<p>and the default namespace for SOAP encoding and data types is:</p>
+<p><a href="http://www.w3.org/2003/05/soap-encoding">
+http://www.w3.org/2003/05/soap-encoding</a></p>
+<hr>
+
+<h2>Syntax Rules</h2>
+<p>Here are some important syntax rules:</p>
+<ul>
+  <li>A SOAP message MUST be encoded using XML</li>
+  <li>A SOAP message MUST use the SOAP Envelope namespace</li>
+  <li>A SOAP message MUST use the SOAP Encoding namespace</li>
+  <li>A SOAP message must NOT contain a DTD reference</li>
+  <li>A SOAP message must NOT contain XML Processing Instructions</li>
+</ul>
+<hr>
+
+<h2>Skeleton SOAP Message</h2>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;?xml version=&quot;1.0&quot;?&gt;<br>
+ <br>&lt;soap:Envelope<br>
+xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope/&quot;<br>
+soap:encodingStyle=&quot;http://www.w3.org/2003/05/soap-encoding&quot;&gt;<br><br>
+&lt;soap:Header&gt;<br>
+  ...<br>
+&lt;/soap:Header&gt;<br><br>
+&lt;soap:Body&gt;<br>
+  ...<br>
+  &nbsp;
+  &lt;soap:Fault&gt;<br>
+    &nbsp;
+    ...<br>
+  &nbsp;
+  &lt;/soap:Fault&gt;<br>
+&lt;/soap:Body&gt;<br><br>
+&lt;/soap:Envelope&gt;
+</div></div>
+<hr>
+
+<h2>The SOAP Envelope Element</h2>
+<p>The required SOAP Envelope element is the root element of a SOAP message. This element defines the XML document as a SOAP message.</p>
+<h3>Example</h3>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;?xml version=&quot;1.0&quot;?&gt;<br>
+ <br>&lt;soap:Envelope<br>
+xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope/&quot;<br>
+soap:encodingStyle=&quot;http://www.w3.org/2003/05/soap-encoding&quot;&gt;<br>
+  &nbsp;
+  ...<br>
+  &nbsp;
+  Message information goes here<br>
+  &nbsp;
+  ...<br>
+&lt;/soap:Envelope&gt;
+</div></div>
+<hr>
+
+<h2>The xmlns:soap Namespace</h2>
+<p>Notice the xmlns:soap namespace in the example above. It should always have the value of: &quot;http://www.w3.org/2003/05/soap-envelope/&quot;.</p>
+<p>The namespace defines the Envelope as a SOAP Envelope.</p>
+<p>If a different namespace is used, the application generates an error and discards the message.</p>
+<hr>
+
+<h2>The encodingStyle Attribute</h2>
+<p>The encodingStyle attribute is used to define the data types used in the 
+document. This attribute may appear on any SOAP element, and applies to the element's contents and all child elements.</p>
+<p>A SOAP message has no default encoding.</p>
+
+<h4>Syntax</h4>
+<div class="w3-example">
+<div class="w3-code notranslate">
+soap:encodingStyle=&quot;<i>URI</i>&quot;</div></div>
+<h4>Example</h4>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;?xml version=&quot;1.0&quot;?&gt;<br>
+ <br>&lt;soap:Envelope<br>
+xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope/&quot;<br>
+soap:encodingStyle=&quot;http://www.w3.org/2003/05/soap-encoding&quot;&gt;<br>
+  &nbsp;
+  ...<br>
+  &nbsp;
+  Message information goes here<br>
+  &nbsp;
+  ...<br>
+&lt;/soap:Envelope&gt;
+</div></div>
+<hr>
+
+<h2>The SOAP Header Element</h2>
+<p>The optional  SOAP Header element contains application-specific information (like authentication, payment, etc) about the SOAP message.</p>
+<p>If the Header element is present, it must be the first child element of the Envelope element.</p>
+<p><b>Note:</b> All immediate child elements of the Header element must be namespace-qualified.</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;?xml version=&quot;1.0&quot;?&gt;<br>
+ <br>&lt;soap:Envelope<br>
+xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope/&quot;<br>
+soap:encodingStyle=&quot;http://www.w3.org/2003/05/soap-encoding&quot;&gt;<br><br>
+&lt;soap:Header&gt;<br>
+&nbsp;
+&lt;m:Trans xmlns:m=&quot;http://www.w3schools.com/transaction/&quot;<br>
+&nbsp;
+soap:mustUnderstand=&quot;1&quot;&gt;234<br>
+&nbsp;
+&lt;/m:Trans&gt;<br>
+&lt;/soap:Header&gt;<br>...<br>
+...<br>
+&lt;/soap:Envelope&gt;
+</div></div>
+
+<p>The example above contains a header with a &quot;Trans&quot; element, a &quot;mustUnderstand&quot; 
+attribute with a value of 1, and a value of 234.</p>
+<p>SOAP defines three attributes in the default namespace. These attributes are: mustUnderstand, 
+actor, and encodingStyle.</p>
+<p>The attributes defined in the SOAP Header defines how a recipient should process the SOAP message.</p>
+<hr>
+
+<h2>The mustUnderstand Attribute</h2>
+<p>The SOAP mustUnderstand attribute can be used to indicate whether a header entry is mandatory or optional for the recipient to process.</p>
+<p>If you add mustUnderstand=&quot;1&quot; to a child element of the Header element it indicates that the receiver processing the Header must recognize the element. If 
+the receiver does not recognize the element it will fail when processing the Header.</p>
+
+<h3>Syntax</h3>
+
+<div class="w3-example">
+<div class="w3-code notranslate">
+soap:mustUnderstand=&quot;0|1&quot;</div></div>
+
+<h3>Example</h3>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;?xml version=&quot;1.0&quot;?&gt;<br>
+ <br>&lt;soap:Envelope<br>
+xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope/&quot;<br>
+soap:encodingStyle=&quot;http://www.w3.org/2003/05/soap-encoding&quot;&gt;<br><br>
+&lt;soap:Header&gt;<br>
+&nbsp;
+&lt;m:Trans xmlns:m=&quot;http://www.w3schools.com/transaction/&quot;<br>
+&nbsp;
+soap:mustUnderstand=&quot;1&quot;&gt;234<br>
+&nbsp;
+&lt;/m:Trans&gt;<br>
+&lt;/soap:Header&gt;<br>
+...<br>
+...<br>
+&lt;/soap:Envelope&gt;
+</div></div>
+<hr>
+
+<h2>The actor Attribute</h2>
+<p>A SOAP message may travel from a sender to a receiver by passing different 
+endpoints along the message path. However, not all parts of a SOAP message may be intended for the ultimate 
+endpoint, instead, it may be intended for one or more of the endpoints on the message path.</p>
+<p>The SOAP actor attribute is used to address the Header element to a specific endpoint.</p>
+
+<h3>Syntax</h3>
+<div class="w3-example">
+<div class="w3-code notranslate">
+soap:actor=&quot;<i>URI</i>&quot;
+</div></div>
+
+<h3>Example</h3>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;?xml version=&quot;1.0&quot;?&gt;<br>
+ <br>&lt;soap:Envelope<br>
+xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope/&quot;<br>
+soap:encodingStyle=&quot;http://www.w3.org/2003/05/soap-encoding&quot;&gt;<br><br>
+&lt;soap:Header&gt;<br>
+&nbsp;
+&lt;m:Trans xmlns:m=&quot;http://www.w3schools.com/transaction/&quot;<br>
+&nbsp;
+soap:actor=&quot;http://www.w3schools.com/appml/&quot;&gt;234<br>
+&nbsp;
+&lt;/m:Trans&gt;<br>
+&lt;/soap:Header&gt;<br>...<br>
+...<br>&lt;/soap:Envelope&gt;
+</div></div>
+<hr>
+
+<h2>The encodingStyle Attribute</h2>
+<p>The encodingStyle attribute is used to define the data types used in the 
+document. This attribute may appear on any SOAP element, and it will apply to that 
+element's contents and all child elements.</p>
+<p>A SOAP message has no default encoding.</p>
+<h3>Syntax</h3>
+
+<div class="w3-example">
+<div class="w3-code notranslate">
+soap:encodingStyle=&quot;<i>URI</i>&quot;
+</div></div>
+<hr>
+
+<h2>The SOAP Body Element</h2>
+<p>The required SOAP Body element contains the actual SOAP message intended for the ultimate endpoint of the message. </p>
+<p>Immediate child elements of the SOAP Body element may be namespace-qualified.</p>
+
+<h3>Example</h3>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;?xml version=&quot;1.0&quot;?&gt;<br>
+ <br>&lt;soap:Envelope<br>
+xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope/&quot;<br>
+soap:encodingStyle=&quot;http://www.w3.org/2003/05/soap-encoding&quot;&gt;<br><br>
+&lt;soap:Body&gt;<br>
+   &nbsp;
+   &lt;m:GetPrice xmlns:m=&quot;http://www.w3schools.com/prices&quot;&gt;<br>
+      &nbsp;&nbsp;&nbsp;
+      &lt;m:Item&gt;Apples&lt;/m:Item&gt;<br>
+   &nbsp;
+   &lt;/m:GetPrice&gt;<br>
+&lt;/soap:Body&gt;<br><br>
+&lt;/soap:Envelope&gt;
+</div></div>
+
+<p>The example above requests the price of apples. Note that the m:GetPrice and 
+the Item elements above are application-specific elements. They are not a part of the SOAP namespace. </p>
+<p>A SOAP response could look something like this:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;?xml version=&quot;1.0&quot;?&gt;<br>
+ <br>&lt;soap:Envelope<br>
+xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope/&quot;<br>
+soap:encodingStyle=&quot;http://www.w3.org/2003/05/soap-encoding&quot;&gt;<br><br>
+&lt;soap:Body&gt;<br>
+   &nbsp;
+   &lt;m:GetPriceResponse xmlns:m=&quot;http://www.w3schools.com/prices&quot;&gt;<br>
+      &nbsp;&nbsp;&nbsp;
+      &lt;m:Price&gt;1.90&lt;/m:Price&gt;<br>
+   &nbsp;
+   &lt;/m:GetPriceResponse&gt;<br>
+&lt;/soap:Body&gt;<br><br>
+&lt;/soap:Envelope&gt;
+</div></div>
+<br>
+
+
+<hr>
+
+<h2>The SOAP Fault Element</h2>
+
+<p class="MsoNormal">The optional SOAP Fault element is used to indicate error 
+messages.</p>
+<p>The  SOAP Fault element holds errors and 
+status information for a SOAP message.</p>
+<p class="MsoNormal">If a Fault element is present, it must appear as a child element
+of the Body element. A Fault element can only appear once in a SOAP message.</p>
+<p class="MsoNormal">The SOAP Fault element has the following sub elements:</p>
+
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:25%">Sub Element</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>&lt;faultcode&gt;</td>
+<td>A code for identifying the fault</td>
+</tr>
+<tr>
+<td>&lt;faultstring&gt;</td>
+<td>A human readable explanation of the fault</td>
+</tr>
+<tr>
+<td>&lt;faultactor&gt;</td>
+<td>Information about who caused the fault to happen</td>
+</tr>
+<tr>
+<td>&lt;detail&gt;</td>
+<td>
+<p class="MsoNormal">Holds application specific error information related to the 
+Body element</p>
+</td>
+</tr>
+</table>
+
+<h3>SOAP Fault Codes</h3>
+
+<p>The faultcode values defined below must be used in the faultcode element when 
+describing faults:</p>
+
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:25%">Error</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>VersionMismatch</td>
+<td>Found an invalid namespace for the SOAP Envelope element</td>
+</tr>
+<tr>
+<td>MustUnderstand</td>
+<td>An immediate child element of the Header element, with the mustUnderstand attribute set to &quot;1&quot;, was
+  not understood</td>
+</tr>
+<tr>
+<td>Client</td>
+<td>The message was incorrectly formed or contained incorrect information</td>
+</tr>
+<tr>
+<td>Server</td>
+<td>There was a problem with the server so the message could not proceed</td>
+</tr>
+</table>
+
+
+<h2>The HTTP Protocol</h2>
+<p>HTTP communicates over TCP/IP. An HTTP client connects to an HTTP server using TCP. After establishing a connection, the client can send an HTTP request message to the server:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate">
+POST /item HTTP/1.1<br>
+Host: 189.123.255.239<br>
+Content-Type: text/plain<br>
+Content-Length: 200
+</div></div>
+
+<p>The server then processes the request and sends an HTTP response back to the client. The response contains a status code that indicates the status of the request:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate">
+200 OK<br>
+Content-Type: text/plain<br>
+Content-Length: 200
+</div></div>
+
+<p>In the example above, the server returned a status code of 200. This is the standard success code for HTTP.</p>
+<p>If the server could not decode the request, it could have returned something like this:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate">
+400 Bad Request<br>
+Content-Length: 0<br>
+</div></div>
+<hr>
+
+<h2>SOAP Binding</h2>
+<p>The SOAP specification defines the structure of the SOAP messages, not how 
+they are exchanged. This gap is filled by what is called &quot;SOAP Bindings&quot;. SOAP 
+bindings are mechanisms which allow SOAP messages to be effectively exchanged 
+using a transport protocol.</p>
+<p>Most SOAP implementations provide bindings for common transport protocols, 
+such as HTTP or SMTP.</p>
+<p>HTTP is synchronous and widely used. A SOAP HTTP request specifies at least two HTTP headers: Content-Type and Content-Length.</p>
+<p>SMTP is asynchronous and is used in last resort or particular cases.</p>
+<p>Java implementations of SOAP usually provide a specific binding for the JMS 
+(Java Messaging System) protocol.</p>
+<hr>
+
+<h2>Content-Type</h2>
+<p>The Content-Type header for a SOAP request and response defines the MIME type for the message and the 
+character encoding (optional) used for the XML body of the request or response.</p>
+
+<h4>Syntax</h4>
+
+<div class="w3-example">
+<div class="w3-code notranslate">
+Content-Type: MIMEType; charset=character-encoding
+</div></div>
+
+<h4>Example</h4>
+
+<div class="w3-example">
+<div class="w3-code notranslate">
+POST /item HTTP/1.1<br>
+Content-Type: application/soap+xml; charset=utf-8
+</div></div>
+<hr>
+
+<h2>Content-Length</h2>
+<p>The Content-Length header for a SOAP request and response specifies the number of bytes in the body of the request or response.</p>
+
+<h4>Syntax</h4>
+<div class="w3-example">
+<div class="w3-code notranslate">
+Content-Length: bytes</div></div>
+
+<h4>Example</h4>
+<div class="w3-example">
+<div class="w3-code notranslate">
+POST /item HTTP/1.1<br>
+Content-Type: application/soap+xml; charset=utf-8<br>
+Content-Length: 250
+</div></div>
+<hr>
+
+<h2>A SOAP Example</h2>
+<p>In the example below, a GetStockPrice request is sent to a server. The request has a StockName parameter,
+and a Price parameter that will be returned in the response. The namespace for the function is defined in &quot;http://www.example.org/stock&quot;.</p>
+
+<h3>A SOAP request:</h3>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+POST /InStock HTTP/1.1<br>
+Host: www.example.org<br>
+Content-Type: application/soap+xml; charset=utf-8<br>
+Content-Length: nnn<br><br>
+&lt;?xml version=&quot;1.0&quot;?&gt;<br>
+ <br>&lt;soap:Envelope<br>
+xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope/&quot;<br>
+soap:encodingStyle=&quot;http://www.w3.org/2003/05/soap-encoding&quot;&gt;<br><br>
+  &lt;soap:Body xmlns:m=&quot;http://www.example.org/stock&quot;&gt;<br>
+&nbsp;  &lt;m:GetStockPrice&gt;<br>
+      &nbsp;&nbsp;&nbsp;
+      &lt;m:StockName&gt;IBM&lt;/m:StockName&gt;<br>
+&nbsp; &lt;/m:GetStockPrice&gt;<br>
+  &lt;/soap:Body&gt;<br><br>
+&lt;/soap:Envelope&gt;
+</div></div>
+
+<h3>The SOAP response:</h3>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+HTTP/1.1 200 OK<br>
+Content-Type: application/soap+xml; charset=utf-8<br>
+Content-Length: nnn<br><br>
+&lt;?xml version=&quot;1.0&quot;?&gt;<br>
+ <br>&lt;soap:Envelope<br>
+xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope/&quot;<br>
+soap:encodingStyle=&quot;http://www.w3.org/2003/05/soap-encoding&quot;&gt;<br><br>
+  &lt;soap:Body xmlns:m=&quot;http://www.example.org/stock&quot;&gt;<br>
+    &nbsp;
+    &lt;m:GetStockPriceResponse&gt;<br>
+      &nbsp;&nbsp;&nbsp;
+      &lt;m:Price&gt;34.5&lt;/m:Price&gt;<br>
+    &nbsp;
+    &lt;/m:GetStockPriceResponse&gt;<br>
+  &lt;/soap:Body&gt;<br><br>
+&lt;/soap:Envelope&gt;
+</div></div>
+
+
+<br>
+<div class="chapter">
+<div class="prev"><a class="chapter" href="xml_wsdl.html">&laquo; Previous</a></div>
+<div class="next"><a class="chapter" href="xml_rdf.html">Next Chapter &raquo;</a></div>
+</div>
+</div>
+<div class="w3-col l2 m12" id="right">
+
+<div class="sidesection">
+<div id="skyscraper">
+<div id="div-gpt-ad-1422003450156-5">
+<script>
+ googletag.cmd.push(function() {
+ googletag.display('div-gpt-ad-1422003450156-5');
+ });
+ </script> 
+</div>
+</div>
+</div>
+
+<div class="sidesection">
+<h3>W3SCHOOLS EXAMS</h3>
+<a target="_blank" href="../cert/default.html">HTML, CSS, JavaScript, PHP, jQuery, and XML Certifications</a>
+</div>
+
+<div class="sidesection">
+<h3>COLOR PICKER</h3>
+<a href="../colors/colors_picker.html">
+<img src="../images/colorpicker.gif" alt="colorpicker"></a>
+</div>
+
+<div class="sidesection">
+<h3>SHARE THIS PAGE</h3>
+<div class="w3-text-grey sharethis">
+<script>
+<!--
+try{
+loc=location.pathname;
+if (loc.toUpperCase().indexOf(".ASP")<0) loc=loc+"default.asp";
+txt='<a href="http://www.facebook.com/sharer.php?u=http://www.w3schools.com'+loc+'" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a>';
+txt=txt+'<a href="http://twitter.com/home?status=Currently reading http://www.w3schools.com'+loc+'" target="_blank" title="Twitter"><span class="fa fa-twitter-square fa-2x"></span></a>';
+txt=txt+'<a href="https://plus.google.com/share?url=http://www.w3schools.com'+loc+'" target="_blank" title="Google+"><span class="fa fa-google-plus-square fa-2x"></span></a>';
+document.write(txt);
+} catch(e) {}
+//-->
+</script>
+</div>
+</div>
+
+<div class="sidesection w3-text-grey sharethis">
+<a href="javascript:void(0);" onclick="clickFBLike()" title="Like W3Schools on Facebook">
+<span class="fa fa-thumbs-o-up fa-2x"></span></a>
+<div id="fblikeframe">
+<div id="popupframe"></div>
+<div id="popupDIV"></div>
+</div>
+</div>       
+
+<div class="sidesection">
+<h3>LEARN MORE:</h3>
+<p>
+<a href="../colors/colors_converter.html">Color Converter</a><br>
+<a href="../howto/howto_google_maps.html">Google Maps</a><br>
+<a href="../howto/howto_css_animate_buttons.html">Animated Buttons</a><br>
+<a href="../howto/howto_css_modals.html">Modal Boxes</a><br>
+<a href="../howto/howto_css_modal_images.html">Modal Images</a><br>
+<a href="../howto/howto_css_tooltip.html">Tooltips</a><br>
+<a href="../howto/howto_css_loader.html">Loaders</a><br>
+<a href="../howto/howto_js_animate.html">JS Animations</a><br>
+<a href="../howto/howto_js_progressbar.html">Progress Bars</a><br>
+<a href="../howto/howto_js_dropdown.html">Dropdowns</a><br>
+<a href="../howto/howto_js_slideshow.html">Slideshow</a><br>
+<a href="../howto/howto_js_sidenav.html">Side Navigation</a><br>
+<a href="../howto/howto_html_include.html">HTML Includes</a><br>
+<a href="../w3css/w3css_color_palettes.html">Color Palettes</a>
+</p>
+</div>
+
+</div>
+</div>
+<div class="footer w3-container w3-white">      
+
+<hr>
+<div style="overflow:auto">
+<!-- BottomMediumRectangle -->
+<div class="bottomad" id='div-gpt-ad-1422003450156-0'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-0'); });
+</script>
+</div>
+<!-- RightBottomMediumRectangle -->
+<div class="bottomad" id='div-gpt-ad-1422003450156-3'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-3'); });
+</script>
+</div>
+</div>
+
+<hr>
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m3 s12">
+<a href="javascript:void(0);" onclick="displayError();return false" style="white-space:nowrap;">REPORT ERROR</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="#" target="_blank" onclick="printPage();return false;">PRINT PAGE</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="http://w3schools.invisionzone.com/" target="_blank">FORUM</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="../about/default.html" target="_top">ABOUT</a>
+</div>
+</div>
+<hr>
+<div class="w3-light-grey w3-padding w3-center" id="err_form" style="display:none;">
+<span onclick="this.parentElement.style.display='none'" class="w3-closebtn">&times;</span>     
+<h2>Your Suggestion:</h2>
+<form>
+<div class="w3-group">      
+<label for="err_email">Your E-mail:</label>
+<input class="w3-input" type="text" style="width:100%" id="err_email" name="err_email">
+</div>
+<div class="w3-group">      
+<label for="err_email">Page address:</label>
+<input class="w3-input" type="text" style="width:100%" id="err_url" name="err_url" disabled="disabled">
+</div>
+<div class="w3-group">
+<label for="err_email">Description:</label>
+<textarea rows="10" class="w3-input" id="err_desc" name="err_desc" style="width:100%;"></textarea>
+</div>
+<div class="form-group">        
+<button type="button" onclick="sendErr()">Submit</button>
+</div>
+<br>
+</form>
+</div>
+<div class="w3-container w3-light-grey w3-padding" id="err_sent" style="display:none;">
+<span onclick="this.parentElement.style.display='none'" class="w3-closebtn">&times;</span>     
+<h2>Thank You For Helping Us!</h2>
+<p>Your message has been sent to W3Schools.</p>
+</div>
+
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 Tutorials</h4>
+<a href="../html/default.html">HTML Tutorial</a><br>
+<a href="../css/default.html">CSS Tutorial</a><br>
+<a href="../js/default.html">JavaScript Tutorial</a><br>
+<a href="../w3css/default.html">W3.CSS Tutorial</a><br>
+<a href="../bootstrap/default.html">Bootstrap Tutorial</a><br>
+<a href="../sql/default.html">SQL Tutorial</a><br>
+<a href="../php/default.html">PHP Tutorial</a><br>
+<a href="../jquery/default.html">jQuery Tutorial</a><br>
+<a href="../angular/default.html">Angular Tutorial</a><br>
+<a href="default.html">XML Tutorial</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 References</h4>
+<a href="../tags/default.html">HTML Reference</a><br>
+<a href="../cssref/default.html">CSS Reference</a><br>
+<a href="../jsref/default.html">JavaScript Reference</a><br>
+<a href="../w3css/w3css_references.html">W3.CSS Reference</a><br>
+<a href="../browsers/default.html">Browser Statistics</a><br>
+<a href="../php/php_ref_array.asp">PHP Reference</a><br>
+<a href="../colors/colors_names.html">HTML Colors</a><br>
+<a href="../charsets/default.html">HTML Character Sets</a><br>
+<a href="../jquery/jquery_ref_selectors.html">jQuery Reference</a><br>
+<a href="../angular/angular_ref_directives.html">AngularJS Reference</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 Examples</h4>
+<a href="../html/html_examples.html">HTML Examples</a><br>
+<a href="../css/css_examples.html">CSS Examples</a><br>
+<a href="../js/js_examples.html">JavaScript Examples</a><br>
+<a href="../w3css/w3css_examples.html">W3.CSS Examples</a><br>
+<a href="../js/js_dom_examples.html">HTML DOM Examples</a><br>
+<a href="../php/php_examples.html">PHP Examples</a><br>
+<a href="../jquery/jquery_examples.html">jQuery Examples</a><br>
+<a href="../asp/asp_examples.html">ASP Examples</a><br>
+<a href="xml_examples.html">XML Examples</a><br>
+<a href="../svg/svg_examples.html">SVG Examples</a>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Web Certificates</h4>
+<a href="../cert/default.html">HTML Certificate</a><br>
+<a href="../cert/default.html">HTML5 Certificate</a><br>
+<a href="../cert/default.html">CSS Certificate</a><br>
+<a href="../cert/default.html">JavaScript Certificate</a><br>
+<a href="../cert/default.html">jQuery Certificate</a><br>
+<a href="../cert/default.html">PHP Certificate</a><br>
+<a href="../cert/default.html">Bootstrap Certificate</a><br>
+<a href="../cert/default.html">XML Certificate</a><br>
+</div>
+</div>        
+</div>        
+
+<hr>
+<div class="w3-center w3-small w3-opacity">
+W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding.
+Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.
+While using this site, you agree to have read and accepted our <a href="../about/about_copyright.html">terms of use</a>,
+<a href="../about/about_privacy.html">cookie and privacy policy</a>.
+<a href="../about/about_copyright.html">Copyright 1999-2016</a> by Refsnes Data. All Rights Reserved.<br><br>
+<a href="../index.html">
+<img style="width:150px;height:28px;border:0" src="../images/w3schoolscom_gray.gif" alt="W3Schools.com"></a>
+</div>
+<br><br>
+</div>
+</div>
+</div>
+
+<div id="nav_tutorials_content" style="display:none;">
+<span onclick='w3_close_nav("tutorials")' class='w3-closebtn w3-xlarge'>&times;</span>
+<div class='w3-row-padding'>
+<div class='w3-col l2 m4'>
+<h3>HTML/CSS</h3>
+<a href='../html/default.html'>Learn HTML</a>
+<a href='../css/default.html'>Learn CSS</a>
+<a href='../w3css/default.html'>Learn W3.CSS</a>
+<a href='../colors/default.html'>Learn Colors</a>
+<a href='../bootstrap/default.html'>Learn Bootstrap</a>
+</div>
+<div class='w3-col l2 m4'>  
+<h3>JavaScript</h3>
+<a href='../js/default.html'>Learn JavaScript</a>
+<a href='../jquery/default.html'>Learn jQuery</a>
+<a href='../jquerymobile/default.html'>Learn jQueryMobile</a>
+<a href='../appml/default.html'>Learn AppML</a>
+<a href='../angular/default.html'>Learn AngularJS</a>
+<a href='../ajax/default.html'>Learn AJAX</a>
+<a href='../json/default.html'>Learn JSON</a>
+</div>
+<div class='w3-col l2 m4'>   
+<h3>HTML Graphics</h3>
+<a href='../canvas/default.html'>Learn Canvas</a>
+<a href='../svg/default.html'>Learn SVG</a>
+<a href='../icons/default.html'>Learn Icons</a>
+<a href='../googleapi/default.html'>Learn Google Maps</a>
+<a href="../games/default.html">Learn HTML Games</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Server Side</h3>
+<a href='../sql/default.html'>Learn SQL</a>
+<a href='../php/default.html'>Learn PHP</a>
+<a href='../asp/default.html'>Learn ASP</a>
+<a href='../aspnet/default.html'>Learn ASP.NET</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Web Building</h3>
+<a href='../website/default.html'>Web Building</a>
+<a href='../browsers/default.html'>Web Statistics</a>
+<a href='../cert/default.html'>Web Certificates</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>XML Tutorials</h3>
+<a href='default.html'>Learn XML</a>
+<a href='../xsl/default.html'>Learn XSLT</a>
+</div>
+</div>
+</div>
+<div id="nav_references_content" style="display:none;">
+<span onclick='w3_close_nav("references")' class='w3-closebtn w3-xlarge'>&times;</span>
+<div class='w3-row-padding'>
+<div class='w3-col l2 m4'>
+<h3>HTML</h3>
+<a href='../tags/default.html'>HTML Tag Reference</a>
+<a href='../tags/ref_eventattributes.html'>HTML Event Reference</a>
+<a href='../colors/default.html'>HTML Color Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>CSS</h3>
+<a href='../cssref/default.html'>CSS Reference</a>
+<a href='../cssref/css_selectors.html'>CSS Selector Reference</a>
+<a href='../w3css/w3css_references.html'>W3.CSS Reference</a>
+<a href='../bootstrap/bootstrap_ref_css_text.html'>Bootstrap Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>JavaScript</h3>
+<a href='../jsref/default.html'>JavaScript Reference</a>
+<a href='../jsref/default.html'>HTML DOM Reference</a>
+<a href='../jquery/jquery_ref_selectors.html'>jQuery Reference</a>
+<a href='../jquerymobile/jquerymobile_ref_data.html'>jQuery Mobile Reference</a>
+<a href='../angular/angular_ref_directives.html'>AngularJS Reference</a>
+<a href='../googleAPI/google_maps_ref.html'>Google Maps Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Server Side</h3>
+<a href='../php/php_ref_array.asp'>PHP Reference</a>
+<a href='../sql/sql_quickref.html'>SQL Reference</a>
+<a href='../asp/asp_ref_response.html'>ASP Reference</a>
+<a href='../aspnet/webpages_ref_classes.html'>Razor Reference</a>
+<a href='../aspnet/aspnet_intro.html'>ASP.NET Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>XML</h3>
+<a href='dom_nodetype.html'>XML Reference</a>
+<a href='../xsl/xsl_w3celementref.html'>XSLT Reference</a>
+<a href='schema_elements_ref.html'>XML Schema Reference</a>
+<a href='../svg/svg_reference.html'>SVG Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Charsets</h3>
+<a href='../charsets/default.html'>HTML Character Sets</a>
+<a href='../charsets/ref_html_ascii.html'>HTML ASCII</a>
+<a href='../charsets/ref_html_ansi.html'>HTML ANSI</a>
+<a href='../charsets/ref_html_ansi.html'>HTML Windows-1252</a>
+<a href='../charsets/ref_html_8859.html'>HTML ISO-8859-1</a>
+<a href='../charsets/ref_html_symbols.html'>HTML Symbols</a>
+<a href='../charsets/ref_html_utf8.html'>HTML UTF-8</a>
+</div>
+</div>
+</div>
+<div id="nav_examples_content" style="display:none;">
+<span onclick='w3_close_nav("examples")' class='w3-closebtn w3-xlarge'>&times;</span>
+<div class='w3-row-padding'>
+<div class='w3-col l3 m6'>
+<h3>HTML/CSS</h3>
+<a href='../html/html_examples.html'>HTML Examples</a>
+<a href='../css/css_examples.html'>CSS Examples</a>
+<a href='../w3css/w3css_examples.html'>W3.CSS Examples</a>
+</div>
+<div class='w3-col l3 m6'>
+<h3>JavaScript</h3>
+<a href='../js/js_examples.html' target='_top'>JavaScript Examples</a>
+<a href='../js/js_dom_examples.html' target='_top'>HTML DOM Examples</a>
+<a href='../jquery/jquery_examples.html' target='_top'>jQuery Examples</a>
+<a href='../jquerymobile/jquerymobile_examples.html' target='_top'>jQuery Mobile Examples</a>
+<a href='../angular/angular_examples.html' target='_top'>AngularJS Examples</a>
+<a href='../ajax/ajax_examples.html' target='_top'>AJAX Examples</a>
+</div>
+<div class='w3-col l3 m6'>
+<h3>Server Side</h3>
+<a href='../php/php_examples.html' target='_top'>PHP Examples</a>
+<a href='../asp/asp_examples.html' target='_top'>ASP Examples</a>
+<a href='../aspnet/webpages_examples.html' target='_top'>Razor Examples</a>
+<a href='../aspnet/aspnet_examples.html' target='_top'>.NET Examples</a>
+</div>
+<div class='w3-col l3 m6'>
+<h3>XML</h3>
+<a href='xml_examples.html' target='_top'>XML Examples</a>
+<a href='../xsl/xsl_examples.html' target='_top'>XSL Examples</a>
+<a href='../xsl/xsl_examples.html' target='_top'>XSLT Examples</a>
+<a href='../xsl/xpath_examples.html' target='_top'>XPath Examples</a>
+<a href='schema_example.html' target='_top'>XML Schema Examples</a>
+<a href='../svg/svg_examples.html' target='_top'>SVG Examples</a>
+</div>
+</div>
+</div>
+<div id='nav_translate_content' style="display:none">
+<span onclick='w3_close_nav("translate")' class='w3-closebtn w3-xlarge'>&times;</span>
+<br><br>Translate w3schools.com:
+<div id='google_translate_element'></div>
+<br>
+</div>
+<div id='nav_search_content' style="display:none">
+<span onclick='w3_close_nav("search")' class='w3-closebtn w3-xlarge'>&times;</span>
+<br><br>
+<div class='searchdiv'>
+Search w3schools.com:
+<div id='googleSearch'><div class='gcse-search'></div></div>
+</div>
+<br>
+</div>
+<script src="../lib/w3schools_footer.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
+<![endif]-->
+</body>
+
+<!-- Mirrored from www.w3schools.com/xml/xml_soap.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:00:33 GMT -->
+</html>

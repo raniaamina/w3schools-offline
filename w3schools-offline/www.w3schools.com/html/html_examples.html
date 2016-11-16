@@ -1,0 +1,978 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/html/html_examples.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 07:31:30 GMT -->
+<head>
+
+<title>HTML Examples</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,ASP,XML,DOM,Bootstrap,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,source code,colors,demos,tips">
+<meta name="Description" content="Well organized and easy to understand Web bulding tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, and XML.">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../lib/w3.css">
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3855518-1', 'auto');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script>
+
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type='text/javascript'>
+// GPT slots
+var gptAdSlots = [];
+googletag.cmd.push(function() {
+var leaderMapping = googletag.sizeMapping().
+// Mobile ad
+addSize([0, 0], [320, 50]). 
+// Vertical Tablet ad
+addSize([480, 0], [468, 60]). 
+// Horizontal Tablet
+addSize([750, 0], [728, 90]).
+// Small Desktop
+addSize([993, 0], [468, 60]).
+// Normal Desktop
+addSize([1135, 0], [728, 90]).
+// Large Desktop and bigger ad
+addSize([1425, 0], [[728, 90], [970, 90]]).build();
+gptAdSlots[0] = googletag.defineSlot('/16833175/MainLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1422003450156-2').
+defineSizeMapping(leaderMapping).addService(googletag.pubads());
+var skyMapping = googletag.sizeMapping().
+// Mobile ad
+addSize([0, 0], [320, 50]). 
+// Tablet ad
+addSize([975, 0], [120, 600]). 
+// Desktop
+addSize([1135, 0], [160, 600]).   
+// Large Desktop
+addSize([1675, 0], [[160, 600], [300, 600], [300, 1050]]).build();
+gptAdSlots[1] = googletag.defineSlot('/16833175/WideSkyScraper', [[160, 600], [300, 600], [300, 1050]], 'div-gpt-ad-1422003450156-5').
+defineSizeMapping(skyMapping).addService(googletag.pubads());
+var bmrMapping = googletag.sizeMapping().
+// Smaller
+addSize([0, 0], [[300, 250], [336, 280]]). 
+// Large Desktop
+addSize([1200, 0], [[300, 250], [336, 280], [970, 250]]).build();
+gptAdSlots[2] = googletag.defineSlot('/16833175/BottomMediumRectangle', [[300, 250], [336, 280], [970, 250]], 'div-gpt-ad-1422003450156-0').
+defineSizeMapping(bmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+gptAdSlots[3] = googletag.defineSlot('/16833175/RightBottomMediumRectangle', [[300, 250], [336, 280]], 'div-gpt-ad-1422003450156-3').addService(googletag.pubads());
+googletag.pubads().setTargeting("content","html");
+googletag.enableServices();
+});
+</script>
+<link rel="stylesheet" type="text/css" href="../stdtheme.css"></head>
+<body>
+<div class='w3-container top'>
+<a class='w3schools-logo' href='../index.html'>w3schools<span class='dotcom'>.com</span></a>
+<div class='w3-right toptext w3-wide'>THE WORLD'S LARGEST WEB DEVELOPER SITE</div></div>
+<div class='w3-topnav w3-card-2 w3-slim topnav' id='topnav'>
+<div style='overflow:auto;'>
+<div style='float:left;width:50%;overflow:hidden;height:44px'>
+<a href='javascript:void(0);' class='topnav-localicons w3-hide-large w3-left' onclick='open_menu()' title='Menu'>&#9776;</a>
+<a href='../default.html' class='topnav-icons fa fa-home w3-left' title='Home'></a>
+<a href='default.html' class='w3-hide-small' title='HTML Tutorial'>HTML</a><a href='../css/default.html' class='w3-hide-small' title='CSS Tutorial'>CSS</a><a href='../js/default.html' class='w3-hide-small' title='JavaScript Tutorial'>JAVASCRIPT</a><a href='../sql/default.html' class='w3-hide-small' title='SQL Tutorial'>SQL</a><a href='../php/default.html' class='w3-hide-small' title='PHP Tutorial'>PHP</a><a href='../bootstrap/default.html' class='w3-hide-small' title='Bootstrap Tutorial'>BOOTSTRAP</a><a href='../jquery/default.html' class='w3-hide-small' title='jQuery Tutorial'>JQUERY</a><a href='../angular/default.html' class='w3-hide-small' title='Angular Tutorial'>ANGULAR</a><a href='../xml/default.html' class='w3-hide-small' title='XML Tutorial'>XML</a></div>
+<div style='float:right;width:110px;overflow:hidden;height:44px;'>
+<a href='javascript:void(0);' class='topnav-icons fa fa-search w3-right' onclick='w3_open_nav("search")' title='Search W3Schools'></a>
+<a href='javascript:void(0);' class='topnav-icons fa fa-globe w3-right' onclick='openGoogleTranslate();w3_open_nav("translate")' title='Translate W3Schools'></a></div>
+<div class='w3-hide-small' style='float:right;width:30%;overflow:hidden;height:44px;'>
+<a id='topnavbtn_tutorials' href='javascript:void(0);' onclick='w3_open_nav("tutorials")' title='Tutorials'>TUTORIALS <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a><a id='topnavbtn_references' href='javascript:void(0);' onclick='w3_open_nav("references")' title='References'>REFERENCES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a><a id='topnavbtn_examples' href='javascript:void(0);' onclick='w3_open_nav("examples")' title='Examples'>EXAMPLES <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style='display:none'></i></a><a href='http://w3schools.invisionzone.com/'>FORUM</a></div></div>
+<div id='nav_tutorials' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_references' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_examples' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_translate' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div>
+<div id='nav_search' class='w3-dropnav w3-light-grey w3-card-2 w3-center'></div></div>
+<div class='w3-row w3-light-grey' id='belowtopnav'>
+<div class='w3-col w3-slim' id='leftmenu'>
+<div id='leftmenuinner'>
+<div class='w3-light-grey' id='leftmenuinnerinner'>
+<a href='javascript:void(0)' onclick='close_menu()' class='w3-closebtn w3-hide-large w3-large' style='padding:3px 12px;'>&times;</a>
+<h2 class="left"><span class="left_h2">HTML</span> Tutorial</h2>
+<a target="_top" href="default.html">HTML HOME</a>
+<a target="_top" href="html_intro.html">HTML Introduction</a>
+<a target="_top" href="html_editors.html">HTML Editors</a>
+<a target="_top" href="html_basic.html">HTML Basic</a>
+<a target="_top" href="html_elements.html">HTML Elements</a>
+<a target="_top" href="html_attributes.html">HTML Attributes</a>
+<a target="_top" href="html_headings.html">HTML Headings</a>
+<a target="_top" href="html_paragraphs.html">HTML Paragraphs</a>
+<a target="_top" href="html_styles.html">HTML Styles</a>
+<a target="_top" href="html_formatting.html">HTML Formatting</a>
+<a target="_top" href="html_quotation_elements.html">HTML Quotations</a>
+<a target="_top" href="html_computercode_elements.html">HTML Computercode</a>
+<a target="_top" href="html_comments.html">HTML Comments</a>
+<a target="_top" href="html_colors.html">HTML Colors</a>
+<a target="_top" href="html_css.html">HTML CSS</a>
+<a target="_top" href="html_links.html">HTML Links</a>
+<a target="_top" href="html_images.html">HTML Images</a>
+<a target="_top" href="html_tables.html">HTML Tables</a>
+<a target="_top" href="html_lists.html">HTML Lists</a>
+<a target="_top" href="html_blocks.html">HTML Blocks</a>
+<a target="_top" href="html_classes.html">HTML Classes</a>
+<a target="_top" href="html_layout.html">HTML Layout</a>
+<a target="_top" href="html_responsive.html">HTML Responsive</a>
+<a target="_top" href="html_iframe.html">HTML Iframes</a>
+
+<a target="_top" href="html_scripts.html">HTML JavaScript</a>
+<a target="_top" href="html_head.html">HTML Head</a>
+<a target="_top" href="html_entities.html">HTML Entities</a>
+<a target="_top" href="html_symbols.html">HTML Symbols</a>
+<a target="_top" href="html_charset.html">HTML Charset</a>
+<a target="_top" href="html_urlencode.html">HTML URL Encode</a>
+<a target="_top" href="html_xhtml.html">HTML XHTML</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> Forms</h2>
+<a target="_top" href="html_forms.html">HTML Forms</a>
+<a target="_top" href="html_form_elements.html">HTML Form Elements</a>
+<a target="_top" href="html_form_input_types.html">HTML Input Types</a>
+<a target="_top" href="html_form_attributes.html">HTML Input Attributes</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML5</span></h2>
+<a target="_top" href="html5_intro.html">HTML5 Intro</a>
+<a target="_top" href="html5_browsers.html">HTML5 Support</a>
+<a target="_top" href="html5_new_elements.html">HTML5 Elements</a>
+<a target="_top" href="html5_semantic_elements.html">HTML5 Semantics</a>
+<a target="_top" href="html5_migration.html">HTML5 Migration</a>
+<a target="_top" href="html5_syntax.html">HTML5 Style Guide</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> Graphics</h2>
+<a target="_top" href="html5_canvas.html">HTML Canvas</a>
+<a target="_top" href="html5_svg.html">HTML SVG</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> Media</h2>
+<a target="_top" href="html_media.html">HTML Media</a>
+<a target="_top" href="html5_video.html">HTML Video</a>
+<a target="_top" href="html5_audio.html">HTML Audio</a>
+<a target="_top" href="html_object.html">HTML Plug-ins</a>
+<a target="_top" href="html_youtube.html">HTML YouTube</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> APIs</h2>
+<a target="_top" href="html5_geolocation.html">HTML Geolocation</a>
+<a target="_top" href="html5_draganddrop.html">HTML Drag/Drop</a>
+<a target="_top" href="html5_webstorage.html">HTML Local Storage</a>
+<a target="_top" href="html5_app_cache.html">HTML App Cache</a>
+<a target="_top" href="html5_webworkers.html">HTML Web Workers</a>
+<a target="_top" href="html5_serversentevents.html">HTML SSE</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> Examples</h2>
+<a target="_top" href="html_examples.html">HTML Examples</a>
+<a target="_top" href="html_quiz.html">HTML Quiz</a>
+<a target="_top" href="html5_quiz.html">HTML5 Quiz</a>
+<a target="_top" href="html_exam.html">HTML Certificate</a>
+<a target="_top" href="html5_exam.html">HTML5 Certificate</a>
+<a target="_top" href="html_summary.html">HTML Summary</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> References</h2>
+<a target="_top" href="../tags/default.html">HTML Tag List</a>
+<a target="_top" href="../tags/ref_standardattributes.html">HTML Attributes</a>
+<a target="_top" href="../tags/ref_eventattributes.html">HTML Events</a>
+<a target="_top" href="../tags/ref_canvas.html">HTML Canvas</a>
+<a target="_top" href="../tags/ref_av_dom.html">HTML Audio/Video</a>
+<a target="_top" href="../tags/ref_html_dtd.html">HTML Doctypes</a>
+<a target="_top" href="../colors/default.html">HTML Colors</a>
+<a target="_top" href="../charsets/default.html">HTML Character Sets</a>
+<a target="_top" href="../tags/ref_urlencode.html">HTML URL Encode</a>
+<a target="_top" href="../tags/ref_language_codes.html">HTML Lang Codes</a>
+<a target="_top" href="../tags/ref_httpmessages.html">HTTP Messages</a>
+<a target="_top" href="../tags/ref_httpmethods.asp">HTTP Methods</a>
+<a target="_top" href="../tags/ref_pxtoemconversion.html">PX to EM Converter</a>
+<a target="_top" href="../tags/ref_keyboardshortcuts.html">Keyboard Shortcuts</a><br><br></div></div>&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-row w3-white'>
+<div class='w3-col l10 m12' id='main'>
+<div id='mainLeaderboard' style='overflow:hidden;'>
+<!-- MainLeaderboard-->
+<div id='div-gpt-ad-1422003450156-2'>
+<script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+</div></div>
+<h1>HTML <span class="color_h1">Examples</span></h1>
+<div class="chapter">
+<div class="prev"><a class="chapter" href="html5_serversentevents.html">&laquo; Previous</a></div>
+<div class="next"><a class="chapter" href="html_quiz.html">Next Chapter &raquo;</a></div>
+</div>
+<hr>
+
+<p><b>HTML Basic</b></p>
+<p>
+<a target="_blank" href="tryit86f8.html?filename=tryhtml_basic_document">HTML document</a><br>
+<a target="_blank" href="tryiteebd.html?filename=tryhtml_basic_headings">HTML headings</a><br>
+<a target="_blank" href="tryitb3f8.html?filename=tryhtml_basic_paragraphs">HTML paragraphs</a><br>
+<a target="_blank" href="tryit6dd1.html?filename=tryhtml_basic_link">HTML links</a><br>
+<a target="_blank" href="tryita61a.html?filename=tryhtml_basic_img">HTML images</a>
+</p>
+<p><a href="html_basic.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML Attributes</b></p>
+<p>
+<a target="_blank" href="tryitf524.html?filename=tryhtml_attributes_title">The title attribute</a><br>
+<a target="_blank" href="tryit9089.html?filename=tryhtml_attributes_link">The href attribute</a><br>
+<a target="_blank" href="tryit2a16.html?filename=tryhtml_attributes_img">The width and height attributes</a><br>
+<a target="_blank" href="tryit0248.html?filename=tryhtml_attributes_alt">The alt attribute</a><br>
+<a target="_blank" href="tryit37e4.html?filename=tryhtml_attributes_noquotes">Attribute without quotes</a><br>
+<a target="_blank" href="tryit7640.html?filename=tryhtml_attributes_error">Attribute without quotes does not work</a>
+</p>
+<p><a href="html_attributes.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML Headings</b></p>
+<p>
+<a target="_blank" href="tryitbe80.html?filename=tryhtml_headings">HTML headings</a><br>
+<a target="_blank" href="tryit47e8.html?filename=tryhtml_headings_hr">HTML horizontal rules</a><br>
+<a target="_blank" href="tryit34a5.html?filename=tryhtml_headings_head">HTML head</a>
+</p>
+<p><a href="html_headings.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML Paragraphs</b></p>
+<p>
+<a target="_blank" href="tryitf9c9.html?filename=tryhtml_paragraphs1">HTML paragraphs</a><br>
+<a target="_blank" href="tryit7f09.html?filename=tryhtml_paragraphs2">More HTML paragraphs</a><br>
+<a target="_blank" href="tryit7d53.html?filename=tryhtml_paragraphs">The use of line breaks in HTML</a><br>
+<a target="_blank" href="tryit36b9.html?filename=tryhtml_poem">Poem problems (some problems with HTML formatting)</a><br>
+<a target="_blank" href="tryitb8e5.html?filename=tryhtml_pre">How to control the line breaks and spaces with the &lt;pre&gt; tag</a>
+</p>
+<p><a href="html_paragraphs.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML Styles</b></p>
+<p>
+<a target="_blank" href="tryitbed5.html?filename=tryhtml_styles_intro">HTML styles</a><br>
+<a target="_blank" href="tryit0aac.html?filename=tryhtml_styles_background-color">HTML background color</a><br>
+<a target="_blank" href="tryit9990.html?filename=tryhtml_styles_color">HTML text color</a><br>
+<a target="_blank" href="tryit114d.html?filename=tryhtml_styles_font-family">HTML text font</a><br>
+<a target="_blank" href="tryit3d6d.html?filename=tryhtml_styles_font-size">HTML text size</a><br>
+<a target="_blank" href="tryitb09f.html?filename=tryhtml_styles_text-align">HTML text alignment</a><br>
+</p>
+<p><a href="html_styles.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML Text Formatting</b></p>
+<p>
+<a target="_blank" href="tryit82ae.html?filename=tryhtml_formatting_b">Bold formatting using the &lt;b&gt; element</a><br>
+<a target="_blank" href="tryit2a85.html?filename=tryhtml_formatting_strong">Strong formatting using the &lt;strong&gt; element</a><br>
+<a target="_blank" href="tryit4646.html?filename=tryhtml_formatting_i">Italic formatting using the &lt;i&gt; element</a><br>
+<a target="_blank" href="tryit7dea.html?filename=tryhtml_formatting_em">Emphasized formatting using the &lt;em&gt; element</a><br>
+<a target="_blank" href="tryited1c.html?filename=tryhtml_formatting_small">Small formatting using the &lt;small&gt; element</a><br>
+<a target="_blank" href="tryit16b4.html?filename=tryhtml_formatting_mark">Marked formatting using the &lt;mark&gt; element</a><br>
+<a target="_blank" href="tryitf9e6.html?filename=tryhtml_formatting_del">Marked deleted using the &lt;del&gt; element</a><br>
+<a target="_blank" href="tryit9844.html?filename=tryhtml_formatting_ins">Marked inserted using the &lt;ins&gt; element</a><br>
+<a target="_blank" href="tryit9467.html?filename=tryhtml_formatting_del_ins">Marked deleted and inserted using &lt;del&gt; and &lt;ins&gt;</a><br>
+<a target="_blank" href="tryit78e9.html?filename=tryhtml_formatting_sub">Subscript formatting using the &lt;sub&gt; element</a><br>
+<a target="_blank" href="tryit7b21.html?filename=tryhtml_formatting_sup">Superscript formatting using the &lt;sup&gt; element</a>
+</p>
+<p><a href="html_formatting.html">Examples explained</a></p>
+
+<hr>
+<p><b>HTML Quotations and Citations</b></p>
+<p>
+<a target="_blank" href="tryitd9a6.html?filename=tryhtml_formatting_q">Formatting short quotations with the &lt;q&gt; element.</a><br>
+<a target="_blank" href="tryitcb56.html?filename=tryhtml_formatting_blockquote">Formatting quoted sections with the &lt;blockquote&gt; element.</a><br>
+<a target="_blank" href="tryit4e4b.html?filename=tryhtml_formatting_address">Formatting document author/owner information with the &lt;address&gt; element</a><br>
+<a target="_blank" href="tryit1a23.html?filename=tryhtml_formatting_abbr">Formatting abbreviations and acronyms the &lt;abbr&gt; element</a><br>
+<a target="_blank" href="tryit0e3d.html?filename=tryhtml_formatting_cite">Formatting work title with the &lt;cite&gt; element</a><br>
+<a target="_blank" href="tryit8e4a.html?filename=tryhtml_formatting_bdo">Formatting text direction with the &lt;bdo&gt; element</a>
+</p>
+<p><a href="html_quotation_elements.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML Computercode Elements</b></p>
+<p>
+<a target="_blank" href="tryit434d.html?filename=tryhtml_formatting_kbd">Keyboard input formatting using the &lt;kbd&gt; element</a><br>
+<a target="_blank" href="tryit66ad.html?filename=tryhtml_formatting_samp">Computer output formatting using the &lt;samp&gt; element</a><br>
+<a target="_blank" href="tryit1b5a.html?filename=tryhtml_formatting_code">Programming code formatting using the &lt;code&gt; element</a><br>
+<a target="_blank" href="tryita294.html?filename=tryhtml_formatting_codepre">Programming code formatting preserving whitespace and line-breaks</a><br>
+<a target="_blank" href="tryitf3a5.html?filename=tryhtml_formatting_var">Variable formatting using the &lt;var&gt; element</a>
+</p>
+<p><a href="html_computercode_elements.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML Comments</b></p>
+<p>
+<a target="_blank" href="tryit79fa.html?filename=tryhtml_comment">Hidden comments</a><br>
+<a target="_blank" href="tryit9dec.html?filename=tryhtml_ie_conditional">Conditional comments</a><br>
+<a target="_blank" href="tryitf7eb.html?filename=tryhtml_comment_out">Comments for debugging</a>
+</p>
+<p><a href="html_comments.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML CSS</b></p>
+<p>
+<a target="_blank" href="tryite7b4.html?filename=tryhtml_css_inline">HTML with inline CSS</a><br>
+<a target="_blank" href="tryitb989.html?filename=tryhtml_css_internal">HTML with internal CSS</a><br>
+<a target="_blank" href="tryit7dcc.html?filename=tryhtml_css_external">HTML with external CSS</a><br>
+<a target="_blank" href="tryitfb29.html?filename=tryhtml_css_fonts">HTML with CSS fonts</a><br>
+<a target="_blank" href="tryit97d9.html?filename=tryhtml_css_id">HTML with CSS using the id attribute</a><br>
+<a target="_blank" href="tryit8442.html?filename=tryhtml_css_class">HTML with CSS using the class attribute</a><br>
+<a target="_blank" href="tryit19b0.html?filename=tryhtml_css_borders">HTML and CSS borders</a><br>
+<a target="_blank" href="tryit9728.html?filename=tryhtml_css_padding">HTML and CSS padding</a><br>
+<a target="_blank" href="tryitcbf5.html?filename=tryhtml_css_margin">HTML and CSS margin</a><br>
+<a target="_blank" href="tryite31e.html?filename=tryhtml_css_full">HTML and CSS full demo</a>
+</p>
+<p><a href="html_css.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML Links</b></p>
+<p>
+<a target="_blank" href="tryit082c.html?filename=tryhtml_links_w3schools">Linking, using an absolute URL</a><br>
+<a target="_blank" href="tryit2507.html?filename=tryhtml_links">Linking, using a relative URL</a><br>
+<a target="_blank" href="tryit5394.html?filename=tryhtml_links_colors">Changing the color of links</a><br>
+<a target="_blank" href="tryit2856.html?filename=tryhtml_links_noline">Removing the underline from links</a><br>
+<a target="_blank" href="tryitb165.html?filename=tryhtml_links_target">Changing the target of a link</a><br>
+<a target="_blank" href="tryit45fc.html?filename=tryhtml_links_image">An image as a link</a><br>
+<a target="_blank" href="tryit3864.html?filename=tryhtml_links_bookmark">Creating a bookmark link</a><br>
+<a target="_blank" href="tryitfba0.html?filename=tryhtml_links_target_top">A link that breaks out of a frame</a><br>
+<a target="_blank" href="tryitd2d6.html?filename=tryhtml_links_mailto">A mailto link</a><br>
+<a target="_blank" href="tryit442e.html?filename=tryhtml_links_mailto_subject">A mailto link with subject</a>
+</p>
+<p><a href="html_links.html">Examples explained</a></p>
+
+<hr>
+<p><b>HTML Images</b></p>
+<p>
+<a target="_blank" href="tryit2ffc.html?filename=tryhtml_images_mountain">The Mountain</a><br>
+<a target="_blank" href="tryit6935.html?filename=tryhtml_images_attributes">An image height and width using attributes</a><br>
+<a target="_blank" href="tryit975c.html?filename=tryhtml_images_size">An image height and width using CSS</a><br>
+<a target="_blank" href="tryit19ca.html?filename=tryhtml_images_style">An image height and width using both</a><br>
+<a target="_blank" href="tryitd52f.html?filename=tryhtml_images_folder">An image in another folder</a><br>
+<a target="_blank" href="tryit212b.html?filename=tryhtml_images_wrong">An image with a broken link</a><br>
+<a target="_blank" href="tryitb021.html?filename=tryhtml_images_w3schools">An image on another server</a><br>
+<a target="_blank" href="tryit991b.html?filename=tryhtml_images_link">Using an image as a link</a><br>
+<a target="_blank" href="tryite923.html?filename=tryhtml_images_hackman">A moving image</a><br>
+<a target="_blank" href="tryit6722.html?filename=tryhtml_images_map">An image map with clickable regions</a><br>
+<a target="_blank" href="tryitd67c.html?filename=tryhtml_images_float">A floating image</a>
+</p>
+<p><a href="html_images.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML Tables</b></p>
+<p>
+<a target="_blank" href="tryit928b.html?filename=tryhtml_table_basic">Basic HTML tables</a><br>
+<a target="_blank" href="tryit046c.html?filename=tryhtml_table_border">A table with borders</a><br>
+<a target="_blank" href="tryitf636.html?filename=tryhtml_table_collapse">A table with collapsed borders</a><br>
+<a target="_blank" href="tryit7de9.html?filename=tryhtml_table_cellpadding">A table with cell padding</a><br>
+<a target="_blank" href="tryitf7e7.html?filename=tryhtml_table_headings">A table with headings</a><br>
+<a target="_blank" href="tryit5052.html?filename=tryhtml_table_headings_left">A table with left-aligned headings</a><br>
+<a target="_blank" href="tryitb403.html?filename=tryhtml_table_headers">Horizontal/Vertical table headings</a><br>
+<a target="_blank" href="tryitaabb.html?filename=tryhtml_tables2">A table with a caption</a><br>
+<a target="_blank" href="tryit66d3.html?filename=tryhtml_table_colspan">Table cells that span more than one column</a><br>
+<a target="_blank" href="tryit914a.html?filename=tryhtml_table_rowspan">Table cells that span more than one row</a><br>
+<a target="_blank" href="tryitec91.html?filename=tryhtml_table_cellspacing">A table with cell spacing</a><br>
+<a target="_blank" href="tryit0721.html?filename=tryhtml_table_elements">A table with HTML tags inside</a><br>
+<a target="_blank" href="tryitdc1a.html?filename=tryhtml_table_id1">Tables with different style using id I</a><br>
+<a target="_blank" href="tryitdfb2.html?filename=tryhtml_table_id2">Tables with different style using id II</a><br>
+<a target="_blank" href="tryitaf7e.html?filename=tryhtml_table_class1">Tables with different style using class I</a><br>
+<a target="_blank" href="tryit035c.html?filename=tryhtml_table_class2">Tables with different style using class II</a>
+</p>
+<p><a href="html_tables.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML Lists</b></p>
+<p>
+<a target="_blank" href="tryit56b2.html?filename=tryhtml_lists_unordered">An unordered list (default)</a><br>
+<a target="_blank" href="tryit678a.html?filename=tryhtml_lists_unordered_disc">An unordered list with disc bullets</a><br>
+<a target="_blank" href="tryitfcf7.html?filename=tryhtml_lists_unordered_circle">An unordered list with circle bullets</a><br>
+<a target="_blank" href="tryit0e3c.html?filename=tryhtml_lists_unordered_square">An unordered list with square bullets</a><br>
+<a target="_blank" href="tryit023a.html?filename=tryhtml_lists_unordered_none">An unordered list without bullets</a><br>
+<a target="_blank" href="tryit2865.html?filename=tryhtml_lists_ordered">An ordered list (default)</a><br>
+<a target="_blank" href="tryit1046.html?filename=tryhtml_lists_ordered_numbers">An ordered list with numbers</a><br>
+<a target="_blank" href="tryitbc1a.html?filename=tryhtml_lists_ordered_ucase">An ordered list with letters</a><br>
+<a target="_blank" href="tryitbb71.html?filename=tryhtml_lists_ordered_lcase">An ordered list with lowercase letters</a><br>
+<a target="_blank" href="tryit2272.html?filename=tryhtml_lists_ordered_roman_ucase">An ordered list with roman numbers</a><br>
+<a target="_blank" href="tryitb795.html?filename=tryhtml_lists_ordered_roman_lcase">An ordered list with lowercase roman numbers</a><br>
+<a target="_blank" href="tryita055.html?filename=tryhtml_lists_description">A description list</a><br>
+<a target="_blank" href="tryit4479.html?filename=tryhtml_lists_nested">A nested list I</a><br>
+<a target="_blank" href="tryit38b2.html?filename=tryhtml_lists_nested2">A nested list II</a><br>
+<a target="_blank" href="tryit209d.html?filename=tryhtml_lists_horizontal">A horizontal list</a><br>
+<a target="_blank" href="tryit0464.html?filename=tryhtml_lists_menu">A horizontal list menu</a>
+</p>
+<p><a href="html_lists.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML Block and inline elements</b></p>
+<p>
+<a target="_blank" href="tryit78bc.html?filename=tryhtml_div_capitals">Styling &lt;div&gt; elements</a><br>
+<a target="_blank" href="tryit1fcd.html?filename=tryhtml_span_red">Styling &lt;span&gt; elements</a>
+<p><a href="html_blocks.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML Classes</b></p>
+<p>
+<a target="_blank" href="tryitd195.html?filename=tryhtml_classes_london">Classing &lt;div&gt; elements I</a><br>
+<a target="_blank" href="tryitdd49.html?filename=tryhtml_classes_capitals">Classing &lt;div&gt; elements II</a><br>
+<a target="_blank" href="tryitd02a.html?filename=tryhtml_classes_span">Classing &lt;span&gt; elements</a>
+<p><a href="html_classes.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML Layout</b></p>
+<p>
+<a target="_blank" href="tryit8c2e.html?filename=tryhtml_layout_divs">Layout using &lt;div&gt; elements</a><br>
+<a target="_blank" href="tryit4c94.html?filename=tryhtml_layout_semantic">Layout using semantic elements</a><br>
+<a target="_blank" href="tryitb981.html?filename=tryhtml_layout_tables">Layout using &lt;table&gt; elements</a>
+</p>
+<p><a href="html_layout.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML IFrame</b></p>
+<p><a target="_blank" href="tryitcbb3.html?filename=tryhtml_iframe">Inline frame (a frame inside an HTML page)</a></p>
+<p><a href="html_iframe.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML head Elements</b></p>
+<p>
+<a target="_blank" href="tryit5ade.html?filename=tryhtml_head_none">A valid HTML document with no &lt;html&gt; &lt;body, and &lt;head&gt;</a><br>
+<a target="_blank" href="tryit9ab2.html?filename=tryhtml_head_no_head">A valid HTML document with no &lt;head&gt; element</a><br>
+<a target="_blank" href="tryit7501.html?filename=tryhtml_head_title">The &lt;title&gt; element defines the document title</a><br>
+<a target="_blank" href="tryit2966.html?filename=tryhtml_head_style">The &lt;style&gt; element contains style information</a><br>
+<a target="_blank" href="tryit0343.html?filename=tryhtml_head_link">The &lt;link&gt; element defines a relationship to an external resource</a><br>
+<a target="_blank" href="tryit43c5.html?filename=tryhtml_head_meta">The &lt;meta&gt; element defines special meta information</a><br>
+<a target="_blank" href="tryit0896.html?filename=tryhtml_head_script">The &lt;script&gt; element defines client-side JavaScripts</a><br>
+<a target="_blank" href="tryit55a3.html?filename=tryhtml_head_base">The &lt;base&gt; element defines the base URL for all URLs</a>
+</p>
+<p><a href="html_head.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML Scripts</b></p>
+<p>
+<a target="_blank" href="tryita3c7.html?filename=tryhtml_script">Insert a script</a><br>
+<a target="_blank" href="tryit80c0.html?filename=tryhtml_noscript">Use of the &lt;noscript&gt; tag</a>
+</p>
+<p><a href="html_scripts.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML Forms</b></p>
+<p>
+<a target="_blank" href="tryit5852.html?filename=tryhtml_form_text">Form with text input</a><br>
+<a target="_blank" href="tryit1082.html?filename=tryhtml_form_radio">Form with radio button input</a><br>
+<a target="_blank" href="tryitcff8.html?filename=tryhtml_form_submit">Form with text fields and a submit button</a><br>
+<a target="_blank" href="tryit1c32.html?filename=tryhtml_form_submit_id">Form with a text fields without a name attribute</a><br>
+<a target="_blank" href="tryit4436.html?filename=tryhtml_form_legend">Grouping Form Data</a><br>
+<a target="_blank" href="tryit37ef.html?filename=tryhtml_form_mail">Send e-mail from a form</a>
+</p>
+<p><a href="html_forms.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML Form Elements</b></p>
+<p>
+<a target="_blank" href="tryitc4f4.html?filename=tryhtml_elem_select">A simple drop-down list</a><br>
+<a target="_blank" href="tryitc971.html?filename=tryhtml_elem_select_pre">A drop-down list with a pre-selected value</a><br>
+<a target="_blank" href="tryitb083.html?filename=tryhtml_elem_textarea">A textarea (a multi-line text input field)</a><br>
+<a target="_blank" href="tryit13bd.html?filename=tryhtml_elem_button">An input button</a><br>
+<a target="_blank" href="tryit13d9.html?filename=tryhtml_elem_datalist">Using the &lt;datalist&gt; Element</a><br>
+<a target="_blank" href="tryit14d5.html?filename=tryhtml_elem_keygen">Using the &lt;keygen&gt; Element</a><br>
+<a target="_blank" href="tryit0e46.html?filename=tryhtml_elem_output">Using the &lt;output&gt; Element</a>
+</p>
+<p><a href="html_form_elements.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML Input Types</b></p>
+<p>
+<a target="_blank" href="tryit8bdc.html?filename=tryhtml_input_text">Input type text</a><br>
+<a target="_blank" href="tryit8a85.html?filename=tryhtml_input_password">Input type password</a><br>
+<a target="_blank" href="tryitbeba.html?filename=tryhtml_input_radio">Input type radio</a><br>
+<a target="_blank" href="tryit6096.html?filename=tryhtml_input_checkbox">Input type checkbox</a><br>
+<a target="_blank" href="tryit1312.html?filename=tryhtml_input_button">Input type button</a><br>
+<a target="_blank" href="tryit005b.html?filename=tryhtml_input_number">Input type number - with restrictions</a><br>
+<a target="_blank" href="tryit2510.html?filename=tryhtml_input_number_step">Input type number - with steps</a><br>
+<a target="_blank" href="tryit6025.html?filename=tryhtml_input_date">Input type date - with date picker</a><br>
+<a target="_blank" href="tryit5141.html?filename=tryhtml_input_date_max_min">Input type date - with restrictions</a><br>
+<a target="_blank" href="tryita532.html?filename=tryhtml_input_color">Input type color - with color picker</a><br>
+<a target="_blank" href="tryite8a3.html?filename=tryhtml_input_range">Input type range</a><br>
+<a target="_blank" href="tryita992.html?filename=tryhtml_input_month">Input type month</a><br>
+<a href="tryitfa07.html?filename=tryhtml_input_week" target="_blank">Input type week</a><br>
+<a target="_blank" href="tryit04de.html?filename=tryhtml_input_time">Input type time</a><br>
+<a target="_blank" href="tryit8960.html?filename=tryhtml_input_datetime">Input type datetime</a><br>
+<a target="_blank" href="tryitc3bb.html?filename=tryhtml_input_datetime-local">Input type datetime-local</a><br>
+<a target="_blank" href="tryitf295.html?filename=tryhtml_input_email">Input type email</a><br>
+<a target="_blank" href="tryit2949.html?filename=tryhtml_input_search">Input type search</a><br>
+<a target="_blank" href="tryitd9c8.html?filename=tryhtml_input_tel">Input type tel</a><br>
+<a target="_blank" href="tryit28c7.html?filename=tryhtml_input_url">Input type url<br>
+</p>
+<p><a href="html_form_input_types.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML Input Attributes</b></p>
+<p>
+<a target="_blank" href="tryit73ef.html?filename=tryhtml5_input_autocomplete">The autocomplete attribute</a><br>
+<a target="_blank" href="tryit7b60.html?filename=tryhtml5_form_novalidate">The novalidate attribute</a><br>
+<a target="_blank" href="tryit7c56.html?filename=tryhtml5_input_autofocus">The autofocus_attribute</a><br>
+<a target="_blank" href="tryit1577.html?filename=tryhtml5_input_form">The form attribute</a><br>
+<a target="_blank" href="tryita145.html?filename=tryhtml5_input_formaction">The formaction attribute</a><br>
+<a target="_blank" href="tryit339d.html?filename=tryhtml5_input_formenctype">The formenctype attribute</a><br>
+<a target="_blank" href="tryit0d88.html?filename=tryhtml5_input_formmethod">The formmethod attribute</a><br>
+<a target="_blank" href="tryitaffe.html?filename=tryhtml5_input_formnovalidate">The formnovalidate attribute</a><br>
+<a target="_blank" href="tryite252.html?filename=tryhtml5_input_formtarget">The formtarget attribute</a><br>
+<a target="_blank" href="tryitc29f.html?filename=tryhtml5_input_height_width">The height and width attributes</a><br>
+<a target="_blank" href="tryit601f.html?filename=tryhtml5_input_list">The list attribute</a><br>
+<a target="_blank" href="tryitb14e.html?filename=tryhtml5_input_max_min">The min and max attributes</a><br>
+<a target="_blank" href="tryit4ebe.html?filename=tryhtml5_input_multiple">The multiple attribute</a><br>
+<a target="_blank" href="tryit64dc.html?filename=tryhtml5_input_pattern">The pattern attribute</a><br>
+<a target="_blank" href="tryitf194.html?filename=tryhtml5_input_placeholder">The placeholder attribute</a><br>
+<a target="_blank" href="tryitd22c.html?filename=tryhtml5_input_required">The required attribute</a><br>
+<a target="_blank" href="tryitec40.html?filename=tryhtml5_input_step">The step attribute</a>
+</p>
+<p><a href="html_form_attributes.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML5 Canvas</b></p>
+<p>
+<a target="_blank" href="tryit9755.html?filename=tryhtml5_canvas_first">Draw on the canvas with JavaScript</a><br>
+<a target="_blank" href="tryitdeac.html?filename=tryhtml5_canvas_tut_path">Draw a line with lineTo()</a><br>
+<a target="_blank" href="tryitabb9.html?filename=tryhtml5_canvas_tut_path2">Draw a circle with arc()</a><br>
+<a target="_blank" href="tryit99c3.html?filename=tryhtml5_canvas_tut_text">Draw a text with fillText()</a><br>
+<a target="_blank" href="tryitdf3c.html?filename=tryhtml5_canvas_tut_text2">Draw a text with strokeText()</a><br>
+<a target="_blank" href="tryit4412.html?filename=tryhtml5_canvas_tut_grad">Draw a linear gradient</a><br>
+<a target="_blank" href="tryitb560.html?filename=tryhtml5_canvas_tut_grad2">Draw a circular gradient</a><br>
+<a target="_blank" href="tryit3ad8.html?filename=tryhtml5_canvas_tut_img">Draw an image with drawImage()</a>
+</p>
+<p><a href="html5_canvas.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML5 SVG</b></p>
+<p>
+<a target="_blank" href="tryit9978.html?filename=tryhtml_svg_circle">SVG Circle</a><br>
+<a target="_blank" href="tryit7edc.html?filename=tryhtml_svg_rect">SVG Rectangle</a><br>
+<a target="_blank" href="tryit2a3b.html?filename=tryhtml_svg_rect_round">SVG Rounded Rectangle</a><br>
+<a target="_blank" href="tryit028e.html?filename=tryhtml_svg_star">SVG Star</a><br>
+<a target="_blank" href="tryitc8dd.html?filename=tryhtml_svg_logo">SVG Logo</a>
+</p>
+<p><a href="html5_svg.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML5 Media</b></p>
+<p>
+<a target="_blank" href="tryit420a.html?filename=tryhtml5_video">Play Bunny</a><br>
+<a target="_blank" href="tryit8456.html?filename=tryhtml5_video_all">Play bear video with controls</a><br>
+<a target="_blank" href="tryit7842.html?filename=tryhtml5_video_autoplay">Play bear video with autoplay</a><br>
+<a target="_blank" href="tryit19ba.html?filename=tryhtml5_audio_all">Play Horse sound with controls</a>
+</p>
+<p><a href="html_media.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML5 Geolocation</b></p>
+<p>
+<a target="_blank" href="tryit6329.html?filename=tryhtml5_geolocation">Get geolocation coordinates</a><br>
+<a target="_blank" href="tryitef87.html?filename=tryhtml5_geolocation_error">Handle geolocation errors</a><br>
+<a target="_blank" href="tryit4090.html?filename=tryhtml5_geolocation_map">Get geolocation with a map</a><br>
+<a target="_blank" href="tryite231.html?filename=tryhtml5_geolocation_map_script">Get geolocation with Google map script</a><br>
+<a target="_blank" href="tryit67d4.html?filename=tryhtml5_geolocation_watchposition">Get geolocation and watch the position</a>
+</p>
+<p><a href="html5_geolocation.html">Examples explained</a></p>
+<hr>
+
+<p><b>HTML5 Local Storage</b></p>
+<p>
+<a target="_blank" href="tryitba72.html?filename=tryhtml5_webstorage_local">Store a name permanently</a><br>
+<a target="_blank" href="tryitdf50.html?filename=tryhtml5_webstorage_local_clickcount">Store a counter permanently</a><br>
+<a target="_blank" href="tryit681b.html?filename=tryhtml5_webstorage_session">Store a counter for one session</a>
+</p>
+<p><a href="html5_webstorage.html">Examples explained</a></p>
+<hr>
+
+<p><b>More HTML5 Examples</b></p>
+<p>
+<a target="_blank" href="tryit01c2.html?filename=tryhtml5_draganddrop">HTML5 drag and drop</a><br>
+<a target="_blank" href="tryit02be.html?filename=tryhtml5_html_manifest">HTML5 application cache</a><br>
+<a target="_blank" href="tryiteefb.html?filename=tryhtml5_webworker">HTML5 web workers</a><br>
+<a target="_blank" href="tryitec4b.html?filename=tryhtml5_sse">HTML5 server sent events</a>
+</p>
+
+<br>
+<div class="chapter">
+<div class="prev"><a class="chapter" href="html5_serversentevents.html">&laquo; Previous</a></div>
+<div class="next"><a class="chapter" href="html_quiz.html">Next Chapter &raquo;</a></div>
+</div>
+</div>
+<div class="w3-col l2 m12" id="right">
+
+<div class="sidesection">
+<div id="skyscraper">
+<div id="div-gpt-ad-1422003450156-5">
+<script>
+ googletag.cmd.push(function() {
+ googletag.display('div-gpt-ad-1422003450156-5');
+ });
+ </script> 
+</div>
+</div>
+</div>
+
+<div class="sidesection">
+<h3>W3SCHOOLS EXAMS</h3>
+<a target="_blank" href="../cert/default.html">HTML, CSS, JavaScript, PHP, jQuery, and XML Certifications</a>
+</div>
+
+<div class="sidesection">
+<h3>COLOR PICKER</h3>
+<a href="../colors/colors_picker.html">
+<img src="../images/colorpicker.gif" alt="colorpicker"></a>
+</div>
+
+<div class="sidesection">
+<h3>SHARE THIS PAGE</h3>
+<div class="w3-text-grey sharethis">
+<script>
+<!--
+try{
+loc=location.pathname;
+if (loc.toUpperCase().indexOf(".ASP")<0) loc=loc+"default.asp";
+txt='<a href="http://www.facebook.com/sharer.php?u=http://www.w3schools.com'+loc+'" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a>';
+txt=txt+'<a href="http://twitter.com/home?status=Currently reading http://www.w3schools.com'+loc+'" target="_blank" title="Twitter"><span class="fa fa-twitter-square fa-2x"></span></a>';
+txt=txt+'<a href="https://plus.google.com/share?url=http://www.w3schools.com'+loc+'" target="_blank" title="Google+"><span class="fa fa-google-plus-square fa-2x"></span></a>';
+document.write(txt);
+} catch(e) {}
+//-->
+</script>
+</div>
+</div>
+
+<div class="sidesection w3-text-grey sharethis">
+<a href="javascript:void(0);" onclick="clickFBLike()" title="Like W3Schools on Facebook">
+<span class="fa fa-thumbs-o-up fa-2x"></span></a>
+<div id="fblikeframe">
+<div id="popupframe"></div>
+<div id="popupDIV"></div>
+</div>
+</div>       
+
+<div class="sidesection">
+<h3>LEARN MORE:</h3>
+<p>
+<a href="../colors/colors_converter.html">Color Converter</a><br>
+<a href="../howto/howto_google_maps.html">Google Maps</a><br>
+<a href="../howto/howto_css_animate_buttons.html">Animated Buttons</a><br>
+<a href="../howto/howto_css_modals.html">Modal Boxes</a><br>
+<a href="../howto/howto_css_modal_images.html">Modal Images</a><br>
+<a href="../howto/howto_css_tooltip.html">Tooltips</a><br>
+<a href="../howto/howto_css_loader.html">Loaders</a><br>
+<a href="../howto/howto_js_animate.html">JS Animations</a><br>
+<a href="../howto/howto_js_progressbar.html">Progress Bars</a><br>
+<a href="../howto/howto_js_dropdown.html">Dropdowns</a><br>
+<a href="../howto/howto_js_slideshow.html">Slideshow</a><br>
+<a href="../howto/howto_js_sidenav.html">Side Navigation</a><br>
+<a href="../howto/howto_html_include.html">HTML Includes</a><br>
+<a href="../w3css/w3css_color_palettes.html">Color Palettes</a>
+</p>
+</div>
+
+</div>
+</div>
+<div class="footer w3-container w3-white">      
+
+<hr>
+<div style="overflow:auto">
+<!-- BottomMediumRectangle -->
+<div class="bottomad" id='div-gpt-ad-1422003450156-0'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-0'); });
+</script>
+</div>
+<!-- RightBottomMediumRectangle -->
+<div class="bottomad" id='div-gpt-ad-1422003450156-3'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-3'); });
+</script>
+</div>
+</div>
+
+<hr>
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m3 s12">
+<a href="javascript:void(0);" onclick="displayError();return false" style="white-space:nowrap;">REPORT ERROR</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="#" target="_blank" onclick="printPage();return false;">PRINT PAGE</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="http://w3schools.invisionzone.com/" target="_blank">FORUM</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="../about/default.html" target="_top">ABOUT</a>
+</div>
+</div>
+<hr>
+<div class="w3-light-grey w3-padding w3-center" id="err_form" style="display:none;">
+<span onclick="this.parentElement.style.display='none'" class="w3-closebtn">&times;</span>     
+<h2>Your Suggestion:</h2>
+<form>
+<div class="w3-group">      
+<label for="err_email">Your E-mail:</label>
+<input class="w3-input" type="text" style="width:100%" id="err_email" name="err_email">
+</div>
+<div class="w3-group">      
+<label for="err_email">Page address:</label>
+<input class="w3-input" type="text" style="width:100%" id="err_url" name="err_url" disabled="disabled">
+</div>
+<div class="w3-group">
+<label for="err_email">Description:</label>
+<textarea rows="10" class="w3-input" id="err_desc" name="err_desc" style="width:100%;"></textarea>
+</div>
+<div class="form-group">        
+<button type="button" onclick="sendErr()">Submit</button>
+</div>
+<br>
+</form>
+</div>
+<div class="w3-container w3-light-grey w3-padding" id="err_sent" style="display:none;">
+<span onclick="this.parentElement.style.display='none'" class="w3-closebtn">&times;</span>     
+<h2>Thank You For Helping Us!</h2>
+<p>Your message has been sent to W3Schools.</p>
+</div>
+
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 Tutorials</h4>
+<a href="default.html">HTML Tutorial</a><br>
+<a href="../css/default.html">CSS Tutorial</a><br>
+<a href="../js/default.html">JavaScript Tutorial</a><br>
+<a href="../w3css/default.html">W3.CSS Tutorial</a><br>
+<a href="../bootstrap/default.html">Bootstrap Tutorial</a><br>
+<a href="../sql/default.html">SQL Tutorial</a><br>
+<a href="../php/default.html">PHP Tutorial</a><br>
+<a href="../jquery/default.html">jQuery Tutorial</a><br>
+<a href="../angular/default.html">Angular Tutorial</a><br>
+<a href="../xml/default.html">XML Tutorial</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 References</h4>
+<a href="../tags/default.html">HTML Reference</a><br>
+<a href="../cssref/default.html">CSS Reference</a><br>
+<a href="../jsref/default.html">JavaScript Reference</a><br>
+<a href="../w3css/w3css_references.html">W3.CSS Reference</a><br>
+<a href="../browsers/default.html">Browser Statistics</a><br>
+<a href="../php/php_ref_array.asp">PHP Reference</a><br>
+<a href="../colors/colors_names.html">HTML Colors</a><br>
+<a href="../charsets/default.html">HTML Character Sets</a><br>
+<a href="../jquery/jquery_ref_selectors.html">jQuery Reference</a><br>
+<a href="../angular/angular_ref_directives.html">AngularJS Reference</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 Examples</h4>
+<a href="html_examples.html">HTML Examples</a><br>
+<a href="../css/css_examples.html">CSS Examples</a><br>
+<a href="../js/js_examples.html">JavaScript Examples</a><br>
+<a href="../w3css/w3css_examples.html">W3.CSS Examples</a><br>
+<a href="../js/js_dom_examples.html">HTML DOM Examples</a><br>
+<a href="../php/php_examples.html">PHP Examples</a><br>
+<a href="../jquery/jquery_examples.html">jQuery Examples</a><br>
+<a href="../asp/asp_examples.html">ASP Examples</a><br>
+<a href="../xml/xml_examples.html">XML Examples</a><br>
+<a href="../svg/svg_examples.html">SVG Examples</a>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Web Certificates</h4>
+<a href="../cert/default.html">HTML Certificate</a><br>
+<a href="../cert/default.html">HTML5 Certificate</a><br>
+<a href="../cert/default.html">CSS Certificate</a><br>
+<a href="../cert/default.html">JavaScript Certificate</a><br>
+<a href="../cert/default.html">jQuery Certificate</a><br>
+<a href="../cert/default.html">PHP Certificate</a><br>
+<a href="../cert/default.html">Bootstrap Certificate</a><br>
+<a href="../cert/default.html">XML Certificate</a><br>
+</div>
+</div>        
+</div>        
+
+<hr>
+<div class="w3-center w3-small w3-opacity">
+W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding.
+Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.
+While using this site, you agree to have read and accepted our <a href="../about/about_copyright.html">terms of use</a>,
+<a href="../about/about_privacy.html">cookie and privacy policy</a>.
+<a href="../about/about_copyright.html">Copyright 1999-2016</a> by Refsnes Data. All Rights Reserved.<br><br>
+<a href="../index.html">
+<img style="width:150px;height:28px;border:0" src="../images/w3schoolscom_gray.gif" alt="W3Schools.com"></a>
+</div>
+<br><br>
+</div>
+</div>
+</div>
+
+<div id="nav_tutorials_content" style="display:none;">
+<span onclick='w3_close_nav("tutorials")' class='w3-closebtn w3-xlarge'>&times;</span>
+<div class='w3-row-padding'>
+<div class='w3-col l2 m4'>
+<h3>HTML/CSS</h3>
+<a href='default.html'>Learn HTML</a>
+<a href='../css/default.html'>Learn CSS</a>
+<a href='../w3css/default.html'>Learn W3.CSS</a>
+<a href='../colors/default.html'>Learn Colors</a>
+<a href='../bootstrap/default.html'>Learn Bootstrap</a>
+</div>
+<div class='w3-col l2 m4'>  
+<h3>JavaScript</h3>
+<a href='../js/default.html'>Learn JavaScript</a>
+<a href='../jquery/default.html'>Learn jQuery</a>
+<a href='../jquerymobile/default.html'>Learn jQueryMobile</a>
+<a href='../appml/default.html'>Learn AppML</a>
+<a href='../angular/default.html'>Learn AngularJS</a>
+<a href='../ajax/default.html'>Learn AJAX</a>
+<a href='../json/default.html'>Learn JSON</a>
+</div>
+<div class='w3-col l2 m4'>   
+<h3>HTML Graphics</h3>
+<a href='../canvas/default.html'>Learn Canvas</a>
+<a href='../svg/default.html'>Learn SVG</a>
+<a href='../icons/default.html'>Learn Icons</a>
+<a href='../googleapi/default.html'>Learn Google Maps</a>
+<a href="../games/default.html">Learn HTML Games</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Server Side</h3>
+<a href='../sql/default.html'>Learn SQL</a>
+<a href='../php/default.html'>Learn PHP</a>
+<a href='../asp/default.html'>Learn ASP</a>
+<a href='../aspnet/default.html'>Learn ASP.NET</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Web Building</h3>
+<a href='../website/default.html'>Web Building</a>
+<a href='../browsers/default.html'>Web Statistics</a>
+<a href='../cert/default.html'>Web Certificates</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>XML Tutorials</h3>
+<a href='../xml/default.html'>Learn XML</a>
+<a href='../xsl/default.html'>Learn XSLT</a>
+</div>
+</div>
+</div>
+<div id="nav_references_content" style="display:none;">
+<span onclick='w3_close_nav("references")' class='w3-closebtn w3-xlarge'>&times;</span>
+<div class='w3-row-padding'>
+<div class='w3-col l2 m4'>
+<h3>HTML</h3>
+<a href='../tags/default.html'>HTML Tag Reference</a>
+<a href='../tags/ref_eventattributes.html'>HTML Event Reference</a>
+<a href='../colors/default.html'>HTML Color Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>CSS</h3>
+<a href='../cssref/default.html'>CSS Reference</a>
+<a href='../cssref/css_selectors.html'>CSS Selector Reference</a>
+<a href='../w3css/w3css_references.html'>W3.CSS Reference</a>
+<a href='../bootstrap/bootstrap_ref_css_text.html'>Bootstrap Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>JavaScript</h3>
+<a href='../jsref/default.html'>JavaScript Reference</a>
+<a href='../jsref/default.html'>HTML DOM Reference</a>
+<a href='../jquery/jquery_ref_selectors.html'>jQuery Reference</a>
+<a href='../jquerymobile/jquerymobile_ref_data.html'>jQuery Mobile Reference</a>
+<a href='../angular/angular_ref_directives.html'>AngularJS Reference</a>
+<a href='../googleAPI/google_maps_ref.html'>Google Maps Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Server Side</h3>
+<a href='../php/php_ref_array.asp'>PHP Reference</a>
+<a href='../sql/sql_quickref.html'>SQL Reference</a>
+<a href='../asp/asp_ref_response.html'>ASP Reference</a>
+<a href='../aspnet/webpages_ref_classes.html'>Razor Reference</a>
+<a href='../aspnet/aspnet_intro.html'>ASP.NET Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>XML</h3>
+<a href='../xml/dom_nodetype.html'>XML Reference</a>
+<a href='../xsl/xsl_w3celementref.html'>XSLT Reference</a>
+<a href='../xml/schema_elements_ref.html'>XML Schema Reference</a>
+<a href='../svg/svg_reference.html'>SVG Reference</a>
+</div>
+<div class='w3-col l2 m4'>
+<h3>Charsets</h3>
+<a href='../charsets/default.html'>HTML Character Sets</a>
+<a href='../charsets/ref_html_ascii.html'>HTML ASCII</a>
+<a href='../charsets/ref_html_ansi.html'>HTML ANSI</a>
+<a href='../charsets/ref_html_ansi.html'>HTML Windows-1252</a>
+<a href='../charsets/ref_html_8859.html'>HTML ISO-8859-1</a>
+<a href='../charsets/ref_html_symbols.html'>HTML Symbols</a>
+<a href='../charsets/ref_html_utf8.html'>HTML UTF-8</a>
+</div>
+</div>
+</div>
+<div id="nav_examples_content" style="display:none;">
+<span onclick='w3_close_nav("examples")' class='w3-closebtn w3-xlarge'>&times;</span>
+<div class='w3-row-padding'>
+<div class='w3-col l3 m6'>
+<h3>HTML/CSS</h3>
+<a href='html_examples.html'>HTML Examples</a>
+<a href='../css/css_examples.html'>CSS Examples</a>
+<a href='../w3css/w3css_examples.html'>W3.CSS Examples</a>
+</div>
+<div class='w3-col l3 m6'>
+<h3>JavaScript</h3>
+<a href='../js/js_examples.html' target='_top'>JavaScript Examples</a>
+<a href='../js/js_dom_examples.html' target='_top'>HTML DOM Examples</a>
+<a href='../jquery/jquery_examples.html' target='_top'>jQuery Examples</a>
+<a href='../jquerymobile/jquerymobile_examples.html' target='_top'>jQuery Mobile Examples</a>
+<a href='../angular/angular_examples.html' target='_top'>AngularJS Examples</a>
+<a href='../ajax/ajax_examples.html' target='_top'>AJAX Examples</a>
+</div>
+<div class='w3-col l3 m6'>
+<h3>Server Side</h3>
+<a href='../php/php_examples.html' target='_top'>PHP Examples</a>
+<a href='../asp/asp_examples.html' target='_top'>ASP Examples</a>
+<a href='../aspnet/webpages_examples.html' target='_top'>Razor Examples</a>
+<a href='../aspnet/aspnet_examples.html' target='_top'>.NET Examples</a>
+</div>
+<div class='w3-col l3 m6'>
+<h3>XML</h3>
+<a href='../xml/xml_examples.html' target='_top'>XML Examples</a>
+<a href='../xsl/xsl_examples.html' target='_top'>XSL Examples</a>
+<a href='../xsl/xsl_examples.html' target='_top'>XSLT Examples</a>
+<a href='../xsl/xpath_examples.html' target='_top'>XPath Examples</a>
+<a href='../xml/schema_example.html' target='_top'>XML Schema Examples</a>
+<a href='../svg/svg_examples.html' target='_top'>SVG Examples</a>
+</div>
+</div>
+</div>
+<div id='nav_translate_content' style="display:none">
+<span onclick='w3_close_nav("translate")' class='w3-closebtn w3-xlarge'>&times;</span>
+<br><br>Translate w3schools.com:
+<div id='google_translate_element'></div>
+<br>
+</div>
+<div id='nav_search_content' style="display:none">
+<span onclick='w3_close_nav("search")' class='w3-closebtn w3-xlarge'>&times;</span>
+<br><br>
+<div class='searchdiv'>
+Search w3schools.com:
+<div id='googleSearch'><div class='gcse-search'></div></div>
+</div>
+<br>
+</div>
+<script src="../lib/w3schools_footer.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
+<![endif]-->
+</body>
+
+<!-- Mirrored from www.w3schools.com/html/html_examples.asp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 07:41:07 GMT -->
+</html>

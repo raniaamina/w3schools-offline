@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=w3schools-offline
+Comment=w3schools offline
+Exec=maleo maleo /usr/lib/w3schools-offline
+Icon=/usr/share/pixmaps/w3-green-logo.png
+Terminal=false
+Type=Application
+Categories=Educations;Programming;
+StartupNotify=true
+Name[id_ID]=w3schools
