@@ -5,7 +5,7 @@ W3Schools adalah sebuah situs pengembang web, dengan tutorial dan referensi tent
 
 w3schools-offline merupakan versi luring w3school.com tersebut untuk kemudahan akses dan pembelajaran.
 
-![Screenshot](w3schools-offline/screenshot.png ""Screenshot"")
+![Screenshot](w3schools-offline/screenshot.png "Screenshot")
 
 Untuk menjalankan w3schools-offline, pastikan bahwa Anda telah measang terlebih dahulu. Maleo dapat diunduh dan di pasang melalui github resmi BlankOn https://github.com/blankon/maleo .
 
